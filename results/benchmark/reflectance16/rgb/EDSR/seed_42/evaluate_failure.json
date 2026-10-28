@@ -1,0 +1,7 @@
+{
+  "status": "failed",
+  "model": "EDSR",
+  "modality": "rgb",
+  "radiometry": "reflectance16",
+  "error": "Traceback (most recent call last):\n  File \"/workspace/shivam/25mcsa19/mahimandal160_25mcsa19/benchmark_harness/mahimandal160/run.py\", line 447, in main\n    (train if args.action == \"train\" else evaluate)(args)\n  File \"/usr/local/lib/python3.8/dist-packages/torch/utils/_contextlib.py\", line 115, in decorate_context\n    return func(*args, **kwargs)\n  File \"/workspace/shivam/25mcsa19/mahimandal160_25mcsa19/benchmark_harness/mahimandal160/run.py\", line 299, in evaluate\n    raise ValueError(\"Checkpoint does not match the requested dataset/modality/radiometry protocol\")\nValueError: Checkpoint does not match the requested dataset/modality/radiometry protocol\n"
+}

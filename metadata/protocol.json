@@ -1,0 +1,57 @@
+{
+  "acquisition_interval": [
+    "2025-01-01",
+    "2026-09-15"
+  ],
+  "collection_order": [
+    "western_himalaya",
+    "balanced_india"
+  ],
+  "dem_collection": "cop-dem-glo-30",
+  "geographic_minimums": {
+    "extreme_north": 300,
+    "northern_band": 500,
+    "rest_of_india": 4000
+  },
+  "landcover_service": "https://ic.imagery1.arcgis.com/arcgis/rest/services/Sentinel2_10m_LandCover/ImageServer",
+  "landcover_year": 2025,
+  "landscape_maximums": {
+    "alpine": 350,
+    "cropland": 1000,
+    "desert_bare": 700,
+    "forest": 800,
+    "mixed": 700,
+    "mountain": 700,
+    "shrub_grass": 800,
+    "urban": 700,
+    "water_wetland": 600
+  },
+  "landscape_minimums": {
+    "alpine": 150,
+    "cropland": 800,
+    "desert_bare": 450,
+    "forest": 600,
+    "mixed": 500,
+    "mountain": 450,
+    "shrub_grass": 550,
+    "urban": 500,
+    "water_wetland": 300
+  },
+  "priority_region_minimums": {
+    "rest_of_india": 4000,
+    "western_himalaya": 800
+  },
+  "protocol_id": "pc_india_rgbnir_esri2025_dem_himalaya_first_v4",
+  "release_manifest": "paper_release_manifest.csv",
+  "snow_ice_is_clear": true,
+  "split_fractions": {
+    "test": 0.1,
+    "train": 0.8,
+    "val": 0.1
+  },
+  "split_layout": "split/LR_or_HR/pair_id.tif",
+  "storage_variant": "reflectance16",
+  "target_pairs": 4800,
+  "worldcover_collection": "esa-worldcover",
+  "worldcover_year": 2021
+}

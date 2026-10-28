@@ -1,0 +1,198 @@
+{
+  "full_count": 731,
+  "retained_count": 709,
+  "excluded_count": 22,
+  "excluded_overlaps_train": 14,
+  "excluded_overlaps_val": 9,
+  "retained_spatial_blocks": 13,
+  "retained_classes": 9,
+  "retained_with_training_source_pair": 369,
+  "bootstrap": {
+    "repeats": 2000,
+    "seed": 42,
+    "method": "uniformly resample spatial blocks; pool selected blocks' paired per-image differences"
+  },
+  "geometry": {
+    "crs": "EPSG:6933",
+    "positive_area_threshold_m2": 1.0,
+    "selection": "exclude test patches audited with positive-area overlap with train or validation",
+    "no_positive_buffer_guaranteed": true
+  },
+  "model_selection": "unchanged validation-selected checkpoints; post hoc sensitivity analysis",
+  "inference_rerun": false,
+  "inputs": [
+    {
+      "file": "C:\\Users\\intel\\Documents\\Playground\\geodiff_gan\\benchmarks\\mahimandal160\\overlap_sensitivity.py",
+      "sha256": "5ff8159c04aa475d25fb53623379a0a44523f6813acc8400e4ea2179fe69aabc"
+    },
+    {
+      "file": "F:\\dgx-downloads\\mahimandal160_paper_benchmark_v1_complete_compact_20261002T113656696649Z\\reflectance16\\rgb\\bicubic\\seed_42\\evaluation\\test\\bicubic\\per_image.csv",
+      "sha256": "de2a5afaad45884fe8d505656b996b96ae1b39d383b3c6cfb4bafc1c08455025"
+    },
+    {
+      "file": "F:\\dgx-downloads\\mahimandal160_paper_benchmark_v1_complete_compact_20261002T113656696649Z\\reflectance16\\rgb\\CAFRN\\seed_42\\evaluation\\test\\a77383526712\\per_image.csv",
+      "sha256": "cf913431f3ec3395da0d8c3ab4d1561bb416b1fd87be51daecf7ae5a8eaa8d92"
+    },
+    {
+      "file": "F:\\dgx-downloads\\mahimandal160_paper_benchmark_v1_complete_compact_20261002T113656696649Z\\reflectance16\\rgb\\DCM\\seed_42\\evaluation\\test\\30e29cd6aa96\\per_image.csv",
+      "sha256": "94409fc1607b3aa9f8343b44e9d2bf450ed00528df12e9dcc4dd12c4ed461489"
+    },
+    {
+      "file": "F:\\dgx-downloads\\mahimandal160_paper_benchmark_v1_complete_compact_20261002T113656696649Z\\reflectance16\\rgb\\EDSR\\seed_42\\evaluation\\test\\87334e0a9a29\\per_image.csv",
+      "sha256": "0f04f62b294a51c6765f723322a7e803194c384b34cde720031d5c1c4d2c331c"
+    },
+    {
+      "file": "F:\\dgx-downloads\\mahimandal160_paper_benchmark_v1_complete_compact_20261002T113656696649Z\\reflectance16\\rgb\\FENet\\seed_42\\evaluation\\test\\9eb0d4116cca\\per_image.csv",
+      "sha256": "959c312d0ed810c40559e57b7e7248f5695a5c926761ea60daf5a166e0eacbd4"
+    },
+    {
+      "file": "F:\\dgx-downloads\\mahimandal160_paper_benchmark_v1_complete_compact_20261002T113656696649Z\\reflectance16\\rgb\\RCAN\\seed_42\\evaluation\\test\\8271b7d0ecaa\\per_image.csv",
+      "sha256": "fc3938fb903629d33e300d390fae298fc5702824568e3695ba0df7ea691b96c2"
+    },
+    {
+      "file": "F:\\dgx-downloads\\mahimandal160_paper_benchmark_v1_complete_compact_20261002T113656696649Z\\reflectance16\\rgb\\RDN\\seed_42\\evaluation\\test\\77f3067ee564\\per_image.csv",
+      "sha256": "e214bcac0ed86dde1e80f77401ccad17991683d7fcaa5e0dab29eec72772183a"
+    },
+    {
+      "file": "F:\\dgx-downloads\\mahimandal160_paper_benchmark_v1_complete_compact_20261002T113656696649Z\\reflectance16\\rgb\\RealESRGAN_SRVGG_X3\\seed_42\\evaluation\\test\\288867baa6b7\\per_image.csv",
+      "sha256": "a30d0aa6261c6bd7dd8f69d5eba14c26b6e4b7b394ffe48144bd5b6ca41644e4"
+    },
+    {
+      "file": "F:\\dgx-downloads\\mahimandal160_paper_benchmark_v1_complete_compact_20261002T113656696649Z\\reflectance16\\rgbnir\\bicubic\\seed_42\\evaluation\\test\\bicubic\\per_image.csv",
+      "sha256": "6443e693ab6da3d8068b5f103654c3b463ece1798904bd32adbad6693af31f58"
+    },
+    {
+      "file": "F:\\dgx-downloads\\mahimandal160_paper_benchmark_v1_complete_compact_20261002T113656696649Z\\reflectance16\\rgbnir\\CAFRN\\seed_42\\evaluation\\test\\338a5f826542\\per_image.csv",
+      "sha256": "186776bfa544f4248349da95470f8f2637f0fbed75a720867f09871464bb7e19"
+    },
+    {
+      "file": "F:\\dgx-downloads\\mahimandal160_paper_benchmark_v1_complete_compact_20261002T113656696649Z\\reflectance16\\rgbnir\\RDN\\seed_42\\evaluation\\test\\318824b2f643\\per_image.csv",
+      "sha256": "b84f16f233a6d6b5613a6ae9e827e97e85f829ce965ed5388d692fa6a2ab8e61"
+    },
+    {
+      "file": "F:\\dgx-downloads\\mahimandal160_paper_benchmark_v1_complete_compact_20261002T113656696649Z\\reflectance16\\rgbnir\\RealESRGAN_SRVGG_X3\\seed_42\\evaluation\\test\\a51ad9abca0d\\per_image.csv",
+      "sha256": "4beb235b093e37272e286063a8a1ce003e110d075bbebd07575b2aef6fdd3962"
+    },
+    {
+      "file": "F:\\mahimandal-dataset\\kaggle-split-releases\\reflectance16\\paper_release_manifest.csv",
+      "sha256": "6bf97403ee40ccf0cbd38b2e6e4932e01973e5d00e211e0acfb1e0b810efc5e7"
+    },
+    {
+      "file": "geodiff_gan\\mahimandal-dataset\\mahimandal_reflectance16_review_audit\\nearest_cross_split_footprints.csv",
+      "sha256": "40f4c86683f159682b11da5e2e46bfd9ffc67e78ebed33ff9198fc4f0b92f9a4"
+    }
+  ],
+  "benchmark": [
+    {
+      "modality": "rgb",
+      "model": "CAFRN",
+      "psnr731": 36.92240981168525,
+      "psnr709": 36.89863398381114,
+      "delta709": 1.524601240924787,
+      "low": 1.058206520955506,
+      "high": 2.0624826148902664,
+      "edge731": 0.6940508797234778,
+      "edge709": 0.6940214920720698
+    },
+    {
+      "modality": "rgb",
+      "model": "DCM",
+      "psnr731": 36.79584992926685,
+      "psnr709": 36.76822589449217,
+      "delta709": 1.3941931516058186,
+      "low": 0.7025605927833232,
+      "high": 2.1277081092112167,
+      "edge731": 0.7047993352817609,
+      "edge709": 0.7045824500838523
+    },
+    {
+      "modality": "rgb",
+      "model": "EDSR",
+      "psnr731": 36.763366487870954,
+      "psnr709": 36.75509146675572,
+      "delta709": 1.3810587238693777,
+      "low": 0.6302311393636862,
+      "high": 2.0622193837187304,
+      "edge731": 0.6975994100832418,
+      "edge709": 0.6974122344459734
+    },
+    {
+      "modality": "rgb",
+      "model": "FENet",
+      "psnr731": 36.64425823561307,
+      "psnr709": 36.622266551503344,
+      "delta709": 1.248233808616993,
+      "low": 0.6121357270825835,
+      "high": 1.9912567590186443,
+      "edge731": 0.6954737107808384,
+      "edge709": 0.6954375401727739
+    },
+    {
+      "modality": "rgb",
+      "model": "RCAN",
+      "psnr731": 36.5945165271472,
+      "psnr709": 36.567794374753795,
+      "delta709": 1.193761631867445,
+      "low": 0.5385992833201999,
+      "high": 1.9285696466551472,
+      "edge731": 0.7208209757154194,
+      "edge709": 0.720310627594485
+    },
+    {
+      "modality": "rgb",
+      "model": "RDN",
+      "psnr731": 37.66881935704097,
+      "psnr709": 37.63999381825349,
+      "delta709": 2.265961075367141,
+      "low": 1.575498122144538,
+      "high": 3.078375031379618,
+      "edge731": 0.7765856761531204,
+      "edge709": 0.7758888761566791
+    },
+    {
+      "modality": "rgb",
+      "model": "RealESRGAN_SRVGG_X3",
+      "psnr731": 35.644303615376984,
+      "psnr709": 35.62150692637111,
+      "delta709": 0.24747418348476483,
+      "low": -0.24241126649260156,
+      "high": 0.8868498517003008,
+      "edge731": 0.6485044514523404,
+      "edge709": 0.6491970192635765
+    },
+    {
+      "modality": "rgbnir",
+      "model": "CAFRN",
+      "psnr731": 34.864406872708884,
+      "psnr709": 34.86078772121155,
+      "delta709": 0.9708520138717674,
+      "low": 0.48317211140879773,
+      "high": 1.536948853667173,
+      "edge731": 0.6736561549794331,
+      "edge709": 0.6740334521143662
+    },
+    {
+      "modality": "rgbnir",
+      "model": "RDN",
+      "psnr731": 36.150825354371285,
+      "psnr709": 36.14695538250449,
+      "delta709": 2.2570196751647003,
+      "low": 1.6854598658671245,
+      "high": 2.874723361849554,
+      "edge731": 0.7716453215451312,
+      "edge709": 0.7712638753719827
+    },
+    {
+      "modality": "rgbnir",
+      "model": "RealESRGAN_SRVGG_X3",
+      "psnr731": 33.909426680015635,
+      "psnr709": 33.9023383319462,
+      "delta709": 0.012402624606413714,
+      "low": -0.27072629109713475,
+      "high": 0.357101364546566,
+      "edge731": 0.6482686182348982,
+      "edge709": 0.6489451100474436
+    }
+  ],
+  "scope": "Dataset paper, fixed-baseline rows only; same geographic exclusion and original metric values"
+}

@@ -1,0 +1,1202 @@
+[
+  {
+    "pair_id": "l8_126038_20190923_s2b_20190923_t49rcq_n0071",
+    "same_crs": true,
+    "equal_bounds_at_0_01_crs_units": false,
+    "lr_minus_hr_bounds_crs_units": [
+      -15.246890783309937,
+      3.0247271060943604,
+      -15.246890783309937,
+      3.0247271060943604
+    ],
+    "note": "Header-coordinate difference, not an image-registration residual; no rewarping performed."
+  },
+  {
+    "pair_id": "l8_126038_20190923_s2b_20190923_t49rcq_n0108",
+    "same_crs": true,
+    "equal_bounds_at_0_01_crs_units": false,
+    "lr_minus_hr_bounds_crs_units": [
+      -12.88069486618042,
+      6.907289624214172,
+      -12.88069486618042,
+      6.907289624214172
+    ],
+    "note": "Header-coordinate difference, not an image-registration residual; no rewarping performed."
+  },
+  {
+    "pair_id": "l8_126038_20190923_s2b_20190923_t49rcq_n0126",
+    "same_crs": true,
+    "equal_bounds_at_0_01_crs_units": false,
+    "lr_minus_hr_bounds_crs_units": [
+      -11.36430025100708,
+      5.359286069869995,
+      -11.36430025100708,
+      5.359286069869995
+    ],
+    "note": "Header-coordinate difference, not an image-registration residual; no rewarping performed."
+  },
+  {
+    "pair_id": "l8_126038_20190923_s2b_20190923_t49rcq_n0145",
+    "same_crs": true,
+    "equal_bounds_at_0_01_crs_units": false,
+    "lr_minus_hr_bounds_crs_units": [
+      -10.22587776184082,
+      6.114265322685242,
+      -10.22587776184082,
+      6.114265322685242
+    ],
+    "note": "Header-coordinate difference, not an image-registration residual; no rewarping performed."
+  },
+  {
+    "pair_id": "l8_126038_20190923_s2b_20190923_t49rdq_n0024",
+    "same_crs": true,
+    "equal_bounds_at_0_01_crs_units": false,
+    "lr_minus_hr_bounds_crs_units": [
+      -16.11268162727356,
+      8.74816358089447,
+      -16.11268162727356,
+      8.74816358089447
+    ],
+    "note": "Header-coordinate difference, not an image-registration residual; no rewarping performed."
+  },
+  {
+    "pair_id": "l8_126038_20190923_s2b_20190923_t49rdq_n0028",
+    "same_crs": true,
+    "equal_bounds_at_0_01_crs_units": false,
+    "lr_minus_hr_bounds_crs_units": [
+      -13.823611736297607,
+      11.086897850036621,
+      -13.823611736297607,
+      11.086897850036621
+    ],
+    "note": "Header-coordinate difference, not an image-registration residual; no rewarping performed."
+  },
+  {
+    "pair_id": "l8_126038_20190923_s2b_20190923_t49rdq_n0048",
+    "same_crs": true,
+    "equal_bounds_at_0_01_crs_units": false,
+    "lr_minus_hr_bounds_crs_units": [
+      -11.793104410171509,
+      9.239417910575867,
+      -11.793104410171509,
+      9.239417910575867
+    ],
+    "note": "Header-coordinate difference, not an image-registration residual; no rewarping performed."
+  },
+  {
+    "pair_id": "l8_126038_20190923_s2b_20190923_t49rdq_n0066",
+    "same_crs": true,
+    "equal_bounds_at_0_01_crs_units": false,
+    "lr_minus_hr_bounds_crs_units": [
+      -13.943411111831665,
+      7.846592664718628,
+      -13.943411111831665,
+      7.846592664718628
+    ],
+    "note": "Header-coordinate difference, not an image-registration residual; no rewarping performed."
+  },
+  {
+    "pair_id": "l8_126038_20190923_s2b_20190923_t49rdq_n0114",
+    "same_crs": true,
+    "equal_bounds_at_0_01_crs_units": false,
+    "lr_minus_hr_bounds_crs_units": [
+      -9.367111921310425,
+      8.07346224784851,
+      -9.367111921310425,
+      8.07346224784851
+    ],
+    "note": "Header-coordinate difference, not an image-registration residual; no rewarping performed."
+  },
+  {
+    "pair_id": "l8_126038_20190923_s2b_20190923_t49scr_n0078",
+    "same_crs": true,
+    "equal_bounds_at_0_01_crs_units": false,
+    "lr_minus_hr_bounds_crs_units": [
+      -22.613515853881836,
+      7.876645922660828,
+      -22.613515853881836,
+      7.876645922660828
+    ],
+    "note": "Header-coordinate difference, not an image-registration residual; no rewarping performed."
+  },
+  {
+    "pair_id": "l8_126038_20190923_s2b_20190923_t49scr_n0110",
+    "same_crs": true,
+    "equal_bounds_at_0_01_crs_units": false,
+    "lr_minus_hr_bounds_crs_units": [
+      -25.691049098968506,
+      3.0036547780036926,
+      -25.691049098968506,
+      3.0036547780036926
+    ],
+    "note": "Header-coordinate difference, not an image-registration residual; no rewarping performed."
+  },
+  {
+    "pair_id": "l8_126038_20190923_s2b_20190923_t49scr_n0137",
+    "same_crs": true,
+    "equal_bounds_at_0_01_crs_units": false,
+    "lr_minus_hr_bounds_crs_units": [
+      -24.02172327041626,
+      4.697242975234985,
+      -24.02172327041626,
+      4.697242975234985
+    ],
+    "note": "Header-coordinate difference, not an image-registration residual; no rewarping performed."
+  },
+  {
+    "pair_id": "l8_126038_20190923_s2b_20190923_t49scr_n0160",
+    "same_crs": true,
+    "equal_bounds_at_0_01_crs_units": false,
+    "lr_minus_hr_bounds_crs_units": [
+      -21.547210216522217,
+      6.0321879386901855,
+      -21.547210216522217,
+      6.0321879386901855
+    ],
+    "note": "Header-coordinate difference, not an image-registration residual; no rewarping performed."
+  },
+  {
+    "pair_id": "l8_126038_20190923_s2b_20190923_t49scr_n0163",
+    "same_crs": true,
+    "equal_bounds_at_0_01_crs_units": false,
+    "lr_minus_hr_bounds_crs_units": [
+      -20.723421573638916,
+      8.573006391525269,
+      -20.723421573638916,
+      8.573006391525269
+    ],
+    "note": "Header-coordinate difference, not an image-registration residual; no rewarping performed."
+  },
+  {
+    "pair_id": "l8_126038_20190923_s2b_20190923_t49scr_n0181",
+    "same_crs": true,
+    "equal_bounds_at_0_01_crs_units": false,
+    "lr_minus_hr_bounds_crs_units": [
+      -20.327305793762207,
+      5.377810001373291,
+      -20.327305793762207,
+      5.377810001373291
+    ],
+    "note": "Header-coordinate difference, not an image-registration residual; no rewarping performed."
+  },
+  {
+    "pair_id": "l8_126038_20190923_s2b_20190923_t49scr_n0189",
+    "same_crs": true,
+    "equal_bounds_at_0_01_crs_units": false,
+    "lr_minus_hr_bounds_crs_units": [
+      -19.53914761543274,
+      6.723837852478027,
+      -19.53914761543274,
+      6.723837852478027
+    ],
+    "note": "Header-coordinate difference, not an image-registration residual; no rewarping performed."
+  },
+  {
+    "pair_id": "l8_126038_20190923_s2b_20190923_t49scs_n0060",
+    "same_crs": true,
+    "equal_bounds_at_0_01_crs_units": false,
+    "lr_minus_hr_bounds_crs_units": [
+      -27.119805812835693,
+      3.1799444556236267,
+      -27.119805812835693,
+      3.1799444556236267
+    ],
+    "note": "Header-coordinate difference, not an image-registration residual; no rewarping performed."
+  },
+  {
+    "pair_id": "l8_126038_20190923_s2b_20190923_t49sdr_n0231",
+    "same_crs": true,
+    "equal_bounds_at_0_01_crs_units": false,
+    "lr_minus_hr_bounds_crs_units": [
+      -14.592143297195435,
+      9.726936221122742,
+      -14.592143297195435,
+      9.726936221122742
+    ],
+    "note": "Header-coordinate difference, not an image-registration residual; no rewarping performed."
+  },
+  {
+    "pair_id": "l8_126039_20190923_s2b_20190923_t49rbn_n0011",
+    "same_crs": true,
+    "equal_bounds_at_0_01_crs_units": false,
+    "lr_minus_hr_bounds_crs_units": [
+      -14.869623184204102,
+      -7.180914282798767,
+      -14.869623184204102,
+      -7.180914282798767
+    ],
+    "note": "Header-coordinate difference, not an image-registration residual; no rewarping performed."
+  },
+  {
+    "pair_id": "l8_126039_20190923_s2b_20190923_t49rbp_n0006",
+    "same_crs": true,
+    "equal_bounds_at_0_01_crs_units": false,
+    "lr_minus_hr_bounds_crs_units": [
+      -12.281521558761597,
+      -4.746145009994507,
+      -12.281521558761597,
+      -4.746145009994507
+    ],
+    "note": "Header-coordinate difference, not an image-registration residual; no rewarping performed."
+  },
+  {
+    "pair_id": "l8_126039_20190923_s2b_20190923_t49rbq_n0041",
+    "same_crs": true,
+    "equal_bounds_at_0_01_crs_units": false,
+    "lr_minus_hr_bounds_crs_units": [
+      -15.975228548049927,
+      -7.2479248046875,
+      -15.975228548049927,
+      -7.2479248046875
+    ],
+    "note": "Header-coordinate difference, not an image-registration residual; no rewarping performed."
+  },
+  {
+    "pair_id": "l8_126039_20190923_s2b_20190923_t49rbq_n0049",
+    "same_crs": true,
+    "equal_bounds_at_0_01_crs_units": false,
+    "lr_minus_hr_bounds_crs_units": [
+      -13.343514204025269,
+      -6.714217662811279,
+      -13.343514204025269,
+      -6.714217662811279
+    ],
+    "note": "Header-coordinate difference, not an image-registration residual; no rewarping performed."
+  },
+  {
+    "pair_id": "l8_126039_20190923_s2b_20190923_t49rcn_n0106",
+    "same_crs": true,
+    "equal_bounds_at_0_01_crs_units": false,
+    "lr_minus_hr_bounds_crs_units": [
+      -8.097733855247498,
+      2.372741550207138,
+      -8.097733855247498,
+      2.372741550207138
+    ],
+    "note": "Header-coordinate difference, not an image-registration residual; no rewarping performed."
+  },
+  {
+    "pair_id": "l8_126039_20190923_s2b_20190923_t49rcp_n0063",
+    "same_crs": true,
+    "equal_bounds_at_0_01_crs_units": false,
+    "lr_minus_hr_bounds_crs_units": [
+      -8.249759674072266,
+      6.016879081726074,
+      -8.249759674072266,
+      6.016879081726074
+    ],
+    "note": "Header-coordinate difference, not an image-registration residual; no rewarping performed."
+  },
+  {
+    "pair_id": "l8_126039_20190923_s2b_20190923_t49rcp_n0114",
+    "same_crs": true,
+    "equal_bounds_at_0_01_crs_units": false,
+    "lr_minus_hr_bounds_crs_units": [
+      -7.885949015617371,
+      4.922142028808594,
+      -7.885949015617371,
+      4.922142028808594
+    ],
+    "note": "Header-coordinate difference, not an image-registration residual; no rewarping performed."
+  },
+  {
+    "pair_id": "l8_126039_20190923_s2b_20190923_t49rcp_n0154",
+    "same_crs": true,
+    "equal_bounds_at_0_01_crs_units": false,
+    "lr_minus_hr_bounds_crs_units": [
+      -7.504264712333679,
+      4.38126415014267,
+      -7.504264712333679,
+      4.38126415014267
+    ],
+    "note": "Header-coordinate difference, not an image-registration residual; no rewarping performed."
+  },
+  {
+    "pair_id": "l8_126039_20190923_s2b_20190923_t49rcp_n0303",
+    "same_crs": true,
+    "equal_bounds_at_0_01_crs_units": false,
+    "lr_minus_hr_bounds_crs_units": [
+      -13.521653413772583,
+      -2.901410758495331,
+      -13.521653413772583,
+      -2.901410758495331
+    ],
+    "note": "Header-coordinate difference, not an image-registration residual; no rewarping performed."
+  },
+  {
+    "pair_id": "l8_126039_20190923_s2b_20190923_t49rcp_n0313",
+    "same_crs": true,
+    "equal_bounds_at_0_01_crs_units": false,
+    "lr_minus_hr_bounds_crs_units": [
+      -14.379018545150757,
+      -2.6503828167915344,
+      -14.379018545150757,
+      -2.6503828167915344
+    ],
+    "note": "Header-coordinate difference, not an image-registration residual; no rewarping performed."
+  },
+  {
+    "pair_id": "l8_126039_20190923_s2b_20190923_t49rcq_n0054",
+    "same_crs": true,
+    "equal_bounds_at_0_01_crs_units": false,
+    "lr_minus_hr_bounds_crs_units": [
+      -12.504357099533081,
+      -0.5454052239656448,
+      -12.504357099533081,
+      -0.5454052239656448
+    ],
+    "note": "Header-coordinate difference, not an image-registration residual; no rewarping performed."
+  },
+  {
+    "pair_id": "l8_126039_20190923_s2b_20190923_t49rdp_n0053",
+    "same_crs": true,
+    "equal_bounds_at_0_01_crs_units": false,
+    "lr_minus_hr_bounds_crs_units": [
+      -7.803850173950195,
+      7.998718619346619,
+      -7.803850173950195,
+      7.998718619346619
+    ],
+    "note": "Header-coordinate difference, not an image-registration residual; no rewarping performed."
+  },
+  {
+    "pair_id": "l8_126039_20190923_s2b_20190923_t49rdp_n0054",
+    "same_crs": true,
+    "equal_bounds_at_0_01_crs_units": false,
+    "lr_minus_hr_bounds_crs_units": [
+      -8.565213680267334,
+      6.06469452381134,
+      -8.565213680267334,
+      6.06469452381134
+    ],
+    "note": "Header-coordinate difference, not an image-registration residual; no rewarping performed."
+  },
+  {
+    "pair_id": "l8_126040_20190923_s2b_20190923_t49rbm_n0013",
+    "same_crs": true,
+    "equal_bounds_at_0_01_crs_units": false,
+    "lr_minus_hr_bounds_crs_units": [
+      -5.471712946891785,
+      7.0369553565979,
+      -5.471712946891785,
+      7.0369553565979
+    ],
+    "note": "Header-coordinate difference, not an image-registration residual; no rewarping performed."
+  },
+  {
+    "pair_id": "l8_126040_20190923_s2b_20190923_t49rbm_n0047",
+    "same_crs": true,
+    "equal_bounds_at_0_01_crs_units": false,
+    "lr_minus_hr_bounds_crs_units": [
+      -4.510243833065033,
+      13.123973608016968,
+      -4.510243833065033,
+      13.123973608016968
+    ],
+    "note": "Header-coordinate difference, not an image-registration residual; no rewarping performed."
+  },
+  {
+    "pair_id": "l8_126040_20190923_s2b_20190923_t49rbm_n0075",
+    "same_crs": true,
+    "equal_bounds_at_0_01_crs_units": false,
+    "lr_minus_hr_bounds_crs_units": [
+      -4.194617867469788,
+      13.81645679473877,
+      -4.194617867469788,
+      13.81645679473877
+    ],
+    "note": "Header-coordinate difference, not an image-registration residual; no rewarping performed."
+  },
+  {
+    "pair_id": "l8_126040_20190923_s2b_20190923_t49rbm_n0226",
+    "same_crs": true,
+    "equal_bounds_at_0_01_crs_units": false,
+    "lr_minus_hr_bounds_crs_units": [
+      1.8727922439575195,
+      18.58088254928589,
+      1.8727922439575195,
+      18.58088254928589
+    ],
+    "note": "Header-coordinate difference, not an image-registration residual; no rewarping performed."
+  },
+  {
+    "pair_id": "l8_126040_20190923_s2b_20190923_t49rbm_n0275",
+    "same_crs": true,
+    "equal_bounds_at_0_01_crs_units": false,
+    "lr_minus_hr_bounds_crs_units": [
+      1.253691166639328,
+      18.48121404647827,
+      1.253691166639328,
+      18.48121404647827
+    ],
+    "note": "Header-coordinate difference, not an image-registration residual; no rewarping performed."
+  },
+  {
+    "pair_id": "l8_126040_20190923_s2b_20190923_t49rbm_n0311",
+    "same_crs": true,
+    "equal_bounds_at_0_01_crs_units": false,
+    "lr_minus_hr_bounds_crs_units": [
+      2.345872074365616,
+      19.739253520965576,
+      2.345872074365616,
+      19.739253520965576
+    ],
+    "note": "Header-coordinate difference, not an image-registration residual; no rewarping performed."
+  },
+  {
+    "pair_id": "l8_126040_20190923_s2b_20190923_t49rbm_n0338",
+    "same_crs": true,
+    "equal_bounds_at_0_01_crs_units": false,
+    "lr_minus_hr_bounds_crs_units": [
+      4.016440212726593,
+      24.190244674682617,
+      4.016440212726593,
+      24.190244674682617
+    ],
+    "note": "Header-coordinate difference, not an image-registration residual; no rewarping performed."
+  },
+  {
+    "pair_id": "l8_126040_20190923_s2b_20190923_t49rbm_n0348",
+    "same_crs": true,
+    "equal_bounds_at_0_01_crs_units": false,
+    "lr_minus_hr_bounds_crs_units": [
+      7.28853166103363,
+      25.33726453781128,
+      7.28853166103363,
+      25.33726453781128
+    ],
+    "note": "Header-coordinate difference, not an image-registration residual; no rewarping performed."
+  },
+  {
+    "pair_id": "l8_126040_20190923_s2b_20190923_t49rbn_n0253",
+    "same_crs": true,
+    "equal_bounds_at_0_01_crs_units": false,
+    "lr_minus_hr_bounds_crs_units": [
+      -5.4307472705841064,
+      9.536767601966858,
+      -5.4307472705841064,
+      9.536767601966858
+    ],
+    "note": "Header-coordinate difference, not an image-registration residual; no rewarping performed."
+  },
+  {
+    "pair_id": "l8_126040_20190923_s2b_20190923_t49rcm_n0022",
+    "same_crs": true,
+    "equal_bounds_at_0_01_crs_units": false,
+    "lr_minus_hr_bounds_crs_units": [
+      -3.5546576976776123,
+      13.629522323608398,
+      -3.5546576976776123,
+      13.629522323608398
+    ],
+    "note": "Header-coordinate difference, not an image-registration residual; no rewarping performed."
+  },
+  {
+    "pair_id": "l8_126040_20190923_s2b_20190923_t49rcm_n0202",
+    "same_crs": true,
+    "equal_bounds_at_0_01_crs_units": false,
+    "lr_minus_hr_bounds_crs_units": [
+      4.18152928352356,
+      20.58692693710327,
+      4.18152928352356,
+      20.58692693710327
+    ],
+    "note": "Header-coordinate difference, not an image-registration residual; no rewarping performed."
+  },
+  {
+    "pair_id": "l8_126040_20190923_s2b_20190923_t49rcn_n0091",
+    "same_crs": true,
+    "equal_bounds_at_0_01_crs_units": false,
+    "lr_minus_hr_bounds_crs_units": [
+      -11.577906608581543,
+      1.1835403740406036,
+      -11.577906608581543,
+      1.1835403740406036
+    ],
+    "note": "Header-coordinate difference, not an image-registration residual; no rewarping performed."
+  },
+  {
+    "pair_id": "l8_126040_20190923_s2b_20190923_t49rcn_n0257",
+    "same_crs": true,
+    "equal_bounds_at_0_01_crs_units": false,
+    "lr_minus_hr_bounds_crs_units": [
+      -3.8105863332748413,
+      11.460795402526855,
+      -3.8105863332748413,
+      11.460795402526855
+    ],
+    "note": "Header-coordinate difference, not an image-registration residual; no rewarping performed."
+  },
+  {
+    "pair_id": "l8_126040_20190923_s2b_20190923_t49rcn_n0267",
+    "same_crs": true,
+    "equal_bounds_at_0_01_crs_units": false,
+    "lr_minus_hr_bounds_crs_units": [
+      -3.7226951122283936,
+      11.111572980880737,
+      -3.7226951122283936,
+      11.111572980880737
+    ],
+    "note": "Header-coordinate difference, not an image-registration residual; no rewarping performed."
+  },
+  {
+    "pair_id": "l8_126041_20190923_s2b_20190923_t48ryq_n0009",
+    "same_crs": true,
+    "equal_bounds_at_0_01_crs_units": false,
+    "lr_minus_hr_bounds_crs_units": [
+      -5.209646224975586,
+      11.60502552986145,
+      -5.209646224975586,
+      11.60502552986145
+    ],
+    "note": "Header-coordinate difference, not an image-registration residual; no rewarping performed."
+  },
+  {
+    "pair_id": "l8_126041_20190923_s2b_20190923_t48ryq_n0063",
+    "same_crs": true,
+    "equal_bounds_at_0_01_crs_units": false,
+    "lr_minus_hr_bounds_crs_units": [
+      -8.158038854598999,
+      9.610819220542908,
+      -8.158038854598999,
+      9.610819220542908
+    ],
+    "note": "Header-coordinate difference, not an image-registration residual; no rewarping performed."
+  },
+  {
+    "pair_id": "l8_126041_20190923_s2b_20190923_t48ryr_n0070",
+    "same_crs": true,
+    "equal_bounds_at_0_01_crs_units": false,
+    "lr_minus_hr_bounds_crs_units": [
+      -4.824879467487335,
+      15.426410436630249,
+      -4.824879467487335,
+      15.426410436630249
+    ],
+    "note": "Header-coordinate difference, not an image-registration residual; no rewarping performed."
+  },
+  {
+    "pair_id": "l8_126041_20190923_s2b_20190923_t49rbk_n0068",
+    "same_crs": true,
+    "equal_bounds_at_0_01_crs_units": false,
+    "lr_minus_hr_bounds_crs_units": [
+      -7.648605108261108,
+      13.7006676197052,
+      -7.648605108261108,
+      13.7006676197052
+    ],
+    "note": "Header-coordinate difference, not an image-registration residual; no rewarping performed."
+  },
+  {
+    "pair_id": "l8_126041_20190923_s2b_20190923_t49rbk_n0115",
+    "same_crs": true,
+    "equal_bounds_at_0_01_crs_units": false,
+    "lr_minus_hr_bounds_crs_units": [
+      -4.8640769720077515,
+      13.425332307815552,
+      -4.8640769720077515,
+      13.425332307815552
+    ],
+    "note": "Header-coordinate difference, not an image-registration residual; no rewarping performed."
+  },
+  {
+    "pair_id": "l8_126041_20190923_s2b_20190923_t49rbk_n0161",
+    "same_crs": true,
+    "equal_bounds_at_0_01_crs_units": false,
+    "lr_minus_hr_bounds_crs_units": [
+      -9.649126529693604,
+      9.962665438652039,
+      -9.649126529693604,
+      9.962665438652039
+    ],
+    "note": "Header-coordinate difference, not an image-registration residual; no rewarping performed."
+  },
+  {
+    "pair_id": "l8_126041_20190923_s2b_20190923_t49rbk_n0250",
+    "same_crs": true,
+    "equal_bounds_at_0_01_crs_units": false,
+    "lr_minus_hr_bounds_crs_units": [
+      -6.8574851751327515,
+      7.629162073135376,
+      -6.8574851751327515,
+      7.629162073135376
+    ],
+    "note": "Header-coordinate difference, not an image-registration residual; no rewarping performed."
+  },
+  {
+    "pair_id": "l8_126041_20190923_s2b_20190923_t49rbl_n0003",
+    "same_crs": true,
+    "equal_bounds_at_0_01_crs_units": false,
+    "lr_minus_hr_bounds_crs_units": [
+      2.468908578157425,
+      18.84576439857483,
+      2.468908578157425,
+      18.84576439857483
+    ],
+    "note": "Header-coordinate difference, not an image-registration residual; no rewarping performed."
+  },
+  {
+    "pair_id": "l8_126041_20190923_s2b_20190923_t49rbl_n0055",
+    "same_crs": true,
+    "equal_bounds_at_0_01_crs_units": false,
+    "lr_minus_hr_bounds_crs_units": [
+      -1.0223984718322754,
+      17.47362971305847,
+      -1.0223984718322754,
+      17.47362971305847
+    ],
+    "note": "Header-coordinate difference, not an image-registration residual; no rewarping performed."
+  },
+  {
+    "pair_id": "l8_126041_20190923_s2b_20190923_t49rbl_n0073",
+    "same_crs": true,
+    "equal_bounds_at_0_01_crs_units": false,
+    "lr_minus_hr_bounds_crs_units": [
+      -0.16865773126482964,
+      18.313652276992798,
+      -0.16865773126482964,
+      18.313652276992798
+    ],
+    "note": "Header-coordinate difference, not an image-registration residual; no rewarping performed."
+  },
+  {
+    "pair_id": "l8_126041_20190923_s2b_20190923_t49rbl_n0094",
+    "same_crs": true,
+    "equal_bounds_at_0_01_crs_units": false,
+    "lr_minus_hr_bounds_crs_units": [
+      0.2534511312842369,
+      17.98242688179016,
+      0.2534511312842369,
+      17.98242688179016
+    ],
+    "note": "Header-coordinate difference, not an image-registration residual; no rewarping performed."
+  },
+  {
+    "pair_id": "l8_126041_20190923_s2b_20190923_t49rbl_n0164",
+    "same_crs": true,
+    "equal_bounds_at_0_01_crs_units": false,
+    "lr_minus_hr_bounds_crs_units": [
+      -3.7543904781341553,
+      17.82881259918213,
+      -3.7543904781341553,
+      17.82881259918213
+    ],
+    "note": "Header-coordinate difference, not an image-registration residual; no rewarping performed."
+  },
+  {
+    "pair_id": "l8_126041_20190923_s2b_20190923_t49rbl_n0266",
+    "same_crs": true,
+    "equal_bounds_at_0_01_crs_units": false,
+    "lr_minus_hr_bounds_crs_units": [
+      -3.7515145540237427,
+      16.251022815704346,
+      -3.7515145540237427,
+      16.251022815704346
+    ],
+    "note": "Header-coordinate difference, not an image-registration residual; no rewarping performed."
+  },
+  {
+    "pair_id": "l8_126041_20190923_s2b_20190923_t49rbl_n0290",
+    "same_crs": true,
+    "equal_bounds_at_0_01_crs_units": false,
+    "lr_minus_hr_bounds_crs_units": [
+      -6.126219034194946,
+      18.073643445968628,
+      -6.126219034194946,
+      18.073643445968628
+    ],
+    "note": "Header-coordinate difference, not an image-registration residual; no rewarping performed."
+  },
+  {
+    "pair_id": "l8_126041_20190923_s2b_20190923_t49rbl_n0320",
+    "same_crs": true,
+    "equal_bounds_at_0_01_crs_units": false,
+    "lr_minus_hr_bounds_crs_units": [
+      0.1959788240492344,
+      17.60322332382202,
+      0.1959788240492344,
+      17.60322332382202
+    ],
+    "note": "Header-coordinate difference, not an image-registration residual; no rewarping performed."
+  },
+  {
+    "pair_id": "l8_126041_20190923_s2b_20190923_t49rbl_n0329",
+    "same_crs": true,
+    "equal_bounds_at_0_01_crs_units": false,
+    "lr_minus_hr_bounds_crs_units": [
+      -5.868208408355713,
+      15.793490409851074,
+      -5.868208408355713,
+      15.793490409851074
+    ],
+    "note": "Header-coordinate difference, not an image-registration residual; no rewarping performed."
+  },
+  {
+    "pair_id": "l8_126041_20190923_s2b_20190923_t49rbm_n0050",
+    "same_crs": true,
+    "equal_bounds_at_0_01_crs_units": false,
+    "lr_minus_hr_bounds_crs_units": [
+      2.2728410363197327,
+      21.09981060028076,
+      2.2728410363197327,
+      21.09981060028076
+    ],
+    "note": "Header-coordinate difference, not an image-registration residual; no rewarping performed."
+  },
+  {
+    "pair_id": "l8_126041_20190923_s2b_20190923_t49rbm_n0110",
+    "same_crs": true,
+    "equal_bounds_at_0_01_crs_units": false,
+    "lr_minus_hr_bounds_crs_units": [
+      1.6868358850479126,
+      19.68111753463745,
+      1.6868358850479126,
+      19.68111753463745
+    ],
+    "note": "Header-coordinate difference, not an image-registration residual; no rewarping performed."
+  },
+  {
+    "pair_id": "l8_126041_20190923_s2b_20190923_t49rbm_n0121",
+    "same_crs": true,
+    "equal_bounds_at_0_01_crs_units": false,
+    "lr_minus_hr_bounds_crs_units": [
+      0.31089775264263153,
+      17.583603858947754,
+      0.31089775264263153,
+      17.583603858947754
+    ],
+    "note": "Header-coordinate difference, not an image-registration residual; no rewarping performed."
+  },
+  {
+    "pair_id": "l8_126041_20190923_s2b_20190923_t49rbm_n0127",
+    "same_crs": true,
+    "equal_bounds_at_0_01_crs_units": false,
+    "lr_minus_hr_bounds_crs_units": [
+      0.6753286719322205,
+      18.347429037094116,
+      0.6753286719322205,
+      18.347429037094116
+    ],
+    "note": "Header-coordinate difference, not an image-registration residual; no rewarping performed."
+  },
+  {
+    "pair_id": "l8_126041_20190923_s2b_20190923_t49rck_n0019",
+    "same_crs": true,
+    "equal_bounds_at_0_01_crs_units": false,
+    "lr_minus_hr_bounds_crs_units": [
+      -3.8673564791679382,
+      13.499480485916138,
+      -3.8673564791679382,
+      13.499480485916138
+    ],
+    "note": "Header-coordinate difference, not an image-registration residual; no rewarping performed."
+  },
+  {
+    "pair_id": "l8_126041_20190923_s2b_20190923_t49rcl_n0036",
+    "same_crs": true,
+    "equal_bounds_at_0_01_crs_units": false,
+    "lr_minus_hr_bounds_crs_units": [
+      3.5466092824935913,
+      21.91398859024048,
+      3.5466092824935913,
+      21.91398859024048
+    ],
+    "note": "Header-coordinate difference, not an image-registration residual; no rewarping performed."
+  },
+  {
+    "pair_id": "l8_126041_20190923_s2b_20190923_t49rcl_n0044",
+    "same_crs": true,
+    "equal_bounds_at_0_01_crs_units": false,
+    "lr_minus_hr_bounds_crs_units": [
+      2.9832616448402405,
+      21.128005981445312,
+      2.9832616448402405,
+      21.128005981445312
+    ],
+    "note": "Header-coordinate difference, not an image-registration residual; no rewarping performed."
+  },
+  {
+    "pair_id": "l8_126041_20190923_s2b_20190923_t49rcl_n0056",
+    "same_crs": true,
+    "equal_bounds_at_0_01_crs_units": false,
+    "lr_minus_hr_bounds_crs_units": [
+      3.3664175868034363,
+      20.603079795837402,
+      3.3664175868034363,
+      20.603079795837402
+    ],
+    "note": "Header-coordinate difference, not an image-registration residual; no rewarping performed."
+  },
+  {
+    "pair_id": "l8_126041_20190923_s2b_20190923_t49rcl_n0118",
+    "same_crs": true,
+    "equal_bounds_at_0_01_crs_units": false,
+    "lr_minus_hr_bounds_crs_units": [
+      1.7961370944976807,
+      19.053986072540283,
+      1.7961370944976807,
+      19.053986072540283
+    ],
+    "note": "Header-coordinate difference, not an image-registration residual; no rewarping performed."
+  },
+  {
+    "pair_id": "l8_126041_20190923_s2b_20190923_t49rcl_n0151",
+    "same_crs": true,
+    "equal_bounds_at_0_01_crs_units": false,
+    "lr_minus_hr_bounds_crs_units": [
+      -1.2532353401184082,
+      17.890530824661255,
+      -1.2532353401184082,
+      17.890530824661255
+    ],
+    "note": "Header-coordinate difference, not an image-registration residual; no rewarping performed."
+  },
+  {
+    "pair_id": "l8_126041_20190923_s2b_20190923_t49rcm_n0005",
+    "same_crs": true,
+    "equal_bounds_at_0_01_crs_units": false,
+    "lr_minus_hr_bounds_crs_units": [
+      5.908870100975037,
+      23.17272663116455,
+      5.908870100975037,
+      23.17272663116455
+    ],
+    "note": "Header-coordinate difference, not an image-registration residual; no rewarping performed."
+  },
+  {
+    "pair_id": "l8_126041_20190923_s2b_20190923_t49rcm_n0034",
+    "same_crs": true,
+    "equal_bounds_at_0_01_crs_units": false,
+    "lr_minus_hr_bounds_crs_units": [
+      4.498622715473175,
+      22.325923442840576,
+      4.498622715473175,
+      22.325923442840576
+    ],
+    "note": "Header-coordinate difference, not an image-registration residual; no rewarping performed."
+  },
+  {
+    "pair_id": "l8_126041_20190923_s2b_20190923_t49rcm_n0038",
+    "same_crs": true,
+    "equal_bounds_at_0_01_crs_units": false,
+    "lr_minus_hr_bounds_crs_units": [
+      4.9475255608558655,
+      22.30093240737915,
+      4.9475255608558655,
+      22.30093240737915
+    ],
+    "note": "Header-coordinate difference, not an image-registration residual; no rewarping performed."
+  },
+  {
+    "pair_id": "l8_126042_20190923_s2b_20190923_t48ryn_n0001",
+    "same_crs": true,
+    "equal_bounds_at_0_01_crs_units": false,
+    "lr_minus_hr_bounds_crs_units": [
+      -18.276855945587158,
+      -20.120854377746582,
+      -18.276855945587158,
+      -20.120854377746582
+    ],
+    "note": "Header-coordinate difference, not an image-registration residual; no rewarping performed."
+  },
+  {
+    "pair_id": "l8_126042_20190923_s2b_20190923_t48ryp_n0021",
+    "same_crs": true,
+    "equal_bounds_at_0_01_crs_units": false,
+    "lr_minus_hr_bounds_crs_units": [
+      -13.39038610458374,
+      -3.0986055731773376,
+      -13.39038610458374,
+      -3.0986055731773376
+    ],
+    "note": "Header-coordinate difference, not an image-registration residual; no rewarping performed."
+  },
+  {
+    "pair_id": "l8_126042_20190923_s2b_20190923_t48ryp_n0065",
+    "same_crs": true,
+    "equal_bounds_at_0_01_crs_units": false,
+    "lr_minus_hr_bounds_crs_units": [
+      -15.403808355331421,
+      -7.662637233734131,
+      -15.403808355331421,
+      -7.662637233734131
+    ],
+    "note": "Header-coordinate difference, not an image-registration residual; no rewarping performed."
+  },
+  {
+    "pair_id": "l8_126042_20190923_s2b_20190923_t48ryp_n0101",
+    "same_crs": true,
+    "equal_bounds_at_0_01_crs_units": false,
+    "lr_minus_hr_bounds_crs_units": [
+      -14.504472017288208,
+      -8.428804874420166,
+      -14.504472017288208,
+      -8.428804874420166
+    ],
+    "note": "Header-coordinate difference, not an image-registration residual; no rewarping performed."
+  },
+  {
+    "pair_id": "l8_126042_20190923_s2b_20190923_t48ryp_n0171",
+    "same_crs": true,
+    "equal_bounds_at_0_01_crs_units": false,
+    "lr_minus_hr_bounds_crs_units": [
+      -18.180992603302002,
+      -16.057147979736328,
+      -18.180992603302002,
+      -16.057147979736328
+    ],
+    "note": "Header-coordinate difference, not an image-registration residual; no rewarping performed."
+  },
+  {
+    "pair_id": "l8_126042_20190923_s2b_20190923_t48ryp_n0193",
+    "same_crs": true,
+    "equal_bounds_at_0_01_crs_units": false,
+    "lr_minus_hr_bounds_crs_units": [
+      -17.81983256340027,
+      -14.70354437828064,
+      -17.81983256340027,
+      -14.70354437828064
+    ],
+    "note": "Header-coordinate difference, not an image-registration residual; no rewarping performed."
+  },
+  {
+    "pair_id": "l8_126042_20190923_s2b_20190923_t48ryp_n0200",
+    "same_crs": true,
+    "equal_bounds_at_0_01_crs_units": false,
+    "lr_minus_hr_bounds_crs_units": [
+      -19.325034618377686,
+      -18.710216283798218,
+      -19.325034618377686,
+      -18.710216283798218
+    ],
+    "note": "Header-coordinate difference, not an image-registration residual; no rewarping performed."
+  },
+  {
+    "pair_id": "l8_126042_20190923_s2b_20190923_t48ryp_n0207",
+    "same_crs": true,
+    "equal_bounds_at_0_01_crs_units": false,
+    "lr_minus_hr_bounds_crs_units": [
+      -18.72204303741455,
+      -18.098961114883423,
+      -18.72204303741455,
+      -18.098961114883423
+    ],
+    "note": "Header-coordinate difference, not an image-registration residual; no rewarping performed."
+  },
+  {
+    "pair_id": "l8_126042_20190923_s2b_20190923_t48ryp_n0229",
+    "same_crs": true,
+    "equal_bounds_at_0_01_crs_units": false,
+    "lr_minus_hr_bounds_crs_units": [
+      -19.399971961975098,
+      -21.427228450775146,
+      -19.399971961975098,
+      -21.427228450775146
+    ],
+    "note": "Header-coordinate difference, not an image-registration residual; no rewarping performed."
+  },
+  {
+    "pair_id": "l8_126042_20190923_s2b_20190923_t48ryq_n0051",
+    "same_crs": true,
+    "equal_bounds_at_0_01_crs_units": false,
+    "lr_minus_hr_bounds_crs_units": [
+      -7.183960676193237,
+      9.188087582588196,
+      -7.183960676193237,
+      9.188087582588196
+    ],
+    "note": "Header-coordinate difference, not an image-registration residual; no rewarping performed."
+  },
+  {
+    "pair_id": "l8_126042_20190923_s2b_20190923_t48ryq_n0062",
+    "same_crs": true,
+    "equal_bounds_at_0_01_crs_units": false,
+    "lr_minus_hr_bounds_crs_units": [
+      -9.362514019012451,
+      5.707451105117798,
+      -9.362514019012451,
+      5.707451105117798
+    ],
+    "note": "Header-coordinate difference, not an image-registration residual; no rewarping performed."
+  },
+  {
+    "pair_id": "l8_126042_20190923_s2b_20190923_t48ryq_n0131",
+    "same_crs": true,
+    "equal_bounds_at_0_01_crs_units": false,
+    "lr_minus_hr_bounds_crs_units": [
+      -12.277517318725586,
+      -1.4752475917339325,
+      -12.277517318725586,
+      -1.4752475917339325
+    ],
+    "note": "Header-coordinate difference, not an image-registration residual; no rewarping performed."
+  },
+  {
+    "pair_id": "l8_126042_20190923_s2b_20190923_t48ryq_n0173",
+    "same_crs": true,
+    "equal_bounds_at_0_01_crs_units": false,
+    "lr_minus_hr_bounds_crs_units": [
+      -13.170011043548584,
+      -2.1587547659873962,
+      -13.170011043548584,
+      -2.1587547659873962
+    ],
+    "note": "Header-coordinate difference, not an image-registration residual; no rewarping performed."
+  },
+  {
+    "pair_id": "l8_126042_20190923_s2b_20190923_t49rbj_n0027",
+    "same_crs": true,
+    "equal_bounds_at_0_01_crs_units": false,
+    "lr_minus_hr_bounds_crs_units": [
+      -14.53188180923462,
+      -4.370391368865967,
+      -14.53188180923462,
+      -4.370391368865967
+    ],
+    "note": "Header-coordinate difference, not an image-registration residual; no rewarping performed."
+  },
+  {
+    "pair_id": "l8_126042_20190923_s2b_20190923_t49rbj_n0035",
+    "same_crs": true,
+    "equal_bounds_at_0_01_crs_units": false,
+    "lr_minus_hr_bounds_crs_units": [
+      -13.699148893356323,
+      -4.216923713684082,
+      -13.699148893356323,
+      -4.216923713684082
+    ],
+    "note": "Header-coordinate difference, not an image-registration residual; no rewarping performed."
+  },
+  {
+    "pair_id": "l8_126042_20190923_s2b_20190923_t49rbj_n0068",
+    "same_crs": true,
+    "equal_bounds_at_0_01_crs_units": false,
+    "lr_minus_hr_bounds_crs_units": [
+      -15.20605206489563,
+      -3.7288898229599,
+      -15.20605206489563,
+      -3.7288898229599
+    ],
+    "note": "Header-coordinate difference, not an image-registration residual; no rewarping performed."
+  },
+  {
+    "pair_id": "l8_126042_20190923_s2b_20190923_t49rbj_n0114",
+    "same_crs": true,
+    "equal_bounds_at_0_01_crs_units": false,
+    "lr_minus_hr_bounds_crs_units": [
+      -17.438358068466187,
+      -5.880026817321777,
+      -17.438358068466187,
+      -5.880026817321777
+    ],
+    "note": "Header-coordinate difference, not an image-registration residual; no rewarping performed."
+  },
+  {
+    "pair_id": "l8_126042_20190923_s2b_20190923_t49rbj_n0169",
+    "same_crs": true,
+    "equal_bounds_at_0_01_crs_units": false,
+    "lr_minus_hr_bounds_crs_units": [
+      -16.742323637008667,
+      -9.993993639945984,
+      -16.742323637008667,
+      -9.993993639945984
+    ],
+    "note": "Header-coordinate difference, not an image-registration residual; no rewarping performed."
+  },
+  {
+    "pair_id": "l8_126042_20190923_s2b_20190923_t49rbj_n0334",
+    "same_crs": true,
+    "equal_bounds_at_0_01_crs_units": false,
+    "lr_minus_hr_bounds_crs_units": [
+      -22.227351665496826,
+      -21.323108673095703,
+      -22.227351665496826,
+      -21.323108673095703
+    ],
+    "note": "Header-coordinate difference, not an image-registration residual; no rewarping performed."
+  },
+  {
+    "pair_id": "l8_126042_20190923_s2b_20190923_t49rbj_n0347",
+    "same_crs": true,
+    "equal_bounds_at_0_01_crs_units": false,
+    "lr_minus_hr_bounds_crs_units": [
+      -22.81411647796631,
+      -22.684130668640137,
+      -22.81411647796631,
+      -22.684130668640137
+    ],
+    "note": "Header-coordinate difference, not an image-registration residual; no rewarping performed."
+  },
+  {
+    "pair_id": "l8_126042_20190923_s2b_20190923_t49rbj_n0353",
+    "same_crs": true,
+    "equal_bounds_at_0_01_crs_units": false,
+    "lr_minus_hr_bounds_crs_units": [
+      -20.849299430847168,
+      -25.939390659332275,
+      -20.849299430847168,
+      -25.939390659332275
+    ],
+    "note": "Header-coordinate difference, not an image-registration residual; no rewarping performed."
+  },
+  {
+    "pair_id": "l8_126042_20190923_s2b_20190923_t49rbk_n0038",
+    "same_crs": true,
+    "equal_bounds_at_0_01_crs_units": false,
+    "lr_minus_hr_bounds_crs_units": [
+      -9.230782389640808,
+      6.786574721336365,
+      -9.230782389640808,
+      6.786574721336365
+    ],
+    "note": "Header-coordinate difference, not an image-registration residual; no rewarping performed."
+  },
+  {
+    "pair_id": "l8_126042_20190923_s2b_20190923_t49rbk_n0173",
+    "same_crs": true,
+    "equal_bounds_at_0_01_crs_units": false,
+    "lr_minus_hr_bounds_crs_units": [
+      -8.163474798202515,
+      -0.8017915487289429,
+      -8.163474798202515,
+      -0.8017915487289429
+    ],
+    "note": "Header-coordinate difference, not an image-registration residual; no rewarping performed."
+  },
+  {
+    "pair_id": "l8_126042_20190923_s2b_20190923_t49rbk_n0281",
+    "same_crs": true,
+    "equal_bounds_at_0_01_crs_units": false,
+    "lr_minus_hr_bounds_crs_units": [
+      -13.092875480651855,
+      -5.056400895118713,
+      -13.092875480651855,
+      -5.056400895118713
+    ],
+    "note": "Header-coordinate difference, not an image-registration residual; no rewarping performed."
+  },
+  {
+    "pair_id": "l8_126042_20190923_s2b_20190923_t49rbk_n0288",
+    "same_crs": true,
+    "equal_bounds_at_0_01_crs_units": false,
+    "lr_minus_hr_bounds_crs_units": [
+      -13.331305980682373,
+      -2.396285831928253,
+      -13.331305980682373,
+      -2.396285831928253
+    ],
+    "note": "Header-coordinate difference, not an image-registration residual; no rewarping performed."
+  },
+  {
+    "pair_id": "l8_126042_20190923_s2b_20190923_t49rbk_n0291",
+    "same_crs": true,
+    "equal_bounds_at_0_01_crs_units": false,
+    "lr_minus_hr_bounds_crs_units": [
+      -13.951886892318726,
+      -4.572778642177582,
+      -13.951886892318726,
+      -4.572778642177582
+    ],
+    "note": "Header-coordinate difference, not an image-registration residual; no rewarping performed."
+  }
+]

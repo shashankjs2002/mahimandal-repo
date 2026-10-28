@@ -1,0 +1,20 @@
+# Install PyTorch and torchvision separately for your CPU/CUDA environment.
+numpy>=1.24
+pandas>=2
+matplotlib>=3.7
+scipy>=1.10
+rasterio>=1.3
+shapely>=2
+geopandas>=0.14
+pyproj>=3.6
+requests>=2.31
+Pillow>=10
+PyYAML>=6
+einops>=0.7
+lpips>=0.1.4
+fvcore>=0.1.5
+tqdm>=4.66
+pystac-client>=0.8,<1
+planetary-computer>=1,<2
+ipykernel>=6
+

@@ -1,0 +1,114 @@
+{
+  "rgb/EDSR": {
+    "status": "passed",
+    "returncode": 0
+  },
+  "rgb/RCAN": {
+    "status": "passed",
+    "returncode": 0
+  },
+  "rgb/RDN": {
+    "status": "passed",
+    "returncode": 0
+  },
+  "rgb/SwinIR": {
+    "status": "failed",
+    "returncode": 1
+  },
+  "rgb/HAT": {
+    "status": "failed",
+    "returncode": 1
+  },
+  "rgb/OmniSR": {
+    "status": "failed",
+    "returncode": 1
+  },
+  "rgb/RealESRGAN_SRVGG_X3": {
+    "status": "passed",
+    "returncode": 0
+  },
+  "rgb/CAFRN": {
+    "status": "passed",
+    "returncode": 0
+  },
+  "rgb/DCM": {
+    "status": "passed",
+    "returncode": 0
+  },
+  "rgb/FENet": {
+    "status": "passed",
+    "returncode": 0
+  },
+  "rgb/HAUNet": {
+    "status": "failed",
+    "returncode": 1
+  },
+  "rgb/HSENet": {
+    "status": "failed",
+    "returncode": 1
+  },
+  "rgb/MHAN": {
+    "status": "failed",
+    "returncode": 1
+  },
+  "rgb/SAN": {
+    "status": "failed",
+    "returncode": 1
+  },
+  "rgbnir/EDSR": {
+    "status": "unsupported",
+    "reason": "verified modalities=['rgb']"
+  },
+  "rgbnir/RCAN": {
+    "status": "unsupported",
+    "reason": "verified modalities=['rgb']"
+  },
+  "rgbnir/RDN": {
+    "status": "passed",
+    "returncode": 0
+  },
+  "rgbnir/SwinIR": {
+    "status": "failed",
+    "returncode": 1
+  },
+  "rgbnir/HAT": {
+    "status": "failed",
+    "returncode": 1
+  },
+  "rgbnir/OmniSR": {
+    "status": "failed",
+    "returncode": 1
+  },
+  "rgbnir/RealESRGAN_SRVGG_X3": {
+    "status": "passed",
+    "returncode": 0
+  },
+  "rgbnir/CAFRN": {
+    "status": "passed",
+    "returncode": 0
+  },
+  "rgbnir/DCM": {
+    "status": "unsupported",
+    "reason": "verified modalities=['rgb']"
+  },
+  "rgbnir/FENet": {
+    "status": "unsupported",
+    "reason": "verified modalities=['rgb']"
+  },
+  "rgbnir/HAUNet": {
+    "status": "unsupported",
+    "reason": "verified modalities=['rgb']"
+  },
+  "rgbnir/HSENet": {
+    "status": "unsupported",
+    "reason": "verified modalities=['rgb']"
+  },
+  "rgbnir/MHAN": {
+    "status": "unsupported",
+    "reason": "verified modalities=['rgb']"
+  },
+  "rgbnir/SAN": {
+    "status": "unsupported",
+    "reason": "verified modalities=['rgb']"
+  }
+}

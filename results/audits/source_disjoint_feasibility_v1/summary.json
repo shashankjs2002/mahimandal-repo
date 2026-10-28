@@ -1,0 +1,25 @@
+{
+  "manifest_sha256": "6bf97403ee40ccf0cbd38b2e6e4932e01973e5d00e211e0acfb1e0b810efc5e7",
+  "script_sha256": "13c7f2ee39132b6218d9a605156f9f7a3e2035f1fa2d64cc2acd705d381dd685",
+  "pairs": 4800,
+  "indivisible_components": 21,
+  "largest_component_pairs": 2370,
+  "positive_area_overlap_edges": 1193,
+  "class_distinct_components": {
+    "alpine": 2,
+    "cropland": 8,
+    "desert_bare": 6,
+    "forest": 13,
+    "mixed": 10,
+    "mountain": 13,
+    "shrub_grass": 11,
+    "urban": 8,
+    "water_wetland": 10
+  },
+  "all_classes_in_three_splits_necessary_condition": false,
+  "classes_failing_necessary_condition": {
+    "alpine": 2
+  },
+  "split_assignments_modified": false,
+  "note": "Necessary condition only. No allocation, source-disjoint benchmark or nonzero spatial buffer is established. Footprints use manifest UL/CRS and nominal 4800-m square geometry."
+}

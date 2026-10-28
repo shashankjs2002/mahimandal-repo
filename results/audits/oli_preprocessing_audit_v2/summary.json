@@ -1,0 +1,33 @@
+{
+  "script_sha256": "a2a850cd5bf3f966c504f32b103295adbf6de250318158f05ae60d13fffe0c01",
+  "publisher_commit": "da443af38994a0cbcec14eda62c87185764434a4",
+  "publisher_url": "https://github.com/wjwjww/OLI2MSI/tree/da443af38994a0cbcec14eda62c87185764434a4",
+  "publisher_contract": {
+    "publisher_band_selection": [
+      4,
+      3,
+      2
+    ],
+    "extractor_calls": [
+      "l8_scene.get_TOA(band, per_pixel=False, clip=True)",
+      "s2_scene.granules[0].get_TOA(band, clip=True)"
+    ],
+    "publisher_radiometry": "top_of_atmosphere_reflectance",
+    "not_claimed": "Same atmospheric correction or surface-reflectance harmonization as Mahimandal"
+  },
+  "test_pairs": 100,
+  "test_files": 200,
+  "all_files_rgb_interpretation": true,
+  "cohort_matches_archived_transfer": true,
+  "below_zero_values": 0,
+  "above_one_values": 0,
+  "pairs_with_different_crs": 0,
+  "pairs_with_unequal_header_bounds": 100,
+  "source_hashes": {
+    "extract_subimgs_from_granules.py": "b9ef2217c21f411adbbff7f26983c1485ce7a2ad5ffa5b4c89a10d91dbe16147",
+    "utils.py": "38ad8466616f74696e4b11e762ace89792d0557efaaf9540b85ed8f013f78524"
+  },
+  "transfer_scores_sha256": "5e9d4b1c0fd15b6c188e60845329201f8429e7439f7c8a1b9fdb3da64d49f2e0",
+  "no_harmonization_no_model_execution": true,
+  "limitation": "Publisher code and local RGB tags support interpretation, not independent atmospheric harmonization or authenticated pixel lineage of the repackaged archive."
+}

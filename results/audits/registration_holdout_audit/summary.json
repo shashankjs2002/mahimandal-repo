@@ -1,0 +1,26 @@
+{
+  "attempted_pairs": 100,
+  "status_counts": {
+    "insufficient_spatially_heldout_matches": 2,
+    "automated_fit_evaluable": 98
+  },
+  "evaluable_pairs": 98,
+  "human_reviewed_pairs": 0,
+  "sample_blocks": 90,
+  "sample_source_pairs": 99,
+  "means_over_evaluable_pairs": {
+    "heldout_identity_rmse_lr_px": 0.6920480541958934,
+    "heldout_identity_median_lr_px": 0.25298332573699883,
+    "heldout_identity_p95_lr_px": 0.9880870097906589,
+    "heldout_fitted_rmse_lr_px": 0.6772523066685535,
+    "heldout_fitted_median_lr_px": 0.23833607221243686,
+    "heldout_fitted_p95_lr_px": 0.9714687433059792
+  },
+  "conversion": {
+    "lr_px_to_sentinel_px": 3,
+    "lr_px_to_m": 30
+  },
+  "interpretation": "feature-match relative consistency, not manually validated landmarks, absolute geodetic accuracy or GCP RMSE",
+  "failure_note": "Unevaluable cases are retained; evaluable-only errors must not be generalized to all 100 pairs or the release.",
+  "manual_review": "CSV and panels provided; no automatic match is asserted to be a human-validated ground control point."
+}

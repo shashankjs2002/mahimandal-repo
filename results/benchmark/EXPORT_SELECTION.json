@@ -1,0 +1,65 @@
+{
+  "rule": "first test pair per landscape class, shared by every model",
+  "pairs": [
+    {
+      "landscape_class": "alpine",
+      "test_index": 37,
+      "pair_id": "LC08_L2SP_146036_20260125_02_T1__44SLD_20260125__31_16",
+      "figure": "alpine.png"
+    },
+    {
+      "landscape_class": "cropland",
+      "test_index": 44,
+      "pair_id": "LC08_L2SP_146040_20260125_02_T1__44RKT_20260125__44_12",
+      "figure": "cropland.png"
+    },
+    {
+      "landscape_class": "desert_bare",
+      "test_index": 236,
+      "pair_id": "LC08_L2SP_151043_20260112_02_T1__42QWM_20260112__32_37",
+      "figure": "desert_bare.png"
+    },
+    {
+      "landscape_class": "forest",
+      "test_index": 3,
+      "pair_id": "LC08_L2SP_139043_20260516_02_T1__45QWG_20260516__14_36",
+      "figure": "forest.png"
+    },
+    {
+      "landscape_class": "mixed",
+      "test_index": 1,
+      "pair_id": "LC08_L2SP_139043_20251207_02_T1__45QWG_20251207__13_35",
+      "figure": "mixed.png"
+    },
+    {
+      "landscape_class": "mountain",
+      "test_index": 34,
+      "pair_id": "LC08_L2SP_141045_20251205_02_T1__44QRJ_20251205__26_24",
+      "figure": "mountain.png"
+    },
+    {
+      "landscape_class": "shrub_grass",
+      "test_index": 0,
+      "pair_id": "LC08_L2SP_139043_20251207_02_T1__45QWG_20251207__12_36",
+      "figure": "shrub_grass.png"
+    },
+    {
+      "landscape_class": "urban",
+      "test_index": 69,
+      "pair_id": "LC08_L2SP_148038_20250309_02_T1__43RFQ_20250309__36_30",
+      "figure": "urban.png"
+    },
+    {
+      "landscape_class": "water_wetland",
+      "test_index": 226,
+      "pair_id": "LC08_L2SP_151043_20260112_02_T1__42QVM_20260112__17_39",
+      "figure": "water_wetland.png"
+    }
+  ],
+  "counts": {
+    "checkpoints": 20,
+    "selected_prediction_tiffs": 108,
+    "excluded_prediction_tiffs": 16404,
+    "other_files": 220
+  }
+}

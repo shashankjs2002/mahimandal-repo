@@ -1,0 +1,33 @@
+{
+  "dataset_root": "/kaggle/input/datasets/twilight2002/mahimandal-sr-dataset/reflectance16",
+  "manifest_sha256": "6bf97403ee40ccf0cbd38b2e6e4932e01973e5d00e211e0acfb1e0b810efc5e7",
+  "protocol_id": "pc_india_rgbnir_esri2025_dem_himalaya_first_v4",
+  "split_counts": {
+    "train": 3424,
+    "val": 645,
+    "test": 731
+  },
+  "source_product_shared_count_total": 445,
+  "test_patches_sharing_exact_train_source_pair": 381,
+  "split_blocks_shared_count": 0,
+  "cross_split_overlapping_patch_count_directed": 75,
+  "minimum_cross_split_planar_edge_distance_m_epsg6933": 0.0,
+  "header_issue_count": 0,
+  "missing_tiff_count": 0,
+  "orphan_tiff_count": 0,
+  "checksums_fully_verified": true,
+  "raw_mask_scope": "all",
+  "raw_mask_expected": 4800,
+  "raw_mask_completed": 4800,
+  "raw_mask_failed_this_run": 0,
+  "raw_mask_all_pass_threshold": true,
+  "raw_boundary_expected": 3,
+  "raw_boundary_completed": 3,
+  "original_preparation_guard_m": 0,
+  "notes": [
+    "The source notebook invoked generate_pc_paper_reports with guard_m=0.",
+    "EPSG:6933 footprint-edge distances are planar approximations, not exact geodesic distances.",
+    "Raw-source mask verification is complete for all 4800 pairs only if scope=all and completed=4800.",
+    "Red-band pixel equality checks fidelity to preparation code, not physical correctness of offset."
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "band_order_on_disk": [
+    "blue",
+    "green",
+    "red",
+    "nir"
+  ],
+  "format": "mahimandal-split-geotiff-v1",
+  "geometry": {
+    "HR": [
+      4,
+      480,
+      480
+    ],
+    "LR": [
+      4,
+      160,
+      160
+    ],
+    "scale": 3
+  },
+  "layout": "{train,val,test}/{LR,HR}/{pair_id}.tif",
+  "model_decode": "clip(pixel/10000,0,1)",
+  "model_value_domain": "float32 reflectance [0,1]",
+  "pairs": 4800,
+  "scientific_note": "The two releases encode the same reflectance samples. They are storage variants, not independent data splits or distinct radiometric experiments.",
+  "source_manifest_sha256": "af910e6fcfa25813c8fbe9853a3620a40065702502a3e8203e1d2c99bd80ea52",
+  "source_root": "F:\\mahimandal-dataset\\mahimandal-dataset\\SR_pairs_india_ESRI2025_4800_balanced",
+  "split_counts": {
+    "test": 731,
+    "train": 3424,
+    "val": 645
+  },
+  "split_source": "authoritative paper_release_manifest.csv; no reshuffling",
+  "stored_dtype": "int16",
+  "stored_value_domain": "reflectance_x10000_[0,10000]",
+  "variant": "reflectance16"
+}

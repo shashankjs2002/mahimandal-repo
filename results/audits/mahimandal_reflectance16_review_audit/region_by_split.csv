@@ -1,0 +1,10 @@
+split,geographic_stratum,pairs,blocks
+test,extreme_north,185,3
+test,northern_band,146,6
+test,rest_of_india,400,6
+train,extreme_north,264,18
+train,northern_band,152,18
+train,rest_of_india,3008,218
+val,extreme_north,80,2
+val,northern_band,140,6
+val,rest_of_india,425,8

@@ -1,0 +1,14 @@
+{
+  "trained_on": "mahimandal",
+  "tested_on": "oli2msi",
+  "source_checkpoint_sha256": "30e29cd6aa96701449b328407189fb4ffcaaf8d873787480fe425fdfc983f4c4",
+  "target_identity": "ef778483659b181fc8feac385e4a3a555e18b0ee5505277fa2314578e168065e",
+  "modality": "rgb",
+  "radiometry": "reflectance16",
+  "geometry": [
+    160,
+    480
+  ],
+  "metric_domain": "reflectance [0,1]",
+  "border_crop": 3
+}

@@ -1,0 +1,10 @@
+split_a,split_b,source,shared_ids,unique_a,unique_b
+train,val,landsat_id,56,264,77
+train,val,sentinel_id,64,550,122
+train,val,source_pair_id,65,688,148
+train,test,landsat_id,55,264,72
+train,test,sentinel_id,64,550,119
+train,test,source_pair_id,68,688,143
+val,test,landsat_id,25,77,72
+val,test,sentinel_id,24,122,119
+val,test,source_pair_id,24,148,143

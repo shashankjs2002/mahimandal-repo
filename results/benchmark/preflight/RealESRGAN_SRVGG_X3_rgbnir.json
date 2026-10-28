@@ -1,0 +1,37 @@
+{
+  "status": "passed",
+  "shape": [
+    1,
+    4,
+    480,
+    480
+  ],
+  "backward": true,
+  "repo": "xinntao/Real-ESRGAN",
+  "revision": "a4abfb2979a7bbff3f69f58f58ae324608821e27",
+  "source_dir": "RealESRGAN",
+  "entry": "realesrgan/archs/srvgg_arch.py",
+  "provenance": "official SRVGGNetCompact and U-Net discriminator, configured for x3 and trained on paired data; an explicit adaptation, not an official Real-ESRGAN x3 checkpoint",
+  "range_multiplier": 1,
+  "range_offset": 0,
+  "modalities": [
+    "rgb",
+    "rgbnir"
+  ],
+  "suite": "perceptual",
+  "adaptation": "native arbitrary-scale constructor set to 3; common paired perceptual-GAN training replaces Real-ESRGAN blind degradation",
+  "name": "RealESRGAN_SRVGG_X3",
+  "constructor": {
+    "num_in_ch": 4,
+    "num_out_ch": 4,
+    "num_feat": 64,
+    "num_conv": 32,
+    "upscale": 3,
+    "act_type": "prelu"
+  },
+  "input_channels": 4,
+  "output_channels": 4,
+  "scale": 3,
+  "parameters": 1206948,
+  "trainable_parameters": 1206948
+}

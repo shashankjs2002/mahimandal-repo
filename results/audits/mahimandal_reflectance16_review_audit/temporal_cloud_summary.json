@@ -1,0 +1,13 @@
+{
+  "count": 4800,
+  "same_day_pairs": 4800,
+  "time_gap_minimum_min": 0.1,
+  "time_gap_mean_min": 8.8948125,
+  "time_gap_median_min": 9.2,
+  "time_gap_maximum_min": 19.8,
+  "recorded_clear_mean": 0.9987718333333332,
+  "recorded_clear_min": 0.99,
+  "manifest_at_0_9900": 3,
+  "manifest_below_0_9900": 0,
+  "obstructed_fraction_from_rounded_manifest_mean": 0.0012281666666668078
+}

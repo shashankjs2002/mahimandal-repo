@@ -1,0 +1,32 @@
+{
+  "manifest_sha256": "6bf97403ee40ccf0cbd38b2e6e4932e01973e5d00e211e0acfb1e0b810efc5e7",
+  "script_sha256": "d477095b9d2c9dfc6b964ad8c9883f4799a540318bda7a0f058d217fa701b292",
+  "source_checkpoint_sha256": "31efb40e754debdcbb44084e6d1d59635befa942ee04296f407aabc8d5dec857",
+  "affected_pairs_by_split": {
+    "train": 266,
+    "test": 80,
+    "val": 58
+  },
+  "cohorts": [
+    {
+      "cohort": "full731",
+      "pairs": 731,
+      "blocks": 13,
+      "classes": 9
+    },
+    {
+      "cohort": "sourcefill_excluded",
+      "pairs": 651,
+      "blocks": 13,
+      "classes": 9
+    },
+    {
+      "cohort": "sourcefill_and_overlap_excluded",
+      "pairs": 629,
+      "blocks": 13,
+      "classes": 9
+    }
+  ],
+  "new_training_or_inference": false,
+  "interpretation": "Entire-pair exclusion using archived scores; not pixel-masked reevaluation or corrected training. Existing full731 results unchanged."
+}

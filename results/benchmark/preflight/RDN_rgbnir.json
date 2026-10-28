@@ -1,0 +1,45 @@
+{
+  "status": "passed",
+  "shape": [
+    1,
+    4,
+    480,
+    480
+  ],
+  "backward": true,
+  "repo": "sanghyun-son/EDSR-PyTorch",
+  "revision": "8dba5581a7502b92de9641eb431130d6c8ca5d7f",
+  "source_dir": "EDSR",
+  "entry": "src/model/rdn.py",
+  "provenance": "PyTorch port linked by the original RDN authors; RDN-B",
+  "range_multiplier": 255,
+  "range_offset": 0,
+  "modalities": [
+    "rgb",
+    "rgbnir"
+  ],
+  "suite": "core",
+  "name": "RDN",
+  "constructor": {
+    "scale": [
+      3
+    ],
+    "n_colors": 4,
+    "n_feats": 64,
+    "rgb_range": 255,
+    "res_scale": 1,
+    "n_resgroups": 10,
+    "n_resblocks": 20,
+    "reduction": 16,
+    "n_basic_modules": 10,
+    "G0": 64,
+    "RDNkSize": 3,
+    "RDNconfig": "B",
+    "no_upsampling": false
+  },
+  "input_channels": 4,
+  "output_channels": 4,
+  "scale": 3,
+  "parameters": 22309188,
+  "trainable_parameters": 22309188
+}

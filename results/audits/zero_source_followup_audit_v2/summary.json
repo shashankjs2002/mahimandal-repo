@@ -1,0 +1,31 @@
+{
+  "script_sha256": "7b766f23ad7621ecf63f6e32446f9ea4bb3299b6ddff6a046d6f7843c6961992",
+  "manifest_sha256": "6bf97403ee40ccf0cbd38b2e6e4932e01973e5d00e211e0acfb1e0b810efc5e7",
+  "candidate_sha256": "10332f0af371075298dcd4428195760aa66976811e6788192c6448dcaa8c41b5",
+  "candidate_rasters": 1187,
+  "imported_checkpoint_sha256": "1c6fa46ab6a7d5c6041bb12505dde62785e661d89546ef3f20e0e35fedd6a11e",
+  "scope": "Original nodata/read-mask and raw-zero checks for bands containing stored zeros; not cloud/saturation masks.",
+  "completed_rasters": 1187,
+  "complete": true,
+  "failed_this_attempt": [],
+  "pairs_with_source_invalid_pixels": 404,
+  "conversion_mismatch_pixels": 0,
+  "by_sensor": {
+    "landsat": {
+      "checked_rasters": 667,
+      "rasters_with_source_invalid_pixels": 29,
+      "invalid_any_checked_band_pixels": 148,
+      "zero_from_valid_clipping_band_values": 307152,
+      "zero_from_source_invalid_band_values": 168
+    },
+    "sentinel": {
+      "checked_rasters": 520,
+      "rasters_with_source_invalid_pixels": 381,
+      "invalid_any_checked_band_pixels": 4540,
+      "zero_from_valid_clipping_band_values": 2292305,
+      "zero_from_source_invalid_band_values": 4540
+    }
+  },
+  "release_or_scoring_masks_changed": false,
+  "unchecked_scope": "Bands/rasters without stored zeros; saturation, QA/SCL flags and original invalid contributor weights during interpolation."
+}

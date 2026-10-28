@@ -1,0 +1,777 @@
+{
+  "script_sha256": "3690691bdaf8164f549c6c4342fffbe7f47efa566d8a59d820eb591649dcc9f2",
+  "manifest_sha256": "6bf97403ee40ccf0cbd38b2e6e4932e01973e5d00e211e0acfb1e0b810efc5e7",
+  "new_training_or_inference": false,
+  "reader_probe": {
+    "passed": true,
+    "synthetic_not_source_evidence": true,
+    "rasterio_version": "1.5.0",
+    "gdal_version": "3.12.1",
+    "scale": 0.0001,
+    "offset": -0.1,
+    "raw_dn": [
+      [
+        0,
+        500,
+        1000,
+        2000,
+        12000
+      ]
+    ],
+    "plain_read": [
+      [
+        0,
+        500,
+        1000,
+        2000,
+        12000
+      ]
+    ],
+    "identity_vrt_read": [
+      [
+        0,
+        500,
+        1000,
+        2000,
+        12000
+      ]
+    ],
+    "valid_before_clipping": [
+      [
+        false,
+        true,
+        true,
+        true,
+        true
+      ]
+    ],
+    "single_offset_stored": [
+      [
+        0,
+        0,
+        0,
+        1000,
+        10000
+      ]
+    ],
+    "double_offset_stored": [
+      [
+        0,
+        0,
+        0,
+        0,
+        10000
+      ]
+    ],
+    "note": "DN 500 is valid but clips to zero; DN 0 is fill. Zero reflectance cannot recover validity."
+  },
+  "notebook_inspection": {
+    "notebook_sha256": "690d9a08df8b0dce9b12f8a4047dbdd827c874877ac3e3c411f58cd1120f0856",
+    "definitions": {
+      "read_l": {
+        "cell_index_zero_based": 7,
+        "source": "def read_l(href, win):\n    with rasterio.open(href) as src:\n        return src.read(1, window=win)"
+      },
+      "read_s2": {
+        "cell_index_zero_based": 7,
+        "source": "def read_s2(href, crs, hr_tf, resampling):\n    with rasterio.open(href) as src:\n        with WarpedVRT(src, crs=crs, transform=hr_tf, width=HR_SIZE, height=HR_SIZE,\n                       resampling=resampling, src_nodata=0, nodata=0) as v:\n            return v.read(1)"
+      },
+      "build_patch": {
+        "cell_index_zero_based": 7,
+        "source": "def build_patch(sc, sd, ancillary, i, j, required_priority_region=None):\n    try:\n        with rio_env():\n            col0, row0 = i * LR_SIZE, j * LR_SIZE\n            tf, crs = sc['tf'], sc['crs']\n            x_ul = tf.c + tf.a * col0 + tf.b * row0\n            y_ul = tf.f + tf.d * col0 + tf.e * row0\n            lr_tf = Affine(LR_RES, 0, x_ul, 0, -LR_RES, y_ul)\n            hr_tf = Affine(HR_RES, 0, x_ul, 0, -HR_RES, y_ul)\n            win = Window(col0, row0, LR_SIZE, LR_SIZE)\n            cx = x_ul + LR_SIZE * LR_RES / 2\n            cy = y_ul - LR_SIZE * LR_RES / 2\n            clon, clat = Transformer.from_crs(\n                crs, 4326, always_xy=True\n            ).transform(cx, cy)\n            state_or_ut = state_or_ut_at(clon, clat)\n            region = priority_region(state_or_ut)\n            if required_priority_region and region != required_priority_region:\n                return dict(ok=False, why=f'outside_{required_priority_region}')\n\n            # Cheap tests first: only QA + SCL are read.\n            qa = retry(lambda: read_l(sc['hrefs']['qa_pixel'], win))\n            l_clear = (qa & 31) == 0\n            if l_clear.mean() < MIN_CLEAR:\n                return dict(ok=False, why='cloud_landsat')\n            scl = retry(lambda: read_s2(\n                sd['hrefs']['SCL'], crs, hr_tf, Resampling.nearest\n            ))\n            s_clear = np.isin(scl, S2_CLEAR_SCL)\n            joint = (\n                np.repeat(np.repeat(l_clear, FACTOR, 0), FACTOR, 1) & s_clear\n            ).mean()\n            if joint < MIN_CLEAR:\n                return dict(ok=False, why='cloud_joint')\n            water = float((scl == 6).mean())\n            if water > MAX_WATER_FRAC:\n                return dict(ok=False, why='water')\n\n            l_dn = np.stack([\n                retry(lambda k=k: read_l(sc['hrefs'][k], win))\n                for k in L_ASSETS\n            ])\n            s_dn = np.stack([\n                retry(lambda k=k: read_s2(\n                    sd['hrefs'][k], crs, hr_tf, Resampling.bilinear\n                )) for k in S_ASSETS\n            ])\n            if (l_dn == 0).any(0).mean() > 0.001 or (s_dn == 0).any(0).mean() > 0.001:\n                return dict(ok=False, why='nodata')\n            lr = np.clip(\n                l_dn.astype('float32') * 0.275 - 2000.0, 0, 10000\n            ).round().astype('int16')\n            hr = np.clip(\n                s_dn.astype('float32') - sd['offset'], 0, 10000\n            ).astype('int16')\n\n            hr_ds = hr.astype('float32').reshape(\n                4, LR_SIZE, FACTOR, LR_SIZE, FACTOR\n            ).mean((2, 4))\n            c_red, c_nir = corr(hr_ds[2], lr[2]), corr(hr_ds[3], lr[3])\n\n            esri_labels = retry(lambda: read_esri_landcover_2025(\n                crs, hr_tf, HR_SIZE, HR_SIZE,\n            ))\n            try:\n                cover = esri_landcover_percentages(esri_labels)\n            except ValueError:\n                return dict(ok=False, why='esri2025_landcover_missing')\n            if cover.get('clouds', 0.0) > MAX_ESRI_CLOUD_PCT:\n                return dict(ok=False, why='esri2025_landcover_cloud')\n\n            historical_labels = retry(lambda: read_mosaic(\n                ancillary['worldcover'], crs, hr_tf, HR_SIZE, HR_SIZE,\n                Resampling.nearest,\n            ))\n            historical_labels = np.where(\n                np.isfinite(historical_labels), np.rint(historical_labels), 0\n            ).astype(np.uint8)\n            try:\n                historical_cover = worldcover_percentages(historical_labels)\n            except ValueError:\n                return dict(ok=False, why='worldcover_missing')\n            elevation = retry(lambda: read_mosaic(\n                ancillary['dem'], crs, lr_tf, LR_SIZE, LR_SIZE,\n                Resampling.bilinear,\n            ))\n            try:\n                terrain = terrain_statistics(elevation, LR_RES)\n            except ValueError:\n                return dict(ok=False, why='dem_missing')\n            landscape = classify_esri_landscape(cover, terrain)\n            nir_threshold = (\n                MIN_NIR_STD_ALPINE if landscape == 'alpine' else MIN_NIR_STD\n            )\n            correlation_threshold = (\n                MIN_CORR_ALPINE if landscape == 'alpine' else MIN_CORR\n            )\n            if hr[3].std() < nir_threshold:\n                return dict(ok=False, why=f'flat_{landscape}')\n            if not (\n                c_red >= correlation_threshold and c_nir >= correlation_threshold\n            ):\n                return dict(ok=False, why=f'low_corr_{landscape}')\n\n            l_it, s_it = sc['item'], sd['item']\n            tile = s_it.properties.get('s2:mgrs_tile', 'NA')\n            pid = f\"{l_it.id}__{tile}_{s_it.datetime:%Y%m%d}__{i}_{j}\"\n            equal_x, equal_y = equal_area_xy(clon, clat)\n            geography = geographic_stratum(clat)\n            row = dict(\n                pair_id=pid, landsat_id=l_it.id, sentinel_id=s_it.id,\n                platform=l_it.properties['platform'],\n                s2_platform=s_it.properties.get('platform'), s2_tile=tile,\n                date_L=f'{l_it.datetime:%Y-%m-%d}',\n                date_S=f'{s_it.datetime:%Y-%m-%d}',\n                day_gap=abs((l_it.datetime.date() - s_it.datetime.date()).days),\n                time_diff_min=round(abs(\n                    (s_it.datetime - l_it.datetime).total_seconds()\n                ) / 60, 1),\n                cloud_L=l_it.properties.get('eo:cloud_cover'),\n                cloud_S=s_it.properties.get('eo:cloud_cover'),\n                crs=str(crs), ul_x=x_ul, ul_y=y_ul,\n                center_lon=round(clon, 6), center_lat=round(clat, 6),\n                equal_area_x_m=round(equal_x, 2),\n                equal_area_y_m=round(equal_y, 2),\n                clear_frac=round(float(joint), 4),\n                water_frac=round(water, 4), corr_red=round(c_red, 4),\n                corr_nir=round(c_nir, 4), nir_std=round(float(hr[3].std()), 1),\n                landscape_class=landscape,\n                geographic_stratum=geography,\n                state_or_ut=state_or_ut,\n                priority_region=region,\n                landcover_year=ESRI_LANDCOVER_YEAR,\n                landcover_source='Esri Impact Observatory Sentinel-2 10m Annual LULC',\n                landcover_service=ESRI_LANDCOVER_SERVICE,\n                worldcover_year=2021,\n                worldcover_source='ESA WorldCover 2021 v200 historical comparison',\n                dem_source='Copernicus DEM GLO-30',\n                **{f'esri2025_{name}_pct': round(value, 4)\n                   for name, value in cover.items()},\n                **{f'wc2021_{name}_pct': round(value, 4)\n                   for name, value in historical_cover.items()},\n                **{name: round(value, 4) for name, value in terrain.items()},\n            )\n            tags = dict(\n                landsat=l_it.id, sentinel=s_it.id,\n                landscape=landscape, landcover='Esri_2025',\n                worldcover_comparison='2021_v200', state_or_ut=state_or_ut,\n            )\n            return dict(\n                ok=True, row=row, preview=(lr, hr), cell=(i, j),\n                low=lr, high=hr, crs=crs, low_transform=lr_tf,\n                high_transform=hr_tf, tags=tags,\n            )\n    except Exception as error:\n        return dict(ok=False, why='read_error', err=str(error)[:160])"
+      }
+    },
+    "raw_zero_test_before_clipping": true,
+    "zero_fraction_tolerance": 0.001,
+    "separate_validity_mask_exported_by_collector": false,
+    "note": "Static source inspection; zero-DN heuristic is not an exhaustive vendor-mask audit."
+  },
+  "source_status": "two_pair_four_band_reproduction_passed",
+  "source_results": [
+    {
+      "pair_id": "LC08_L2SP_147044_20260116_02_T1__43QCF_20260116__5_25",
+      "sensor": "landsat",
+      "asset": "blue",
+      "source_metadata": {
+        "dtype": "uint16",
+        "nodata": 0.0,
+        "scale": 1.0,
+        "offset": 0.0,
+        "raster_bands": [
+          {
+            "scale": 2.75e-05,
+            "nodata": 0,
+            "offset": -0.2,
+            "data_type": "uint16",
+            "spatial_resolution": 30
+          }
+        ]
+      },
+      "raw_array_sha256": "24c49edaf568d7e2b3bb29a3b6a9c0256d3af30333bd43d2a1dd32cc6c54bfda",
+      "release_file_sha256": "ef321470e7ca1afdf7e487c69f54c1bb5bf8a18e1e95dd8ed2b83ea734aec78b",
+      "mismatch_pixels": 0,
+      "raw_zero_pixels": 0,
+      "invalid_before_clipping_pixels": 0,
+      "valid_clipped_zero_pixels": 0,
+      "examples": [
+        {
+          "row": 0,
+          "col": 0,
+          "raw_dn": 9061,
+          "valid_before_clipping": true,
+          "physical_before_clipping": 0.049177499999999985,
+          "expected_stored": 492,
+          "released_stored": 492
+        },
+        {
+          "row": 0,
+          "col": 1,
+          "raw_dn": 9320,
+          "valid_before_clipping": true,
+          "physical_before_clipping": 0.05630000000000002,
+          "expected_stored": 563,
+          "released_stored": 563
+        }
+      ]
+    },
+    {
+      "pair_id": "LC08_L2SP_147044_20260116_02_T1__43QCF_20260116__5_25",
+      "sensor": "landsat",
+      "asset": "green",
+      "source_metadata": {
+        "dtype": "uint16",
+        "nodata": 0.0,
+        "scale": 1.0,
+        "offset": 0.0,
+        "raster_bands": [
+          {
+            "scale": 2.75e-05,
+            "nodata": 0,
+            "offset": -0.2,
+            "data_type": "uint16",
+            "spatial_resolution": 30
+          }
+        ]
+      },
+      "raw_array_sha256": "1595a07dc9a40b0b656961914777498ba32270c9e67b75a91cf1b1a56beac414",
+      "release_file_sha256": "ef321470e7ca1afdf7e487c69f54c1bb5bf8a18e1e95dd8ed2b83ea734aec78b",
+      "mismatch_pixels": 0,
+      "raw_zero_pixels": 0,
+      "invalid_before_clipping_pixels": 0,
+      "valid_clipped_zero_pixels": 0,
+      "examples": [
+        {
+          "row": 0,
+          "col": 0,
+          "raw_dn": 9885,
+          "valid_before_clipping": true,
+          "physical_before_clipping": 0.0718375,
+          "expected_stored": 718,
+          "released_stored": 718
+        },
+        {
+          "row": 0,
+          "col": 1,
+          "raw_dn": 10265,
+          "valid_before_clipping": true,
+          "physical_before_clipping": 0.08228750000000001,
+          "expected_stored": 823,
+          "released_stored": 823
+        }
+      ]
+    },
+    {
+      "pair_id": "LC08_L2SP_147044_20260116_02_T1__43QCF_20260116__5_25",
+      "sensor": "landsat",
+      "asset": "red",
+      "source_metadata": {
+        "dtype": "uint16",
+        "nodata": 0.0,
+        "scale": 1.0,
+        "offset": 0.0,
+        "raster_bands": [
+          {
+            "scale": 2.75e-05,
+            "nodata": 0,
+            "offset": -0.2,
+            "data_type": "uint16",
+            "spatial_resolution": 30
+          }
+        ]
+      },
+      "raw_array_sha256": "a6053d56b4e8752f44f1e8cf57e946751766e62d0b029aecb29cb95551ea0e48",
+      "release_file_sha256": "ef321470e7ca1afdf7e487c69f54c1bb5bf8a18e1e95dd8ed2b83ea734aec78b",
+      "mismatch_pixels": 0,
+      "raw_zero_pixels": 0,
+      "invalid_before_clipping_pixels": 0,
+      "valid_clipped_zero_pixels": 0,
+      "examples": [
+        {
+          "row": 0,
+          "col": 0,
+          "raw_dn": 10564,
+          "valid_before_clipping": true,
+          "physical_before_clipping": 0.09050999999999998,
+          "expected_stored": 905,
+          "released_stored": 905
+        },
+        {
+          "row": 0,
+          "col": 1,
+          "raw_dn": 11343,
+          "valid_before_clipping": true,
+          "physical_before_clipping": 0.11193249999999999,
+          "expected_stored": 1119,
+          "released_stored": 1119
+        }
+      ]
+    },
+    {
+      "pair_id": "LC08_L2SP_147044_20260116_02_T1__43QCF_20260116__5_25",
+      "sensor": "landsat",
+      "asset": "nir08",
+      "source_metadata": {
+        "dtype": "uint16",
+        "nodata": 0.0,
+        "scale": 1.0,
+        "offset": 0.0,
+        "raster_bands": [
+          {
+            "scale": 2.75e-05,
+            "nodata": 0,
+            "offset": -0.2,
+            "data_type": "uint16",
+            "spatial_resolution": 30
+          }
+        ]
+      },
+      "raw_array_sha256": "9cff01800d9fe5445372ad54823720331d4f911cd3f2aa79386dcae71739bc22",
+      "release_file_sha256": "ef321470e7ca1afdf7e487c69f54c1bb5bf8a18e1e95dd8ed2b83ea734aec78b",
+      "mismatch_pixels": 0,
+      "raw_zero_pixels": 0,
+      "invalid_before_clipping_pixels": 0,
+      "valid_clipped_zero_pixels": 0,
+      "examples": [
+        {
+          "row": 0,
+          "col": 0,
+          "raw_dn": 13047,
+          "valid_before_clipping": true,
+          "physical_before_clipping": 0.1587925,
+          "expected_stored": 1588,
+          "released_stored": 1588
+        },
+        {
+          "row": 0,
+          "col": 1,
+          "raw_dn": 14297,
+          "valid_before_clipping": true,
+          "physical_before_clipping": 0.1931675,
+          "expected_stored": 1932,
+          "released_stored": 1932
+        }
+      ]
+    },
+    {
+      "pair_id": "LC08_L2SP_147044_20260116_02_T1__43QCF_20260116__5_25",
+      "sensor": "sentinel",
+      "asset": "B02",
+      "source_metadata": {
+        "dtype": "uint16",
+        "nodata": 0.0,
+        "scale": 1.0,
+        "offset": 0.0,
+        "raster_bands": []
+      },
+      "raw_array_sha256": "862bc6b244d3c2c9f7d9053cabfc8d0f3b6b74106387faf0974e1af6f4a28eb8",
+      "release_file_sha256": "5958427135cdaf206f77c62ecb6815716e3052ce0f8561add5ea65804018572f",
+      "mismatch_pixels": 0,
+      "raw_zero_pixels": 0,
+      "invalid_before_clipping_pixels": 0,
+      "valid_clipped_zero_pixels": 0,
+      "examples": [
+        {
+          "row": 4,
+          "col": 394,
+          "raw_dn": 2021,
+          "valid_before_clipping": true,
+          "physical_before_clipping": 0.1021,
+          "expected_stored": 1021,
+          "released_stored": 1021
+        },
+        {
+          "row": 5,
+          "col": 332,
+          "raw_dn": 2108,
+          "valid_before_clipping": true,
+          "physical_before_clipping": 0.1108,
+          "expected_stored": 1108,
+          "released_stored": 1108
+        }
+      ],
+      "double_offset_mismatch_pixels": 230400
+    },
+    {
+      "pair_id": "LC08_L2SP_147044_20260116_02_T1__43QCF_20260116__5_25",
+      "sensor": "sentinel",
+      "asset": "B03",
+      "source_metadata": {
+        "dtype": "uint16",
+        "nodata": 0.0,
+        "scale": 1.0,
+        "offset": 0.0,
+        "raster_bands": []
+      },
+      "raw_array_sha256": "14a527fc2318ef37eae001615255f822b60bc7d7cc7bb1bebe93d16aafe2dbb9",
+      "release_file_sha256": "5958427135cdaf206f77c62ecb6815716e3052ce0f8561add5ea65804018572f",
+      "mismatch_pixels": 0,
+      "raw_zero_pixels": 0,
+      "invalid_before_clipping_pixels": 0,
+      "valid_clipped_zero_pixels": 0,
+      "examples": [
+        {
+          "row": 0,
+          "col": 5,
+          "raw_dn": 2015,
+          "valid_before_clipping": true,
+          "physical_before_clipping": 0.1015,
+          "expected_stored": 1015,
+          "released_stored": 1015
+        },
+        {
+          "row": 0,
+          "col": 216,
+          "raw_dn": 2037,
+          "valid_before_clipping": true,
+          "physical_before_clipping": 0.1037,
+          "expected_stored": 1037,
+          "released_stored": 1037
+        }
+      ],
+      "double_offset_mismatch_pixels": 230400
+    },
+    {
+      "pair_id": "LC08_L2SP_147044_20260116_02_T1__43QCF_20260116__5_25",
+      "sensor": "sentinel",
+      "asset": "B04",
+      "source_metadata": {
+        "dtype": "uint16",
+        "nodata": 0.0,
+        "scale": 1.0,
+        "offset": 0.0,
+        "raster_bands": []
+      },
+      "raw_array_sha256": "5c5e2e9744e565d6ac7b9864e04ac16712f5aafd0704c1dbcec9c20618e3bf43",
+      "release_file_sha256": "5958427135cdaf206f77c62ecb6815716e3052ce0f8561add5ea65804018572f",
+      "mismatch_pixels": 0,
+      "raw_zero_pixels": 0,
+      "invalid_before_clipping_pixels": 0,
+      "valid_clipped_zero_pixels": 0,
+      "examples": [
+        {
+          "row": 0,
+          "col": 0,
+          "raw_dn": 2031,
+          "valid_before_clipping": true,
+          "physical_before_clipping": 0.1031,
+          "expected_stored": 1031,
+          "released_stored": 1031
+        },
+        {
+          "row": 0,
+          "col": 3,
+          "raw_dn": 2125,
+          "valid_before_clipping": true,
+          "physical_before_clipping": 0.1125,
+          "expected_stored": 1125,
+          "released_stored": 1125
+        }
+      ],
+      "double_offset_mismatch_pixels": 230400
+    },
+    {
+      "pair_id": "LC08_L2SP_147044_20260116_02_T1__43QCF_20260116__5_25",
+      "sensor": "sentinel",
+      "asset": "B08",
+      "source_metadata": {
+        "dtype": "uint16",
+        "nodata": 0.0,
+        "scale": 1.0,
+        "offset": 0.0,
+        "raster_bands": []
+      },
+      "raw_array_sha256": "5312c4146ebdf215b758fac6362b4d5b3485e6e69f66d1ce4ba1acafc413187e",
+      "release_file_sha256": "5958427135cdaf206f77c62ecb6815716e3052ce0f8561add5ea65804018572f",
+      "mismatch_pixels": 0,
+      "raw_zero_pixels": 0,
+      "invalid_before_clipping_pixels": 0,
+      "valid_clipped_zero_pixels": 0,
+      "examples": [
+        {
+          "row": 0,
+          "col": 0,
+          "raw_dn": 2588,
+          "valid_before_clipping": true,
+          "physical_before_clipping": 0.1588,
+          "expected_stored": 1588,
+          "released_stored": 1588
+        },
+        {
+          "row": 0,
+          "col": 1,
+          "raw_dn": 2314,
+          "valid_before_clipping": true,
+          "physical_before_clipping": 0.1314,
+          "expected_stored": 1314,
+          "released_stored": 1314
+        }
+      ],
+      "double_offset_mismatch_pixels": 230400
+    },
+    {
+      "pair_id": "LC08_L2SP_139043_20251207_02_T1__45RVH_20251207__6_21",
+      "sensor": "landsat",
+      "asset": "blue",
+      "source_metadata": {
+        "dtype": "uint16",
+        "nodata": 0.0,
+        "scale": 1.0,
+        "offset": 0.0,
+        "raster_bands": [
+          {
+            "scale": 2.75e-05,
+            "nodata": 0,
+            "offset": -0.2,
+            "data_type": "uint16",
+            "spatial_resolution": 30
+          }
+        ]
+      },
+      "raw_array_sha256": "23d1d308f83859584c1645baa9787577ed3b519fb93368c96a89d062e15ae2db",
+      "release_file_sha256": "ab4b84b14eaf384f4ce07cc4909a636e258cdaa733f72dde18454386007235a9",
+      "mismatch_pixels": 0,
+      "raw_zero_pixels": 0,
+      "invalid_before_clipping_pixels": 0,
+      "valid_clipped_zero_pixels": 0,
+      "examples": [
+        {
+          "row": 0,
+          "col": 0,
+          "raw_dn": 8723,
+          "valid_before_clipping": true,
+          "physical_before_clipping": 0.03988249999999999,
+          "expected_stored": 399,
+          "released_stored": 399
+        },
+        {
+          "row": 0,
+          "col": 1,
+          "raw_dn": 8768,
+          "valid_before_clipping": true,
+          "physical_before_clipping": 0.04111999999999999,
+          "expected_stored": 411,
+          "released_stored": 411
+        }
+      ]
+    },
+    {
+      "pair_id": "LC08_L2SP_139043_20251207_02_T1__45RVH_20251207__6_21",
+      "sensor": "landsat",
+      "asset": "green",
+      "source_metadata": {
+        "dtype": "uint16",
+        "nodata": 0.0,
+        "scale": 1.0,
+        "offset": 0.0,
+        "raster_bands": [
+          {
+            "scale": 2.75e-05,
+            "nodata": 0,
+            "offset": -0.2,
+            "data_type": "uint16",
+            "spatial_resolution": 30
+          }
+        ]
+      },
+      "raw_array_sha256": "0f1d5562d9ce49b8c6e1e8111a4d22574dda4c101a205da9043efa36aedb7664",
+      "release_file_sha256": "ab4b84b14eaf384f4ce07cc4909a636e258cdaa733f72dde18454386007235a9",
+      "mismatch_pixels": 0,
+      "raw_zero_pixels": 0,
+      "invalid_before_clipping_pixels": 0,
+      "valid_clipped_zero_pixels": 0,
+      "examples": [
+        {
+          "row": 0,
+          "col": 0,
+          "raw_dn": 10021,
+          "valid_before_clipping": true,
+          "physical_before_clipping": 0.07557750000000002,
+          "expected_stored": 756,
+          "released_stored": 756
+        },
+        {
+          "row": 0,
+          "col": 1,
+          "raw_dn": 10034,
+          "valid_before_clipping": true,
+          "physical_before_clipping": 0.07593499999999997,
+          "expected_stored": 759,
+          "released_stored": 759
+        }
+      ]
+    },
+    {
+      "pair_id": "LC08_L2SP_139043_20251207_02_T1__45RVH_20251207__6_21",
+      "sensor": "landsat",
+      "asset": "red",
+      "source_metadata": {
+        "dtype": "uint16",
+        "nodata": 0.0,
+        "scale": 1.0,
+        "offset": 0.0,
+        "raster_bands": [
+          {
+            "scale": 2.75e-05,
+            "nodata": 0,
+            "offset": -0.2,
+            "data_type": "uint16",
+            "spatial_resolution": 30
+          }
+        ]
+      },
+      "raw_array_sha256": "f54eeab17527ac1584172a848c8dce0703e03105b6d97bf454806ff676c44046",
+      "release_file_sha256": "ab4b84b14eaf384f4ce07cc4909a636e258cdaa733f72dde18454386007235a9",
+      "mismatch_pixels": 0,
+      "raw_zero_pixels": 0,
+      "invalid_before_clipping_pixels": 0,
+      "valid_clipped_zero_pixels": 0,
+      "examples": [
+        {
+          "row": 0,
+          "col": 0,
+          "raw_dn": 10228,
+          "valid_before_clipping": true,
+          "physical_before_clipping": 0.08127000000000001,
+          "expected_stored": 813,
+          "released_stored": 813
+        },
+        {
+          "row": 0,
+          "col": 1,
+          "raw_dn": 10239,
+          "valid_before_clipping": true,
+          "physical_before_clipping": 0.08157249999999999,
+          "expected_stored": 816,
+          "released_stored": 816
+        }
+      ]
+    },
+    {
+      "pair_id": "LC08_L2SP_139043_20251207_02_T1__45RVH_20251207__6_21",
+      "sensor": "landsat",
+      "asset": "nir08",
+      "source_metadata": {
+        "dtype": "uint16",
+        "nodata": 0.0,
+        "scale": 1.0,
+        "offset": 0.0,
+        "raster_bands": [
+          {
+            "scale": 2.75e-05,
+            "nodata": 0,
+            "offset": -0.2,
+            "data_type": "uint16",
+            "spatial_resolution": 30
+          }
+        ]
+      },
+      "raw_array_sha256": "be24db35c27fc90ef8c15056c398c78155435744b417bd7e2ab031a033d84301",
+      "release_file_sha256": "ab4b84b14eaf384f4ce07cc4909a636e258cdaa733f72dde18454386007235a9",
+      "mismatch_pixels": 0,
+      "raw_zero_pixels": 0,
+      "invalid_before_clipping_pixels": 0,
+      "valid_clipped_zero_pixels": 0,
+      "examples": [
+        {
+          "row": 0,
+          "col": 0,
+          "raw_dn": 16334,
+          "valid_before_clipping": true,
+          "physical_before_clipping": 0.249185,
+          "expected_stored": 2492,
+          "released_stored": 2492
+        },
+        {
+          "row": 0,
+          "col": 1,
+          "raw_dn": 16851,
+          "valid_before_clipping": true,
+          "physical_before_clipping": 0.2634025,
+          "expected_stored": 2634,
+          "released_stored": 2634
+        }
+      ]
+    },
+    {
+      "pair_id": "LC08_L2SP_139043_20251207_02_T1__45RVH_20251207__6_21",
+      "sensor": "sentinel",
+      "asset": "B02",
+      "source_metadata": {
+        "dtype": "uint16",
+        "nodata": 0.0,
+        "scale": 1.0,
+        "offset": 0.0,
+        "raster_bands": []
+      },
+      "raw_array_sha256": "0b782aace50c5e31bffca7735c6f4abb94ebba26a7c28d31f787c9a9b03b7bb1",
+      "release_file_sha256": "45b82b86caa17160c30dfafe37e87eb3b540911997335ec8a1f580047bf0456a",
+      "mismatch_pixels": 0,
+      "raw_zero_pixels": 0,
+      "invalid_before_clipping_pixels": 0,
+      "valid_clipped_zero_pixels": 0,
+      "examples": [
+        {
+          "row": 0,
+          "col": 355,
+          "raw_dn": 2037,
+          "valid_before_clipping": true,
+          "physical_before_clipping": 0.1037,
+          "expected_stored": 1037,
+          "released_stored": 1037
+        },
+        {
+          "row": 0,
+          "col": 356,
+          "raw_dn": 2154,
+          "valid_before_clipping": true,
+          "physical_before_clipping": 0.1154,
+          "expected_stored": 1154,
+          "released_stored": 1154
+        }
+      ],
+      "double_offset_mismatch_pixels": 230400
+    },
+    {
+      "pair_id": "LC08_L2SP_139043_20251207_02_T1__45RVH_20251207__6_21",
+      "sensor": "sentinel",
+      "asset": "B03",
+      "source_metadata": {
+        "dtype": "uint16",
+        "nodata": 0.0,
+        "scale": 1.0,
+        "offset": 0.0,
+        "raster_bands": []
+      },
+      "raw_array_sha256": "6eb46e5a51754fdfb7be4f24662951c5c328f515c4e3e190cbb1bb577c161894",
+      "release_file_sha256": "45b82b86caa17160c30dfafe37e87eb3b540911997335ec8a1f580047bf0456a",
+      "mismatch_pixels": 0,
+      "raw_zero_pixels": 0,
+      "invalid_before_clipping_pixels": 0,
+      "valid_clipped_zero_pixels": 0,
+      "examples": [
+        {
+          "row": 0,
+          "col": 0,
+          "raw_dn": 2011,
+          "valid_before_clipping": true,
+          "physical_before_clipping": 0.1011,
+          "expected_stored": 1011,
+          "released_stored": 1011
+        },
+        {
+          "row": 0,
+          "col": 8,
+          "raw_dn": 2048,
+          "valid_before_clipping": true,
+          "physical_before_clipping": 0.1048,
+          "expected_stored": 1048,
+          "released_stored": 1048
+        }
+      ],
+      "double_offset_mismatch_pixels": 230400
+    },
+    {
+      "pair_id": "LC08_L2SP_139043_20251207_02_T1__45RVH_20251207__6_21",
+      "sensor": "sentinel",
+      "asset": "B04",
+      "source_metadata": {
+        "dtype": "uint16",
+        "nodata": 0.0,
+        "scale": 1.0,
+        "offset": 0.0,
+        "raster_bands": []
+      },
+      "raw_array_sha256": "06e1e9b7bc49ed5687e3d7de983f5f0adfee9675819fc0b05773e0b5d584da26",
+      "release_file_sha256": "45b82b86caa17160c30dfafe37e87eb3b540911997335ec8a1f580047bf0456a",
+      "mismatch_pixels": 0,
+      "raw_zero_pixels": 0,
+      "invalid_before_clipping_pixels": 0,
+      "valid_clipped_zero_pixels": 0,
+      "examples": [
+        {
+          "row": 0,
+          "col": 0,
+          "raw_dn": 2156,
+          "valid_before_clipping": true,
+          "physical_before_clipping": 0.1156,
+          "expected_stored": 1156,
+          "released_stored": 1156
+        },
+        {
+          "row": 0,
+          "col": 1,
+          "raw_dn": 2090,
+          "valid_before_clipping": true,
+          "physical_before_clipping": 0.109,
+          "expected_stored": 1090,
+          "released_stored": 1090
+        }
+      ],
+      "double_offset_mismatch_pixels": 230400
+    },
+    {
+      "pair_id": "LC08_L2SP_139043_20251207_02_T1__45RVH_20251207__6_21",
+      "sensor": "sentinel",
+      "asset": "B08",
+      "source_metadata": {
+        "dtype": "uint16",
+        "nodata": 0.0,
+        "scale": 1.0,
+        "offset": 0.0,
+        "raster_bands": []
+      },
+      "raw_array_sha256": "c0fbe32be24c64c911727193b7c30a47afb1ec87450d05fbc35c577d7cec024f",
+      "release_file_sha256": "45b82b86caa17160c30dfafe37e87eb3b540911997335ec8a1f580047bf0456a",
+      "mismatch_pixels": 0,
+      "raw_zero_pixels": 0,
+      "invalid_before_clipping_pixels": 0,
+      "valid_clipped_zero_pixels": 0,
+      "examples": [
+        {
+          "row": 0,
+          "col": 0,
+          "raw_dn": 3612,
+          "valid_before_clipping": true,
+          "physical_before_clipping": 0.2612,
+          "expected_stored": 2612,
+          "released_stored": 2612
+        },
+        {
+          "row": 0,
+          "col": 1,
+          "raw_dn": 3576,
+          "valid_before_clipping": true,
+          "physical_before_clipping": 0.2576,
+          "expected_stored": 2576,
+          "released_stored": 2576
+        }
+      ],
+      "double_offset_mismatch_pixels": 230400
+    }
+  ],
+  "remaining": "No full-release vendor-mask audit or persistent per-pixel validity masks established.",
+  "selected_pair_ids": [
+    "LC08_L2SP_147044_20260116_02_T1__43QCF_20260116__5_25",
+    "LC08_L2SP_139043_20251207_02_T1__45RVH_20251207__6_21"
+  ]
+}
