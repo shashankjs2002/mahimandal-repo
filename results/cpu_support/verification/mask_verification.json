@@ -1,0 +1,21 @@
+{
+  "manifest_sha256": "6bf97403ee40ccf0cbd38b2e6e4932e01973e5d00e211e0acfb1e0b810efc5e7",
+  "mask_inventory_sha256": "9aafc4a8f1158433df749e4d2d3de334c6f6164a26be339fce947aca4b71246d",
+  "script_sha256": "27a7ec4a3153f1bdbec58f2a1c0b82fbd1533418f81c6af1dc19a29f4c09701e",
+  "verified_files": 410,
+  "affected_pairs": 404,
+  "native_pixel_counts": {
+    "landsat": 148,
+    "sentinel": 4540
+  },
+  "affected_pairs_by_split": {
+    "train": 266,
+    "test": 80,
+    "val": 58
+  },
+  "all_inventory_hashes_and_source_grids_match": true,
+  "semantics": "1 identifies source fill recovered by the prior audit. 0 means no fill identified. These are not exhaustive QA/SCL or saturation masks.",
+  "hr_union_rule": "Nearest-neighbour 3x expansion of the Landsat mask, union with the Sentinel mask where present; count locations once per pair.",
+  "scope": "Only inventory-listed identified-fill masks are verified; absent files do not establish universally valid pixels.",
+  "original_images_masks_and_scores_modified": false
+}

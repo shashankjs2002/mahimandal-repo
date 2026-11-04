@@ -14,9 +14,15 @@
   failures and blank manual-review forms; not manually confirmed ground control.
 - Other audit folders record auxiliary-label provenance, OLI preprocessing and
   strict source-disjoint split feasibility.
+- `benchmark_three_seed/`: the archived per-image scores, metric means and
+  training receipts for seeds 42/43/44 used in the primary paper tables.
+- `cpu_support/`: paired model comparisons, equal-block and leave-one-block-out
+  summaries, plus verification of archived means and companion masks.
+- `audits/identified_fill_masks_v1/`: 410 georeferenced identified-fill masks
+  for 404 pairs, with their original inventory and explicit mask semantics.
 
-Numerical scores are archived observations, not fresh inference. File-source
-records document the fixed-baseline row filtering of mixed exports. Raw remote
+Numerical scores are archived observations, not fresh inference. Mixed exports
+were restricted to fixed-baseline rows without changing metric values. Raw remote
 service-response caches, full-resolution predictions and model states are not
 included. Retain the full evidence deposit for those larger artifacts.
 

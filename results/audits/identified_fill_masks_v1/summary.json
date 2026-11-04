@@ -1,0 +1,3292 @@
+{
+  "complete": true,
+  "mask_files": 410,
+  "distinct_pairs": 404,
+  "manifest_sha256": "6bf97403ee40ccf0cbd38b2e6e4932e01973e5d00e211e0acfb1e0b810efc5e7",
+  "source_checkpoint_sha256": "31efb40e754debdcbb44084e6d1d59635befa942ee04296f407aabc8d5dec857",
+  "script_sha256": "726d6a8ece230026d6ea9989f0ca12b81ac21be5131f6d99ea22e4dc775d6348",
+  "original_rasters_and_metric_masks_modified": false,
+  "semantics": "1 identified fill; 0 no fill identified; not a claim of all-source validity",
+  "files": [
+    {
+      "pair_id": "LC08_L2SP_141043_20251205_02_T1__44QQM_20251205__2_34",
+      "sensor": "sentinel",
+      "split": "train",
+      "pixels_identified": 20,
+      "path": "masks/train/sentinel/LC08_L2SP_141043_20251205_02_T1__44QQM_20251205__2_34.tif",
+      "sha256": "4ed8a015d9f5571efb5091b53a75af674714e4ff7826d5de7d1ab004762f1c99"
+    },
+    {
+      "pair_id": "LC08_L2SP_141043_20260514_02_T1__44RQN_20260514__10_24",
+      "sensor": "sentinel",
+      "split": "train",
+      "pixels_identified": 5,
+      "path": "masks/train/sentinel/LC08_L2SP_141043_20260514_02_T1__44RQN_20260514__10_24.tif",
+      "sha256": "8b8205d8a4f0b49d645e896d6a6ff30a4d15035eb2c8806d60983fafc090cb8c"
+    },
+    {
+      "pair_id": "LC08_L2SP_141043_20260514_02_T1__44RRN_20260514__12_28",
+      "sensor": "sentinel",
+      "split": "train",
+      "pixels_identified": 3,
+      "path": "masks/train/sentinel/LC08_L2SP_141043_20260514_02_T1__44RRN_20260514__12_28.tif",
+      "sha256": "7493caaf7a79ee3bc59dad177e7f4381980e13e715e9780b27f42d8ce199509e"
+    },
+    {
+      "pair_id": "LC08_L2SP_141043_20260514_02_T1__44RRN_20260514__15_27",
+      "sensor": "sentinel",
+      "split": "train",
+      "pixels_identified": 3,
+      "path": "masks/train/sentinel/LC08_L2SP_141043_20260514_02_T1__44RRN_20260514__15_27.tif",
+      "sha256": "00e793c92d96543a557a2a08581d8ebc9d9ba4553120a2c2b4fe83df643a1fbf"
+    },
+    {
+      "pair_id": "LC08_L2SP_141043_20260514_02_T1__44RRN_20260514__17_27",
+      "sensor": "sentinel",
+      "split": "train",
+      "pixels_identified": 2,
+      "path": "masks/train/sentinel/LC08_L2SP_141043_20260514_02_T1__44RRN_20260514__17_27.tif",
+      "sha256": "546e7575887a7822a328391271331ab90be63cf9b8169eeb53abe12cba020081"
+    },
+    {
+      "pair_id": "LC08_L2SP_141043_20260514_02_T1__44RRN_20260514__20_29",
+      "sensor": "sentinel",
+      "split": "train",
+      "pixels_identified": 7,
+      "path": "masks/train/sentinel/LC08_L2SP_141043_20260514_02_T1__44RRN_20260514__20_29.tif",
+      "sha256": "91930f768b1173690a76d326bb9e6c02822be9f20bd1e20957aabf04dfd6a6c9"
+    },
+    {
+      "pair_id": "LC08_L2SP_141043_20260514_02_T1__44RRN_20260514__21_26",
+      "sensor": "sentinel",
+      "split": "train",
+      "pixels_identified": 1,
+      "path": "masks/train/sentinel/LC08_L2SP_141043_20260514_02_T1__44RRN_20260514__21_26.tif",
+      "sha256": "b56b5b617863a0128dd6210af6a1b6ac36b1b7d53f11bc2f377d79fdc76a37cc"
+    },
+    {
+      "pair_id": "LC08_L2SP_141043_20260514_02_T1__44RRN_20260514__23_25",
+      "sensor": "sentinel",
+      "split": "train",
+      "pixels_identified": 9,
+      "path": "masks/train/sentinel/LC08_L2SP_141043_20260514_02_T1__44RRN_20260514__23_25.tif",
+      "sha256": "2f49f5a3314b4aaf41873d350794054d5ab1d88e6013ae705eb62592d5933628"
+    },
+    {
+      "pair_id": "LC08_L2SP_141043_20260514_02_T1__45RTH_20260514__17_15",
+      "sensor": "sentinel",
+      "split": "test",
+      "pixels_identified": 62,
+      "path": "masks/test/sentinel/LC08_L2SP_141043_20260514_02_T1__45RTH_20260514__17_15.tif",
+      "sha256": "ff73710036c460108b5050cee95797444229972ff6e93b8a5bbabff00e800be5"
+    },
+    {
+      "pair_id": "LC08_L2SP_142044_20260419_02_T1__44QPK_20260419__11_39",
+      "sensor": "sentinel",
+      "split": "train",
+      "pixels_identified": 1,
+      "path": "masks/train/sentinel/LC08_L2SP_142044_20260419_02_T1__44QPK_20260419__11_39.tif",
+      "sha256": "85d5138c3fed00c4bdfb6c424e772542288e65e553e1d206d23ce72334977154"
+    },
+    {
+      "pair_id": "LC08_L2SP_142049_20260606_02_T1__44QMD_20260606__7_15",
+      "sensor": "sentinel",
+      "split": "train",
+      "pixels_identified": 1,
+      "path": "masks/train/sentinel/LC08_L2SP_142049_20260606_02_T1__44QMD_20260606__7_15.tif",
+      "sha256": "751aa2b4321d35fbb924be02257d1fe258bd1046d6de18d291e0469bee2aadf1"
+    },
+    {
+      "pair_id": "LC08_L2SP_143041_20260512_02_T1__44RPQ_20260512__25_34",
+      "sensor": "sentinel",
+      "split": "train",
+      "pixels_identified": 2,
+      "path": "masks/train/sentinel/LC08_L2SP_143041_20260512_02_T1__44RPQ_20260512__25_34.tif",
+      "sha256": "22f8ce7c8274abce873fde940e5736799b58605dd6c6223c0b2564e18bd8d5a9"
+    },
+    {
+      "pair_id": "LC08_L2SP_143042_20260512_02_T1__44RPP_20260512__29_40",
+      "sensor": "sentinel",
+      "split": "train",
+      "pixels_identified": 22,
+      "path": "masks/train/sentinel/LC08_L2SP_143042_20260512_02_T1__44RPP_20260512__29_40.tif",
+      "sha256": "86e00b55302c24937afe65ff7501e9770b715067f7f0b520fb09e2ade184c2db"
+    },
+    {
+      "pair_id": "LC08_L2SP_143043_20251203_02_T1__44RNP_20251203__25_7",
+      "sensor": "sentinel",
+      "split": "train",
+      "pixels_identified": 41,
+      "path": "masks/train/sentinel/LC08_L2SP_143043_20251203_02_T1__44RNP_20251203__25_7.tif",
+      "sha256": "96b17060217dd9ddf11f2bd819dd866415904c3325fdfcd44be55ff2e2c9320a"
+    },
+    {
+      "pair_id": "LC08_L2SP_143043_20260512_02_T1__44RPN_20260512__41_25",
+      "sensor": "sentinel",
+      "split": "train",
+      "pixels_identified": 2,
+      "path": "masks/train/sentinel/LC08_L2SP_143043_20260512_02_T1__44RPN_20260512__41_25.tif",
+      "sha256": "fc3b5ce7cae3a6863d6dc8f873b18fedfd366d27cc4ac055d006365e3b0adf7a"
+    },
+    {
+      "pair_id": "LC08_L2SP_143043_20260512_02_T1__44RPN_20260512__42_25",
+      "sensor": "sentinel",
+      "split": "train",
+      "pixels_identified": 1,
+      "path": "masks/train/sentinel/LC08_L2SP_143043_20260512_02_T1__44RPN_20260512__42_25.tif",
+      "sha256": "97e14e4bb03427c1719a6703b454ce926147cc02627927abd919de439e5a0230"
+    },
+    {
+      "pair_id": "LC08_L2SP_143044_20251203_02_T1__44QMK_20251203__12_37",
+      "sensor": "sentinel",
+      "split": "train",
+      "pixels_identified": 9,
+      "path": "masks/train/sentinel/LC08_L2SP_143044_20251203_02_T1__44QMK_20251203__12_37.tif",
+      "sha256": "ac277e986de0f47b6367e2662ad5f15432df0697c7248a33f4b987e83f83486c"
+    },
+    {
+      "pair_id": "LC08_L2SP_143044_20251203_02_T1__44QMK_20251203__19_40",
+      "sensor": "sentinel",
+      "split": "train",
+      "pixels_identified": 3,
+      "path": "masks/train/sentinel/LC08_L2SP_143044_20251203_02_T1__44QMK_20251203__19_40.tif",
+      "sha256": "fa3468f8af658021bb77b9897bf8de8177e77c9df6a496d435a8ad871c870a6a"
+    },
+    {
+      "pair_id": "LC08_L2SP_143044_20251203_02_T1__44QMK_20251203__19_41",
+      "sensor": "sentinel",
+      "split": "train",
+      "pixels_identified": 3,
+      "path": "masks/train/sentinel/LC08_L2SP_143044_20251203_02_T1__44QMK_20251203__19_41.tif",
+      "sha256": "ea1a621f8e44d8b4df78042477f43e955f811ff4bfaa4287b28c94dccb47a433"
+    },
+    {
+      "pair_id": "LC08_L2SP_143044_20251203_02_T1__44QMK_20251203__20_38",
+      "sensor": "sentinel",
+      "split": "train",
+      "pixels_identified": 6,
+      "path": "masks/train/sentinel/LC08_L2SP_143044_20251203_02_T1__44QMK_20251203__20_38.tif",
+      "sha256": "3c5100794f1159a97cca261f19945c7093aa08cf4214a1de1c27e52be93db97b"
+    },
+    {
+      "pair_id": "LC08_L2SP_143044_20251203_02_T1__44QMK_20251203__20_39",
+      "sensor": "sentinel",
+      "split": "train",
+      "pixels_identified": 11,
+      "path": "masks/train/sentinel/LC08_L2SP_143044_20251203_02_T1__44QMK_20251203__20_39.tif",
+      "sha256": "1185e6cf4bb83e621044f5cbd97d1736915691c0c718743fbc55f50dbae9b32b"
+    },
+    {
+      "pair_id": "LC08_L2SP_143044_20251203_02_T1__44QMK_20251203__21_36",
+      "sensor": "sentinel",
+      "split": "train",
+      "pixels_identified": 6,
+      "path": "masks/train/sentinel/LC08_L2SP_143044_20251203_02_T1__44QMK_20251203__21_36.tif",
+      "sha256": "2482e041881985a3d28d0e1d87e530e727e637051bcc408c838bcde414240bc5"
+    },
+    {
+      "pair_id": "LC08_L2SP_143046_20251203_02_T1__44QLG_20251203__10_35",
+      "sensor": "landsat",
+      "split": "train",
+      "pixels_identified": 1,
+      "path": "masks/train/landsat/LC08_L2SP_143046_20251203_02_T1__44QLG_20251203__10_35.tif",
+      "sha256": "866502eeb4d7c8308f900326f6f78af6e595b092dce4508fb267e15a63735362"
+    },
+    {
+      "pair_id": "LC08_L2SP_143049_20260221_02_T1__43QHU_20260221__8_12",
+      "sensor": "sentinel",
+      "split": "train",
+      "pixels_identified": 11,
+      "path": "masks/train/sentinel/LC08_L2SP_143049_20260221_02_T1__43QHU_20260221__8_12.tif",
+      "sha256": "9bef2ec74b399b1a7f11c3680d5c6c3647d7503ed16f98c16b43869a0abe20ea"
+    },
+    {
+      "pair_id": "LC08_L2SP_143049_20260221_02_T1__44QKD_20260221__17_16",
+      "sensor": "sentinel",
+      "split": "train",
+      "pixels_identified": 15,
+      "path": "masks/train/sentinel/LC08_L2SP_143049_20260221_02_T1__44QKD_20260221__17_16.tif",
+      "sha256": "15062e2416849abb0368cfc8f61861545a15e778e28662b9ab50f5548fb0c356"
+    },
+    {
+      "pair_id": "LC08_L2SP_143049_20260221_02_T1__44QKD_20260221__18_12",
+      "sensor": "sentinel",
+      "split": "train",
+      "pixels_identified": 1,
+      "path": "masks/train/sentinel/LC08_L2SP_143049_20260221_02_T1__44QKD_20260221__18_12.tif",
+      "sha256": "1999d4aa54eb42b765a3cded9f70e9c8f1d9a07856d99a20e7464ec8bef8a974"
+    },
+    {
+      "pair_id": "LC08_L2SP_143050_20250914_02_T1__44PKB_20250914__10_23",
+      "sensor": "sentinel",
+      "split": "train",
+      "pixels_identified": 9,
+      "path": "masks/train/sentinel/LC08_L2SP_143050_20250914_02_T1__44PKB_20250914__10_23.tif",
+      "sha256": "c5d7627f420c6ff759fc6839b0d7d5a7b7038ef104303eff095afaef96579b3a"
+    },
+    {
+      "pair_id": "LC08_L2SP_143052_20250914_02_T1__44PLU_20250914__41_12",
+      "sensor": "sentinel",
+      "split": "train",
+      "pixels_identified": 1,
+      "path": "masks/train/sentinel/LC08_L2SP_143052_20250914_02_T1__44PLU_20250914__41_12.tif",
+      "sha256": "dce1da6c0dbee28337175ecf27177a20998ee807307143af328eac9cf14f4a02"
+    },
+    {
+      "pair_id": "LC08_L2SP_144040_20260127_02_T1__44RNR_20260127__28_45",
+      "sensor": "sentinel",
+      "split": "train",
+      "pixels_identified": 11,
+      "path": "masks/train/sentinel/LC08_L2SP_144040_20260127_02_T1__44RNR_20260127__28_45.tif",
+      "sha256": "6137ed406b6372c9f2e1339097b4337e0de3daa66d4a846cd8e4ac52110bacd3"
+    },
+    {
+      "pair_id": "LC08_L2SP_144045_20260127_02_T1__43QHD_20260127__12_40",
+      "sensor": "sentinel",
+      "split": "train",
+      "pixels_identified": 77,
+      "path": "masks/train/sentinel/LC08_L2SP_144045_20260127_02_T1__43QHD_20260127__12_40.tif",
+      "sha256": "0c9010c2bafbdfdcad7a67616ce8e92db5c7a79c344be12387033b826f551752"
+    },
+    {
+      "pair_id": "LC08_L2SP_144045_20260127_02_T1__43QHD_20260127__15_38",
+      "sensor": "sentinel",
+      "split": "train",
+      "pixels_identified": 23,
+      "path": "masks/train/sentinel/LC08_L2SP_144045_20260127_02_T1__43QHD_20260127__15_38.tif",
+      "sha256": "e1eac022b2216d672e8253f9f4f2f0917fb2ccebec04bd5f721d34e9b6b12dbf"
+    },
+    {
+      "pair_id": "LC08_L2SP_144045_20260127_02_T1__44QKJ_20260127__11_38",
+      "sensor": "sentinel",
+      "split": "train",
+      "pixels_identified": 12,
+      "path": "masks/train/sentinel/LC08_L2SP_144045_20260127_02_T1__44QKJ_20260127__11_38.tif",
+      "sha256": "727f4a65cd470625109621d595d871046a5dd8f755471b04c339e15211d2ade3"
+    },
+    {
+      "pair_id": "LC08_L2SP_144045_20260127_02_T1__44QKJ_20260127__11_40",
+      "sensor": "sentinel",
+      "split": "train",
+      "pixels_identified": 40,
+      "path": "masks/train/sentinel/LC08_L2SP_144045_20260127_02_T1__44QKJ_20260127__11_40.tif",
+      "sha256": "ed0b20f29023000183f85a8b7ddde6634f86c6ffd24d6871d9ddef8e11ab0cae"
+    },
+    {
+      "pair_id": "LC08_L2SP_144045_20260127_02_T1__44QKJ_20260127__12_39",
+      "sensor": "sentinel",
+      "split": "train",
+      "pixels_identified": 49,
+      "path": "masks/train/sentinel/LC08_L2SP_144045_20260127_02_T1__44QKJ_20260127__12_39.tif",
+      "sha256": "968a7de57a57e090f35522e640aa3ec1803f7a7e934c55f63056b2a08fbea2ff"
+    },
+    {
+      "pair_id": "LC08_L2SP_144045_20260127_02_T1__44QKJ_20260127__15_39",
+      "sensor": "sentinel",
+      "split": "train",
+      "pixels_identified": 30,
+      "path": "masks/train/sentinel/LC08_L2SP_144045_20260127_02_T1__44QKJ_20260127__15_39.tif",
+      "sha256": "28a7bd55062d065e1df7e0d2e112aa7509e6177c92ca83ee8b459a48c34b9987"
+    },
+    {
+      "pair_id": "LC08_L2SP_144045_20260127_02_T1__44QLK_20260127__33_19",
+      "sensor": "sentinel",
+      "split": "train",
+      "pixels_identified": 1,
+      "path": "masks/train/sentinel/LC08_L2SP_144045_20260127_02_T1__44QLK_20260127__33_19.tif",
+      "sha256": "8eecfee657c61bb170895480bfd9bb787240792a7920e14d379e1febf13868e6"
+    },
+    {
+      "pair_id": "LC08_L2SP_144045_20260604_02_T1__44QKK_20260604__11_19",
+      "sensor": "sentinel",
+      "split": "train",
+      "pixels_identified": 2,
+      "path": "masks/train/sentinel/LC08_L2SP_144045_20260604_02_T1__44QKK_20260604__11_19.tif",
+      "sha256": "8a987335aca6911c6fba9a4e64854c0d292e4dd6d6a3336307cdb213e11ca6fb"
+    },
+    {
+      "pair_id": "LC08_L2SP_144045_20260604_02_T1__44QKK_20260604__13_19",
+      "sensor": "sentinel",
+      "split": "train",
+      "pixels_identified": 1,
+      "path": "masks/train/sentinel/LC08_L2SP_144045_20260604_02_T1__44QKK_20260604__13_19.tif",
+      "sha256": "be0f3d2e7d46b8117a30640f4c2ea695c405c1ec0f633eb9976654711182462b"
+    },
+    {
+      "pair_id": "LC08_L2SP_144045_20260604_02_T1__44QKK_20260604__14_23",
+      "sensor": "sentinel",
+      "split": "train",
+      "pixels_identified": 2,
+      "path": "masks/train/sentinel/LC08_L2SP_144045_20260604_02_T1__44QKK_20260604__14_23.tif",
+      "sha256": "86b7b157f22fb1c14c2f422228cea651bffd49755e651f1f58e14cbec4403ed0"
+    },
+    {
+      "pair_id": "LC08_L2SP_144045_20260604_02_T1__44QKK_20260604__14_7",
+      "sensor": "sentinel",
+      "split": "train",
+      "pixels_identified": 1,
+      "path": "masks/train/sentinel/LC08_L2SP_144045_20260604_02_T1__44QKK_20260604__14_7.tif",
+      "sha256": "b4cbe74e12846db4d400afe5f909c7335e64f7794c399292fb8846f9a6ae6143"
+    },
+    {
+      "pair_id": "LC08_L2SP_144045_20260604_02_T1__44QKK_20260604__19_22",
+      "sensor": "sentinel",
+      "split": "train",
+      "pixels_identified": 1,
+      "path": "masks/train/sentinel/LC08_L2SP_144045_20260604_02_T1__44QKK_20260604__19_22.tif",
+      "sha256": "05ab7a3eeff96c88ba3d4ee572416877732349a56b804e93ad8900d238e51da2"
+    },
+    {
+      "pair_id": "LC08_L2SP_144046_20260127_02_T1__43QHC_20260127__17_25",
+      "sensor": "sentinel",
+      "split": "train",
+      "pixels_identified": 38,
+      "path": "masks/train/sentinel/LC08_L2SP_144046_20260127_02_T1__43QHC_20260127__17_25.tif",
+      "sha256": "1b92c00190bfac800be56f11ce9587a0e1629cd0c63db1902aa763203ee0f964"
+    },
+    {
+      "pair_id": "LC08_L2SP_144046_20260127_02_T1__43QHC_20260127__17_28",
+      "sensor": "sentinel",
+      "split": "train",
+      "pixels_identified": 28,
+      "path": "masks/train/sentinel/LC08_L2SP_144046_20260127_02_T1__43QHC_20260127__17_28.tif",
+      "sha256": "ae77c6497d83b78d4d087ab5de0f0ba2463c0dec06d6759dd8ed597dd95b7b3d"
+    },
+    {
+      "pair_id": "LC08_L2SP_144046_20260127_02_T1__43QHC_20260127__19_26",
+      "sensor": "sentinel",
+      "split": "train",
+      "pixels_identified": 26,
+      "path": "masks/train/sentinel/LC08_L2SP_144046_20260127_02_T1__43QHC_20260127__19_26.tif",
+      "sha256": "5cfe25f1725daf3348e46abdfc3b22992666f42f8a33a7631d655538539e52b9"
+    },
+    {
+      "pair_id": "LC08_L2SP_144046_20260127_02_T1__43QHD_20260127__23_9",
+      "sensor": "sentinel",
+      "split": "train",
+      "pixels_identified": 40,
+      "path": "masks/train/sentinel/LC08_L2SP_144046_20260127_02_T1__43QHD_20260127__23_9.tif",
+      "sha256": "f4bcce32d0a83284adae451687e3b470bf3f583e01f4c61b834b056d58302ee5"
+    },
+    {
+      "pair_id": "LC08_L2SP_144046_20260127_02_T1__44QKG_20260127__18_43",
+      "sensor": "sentinel",
+      "split": "train",
+      "pixels_identified": 2,
+      "path": "masks/train/sentinel/LC08_L2SP_144046_20260127_02_T1__44QKG_20260127__18_43.tif",
+      "sha256": "ce825ae0c1f1d5c38879a501d182c424ed3556fed99305422cdb640164bc9ee6"
+    },
+    {
+      "pair_id": "LC08_L2SP_144046_20260127_02_T1__44QKH_20260127__15_32",
+      "sensor": "sentinel",
+      "split": "train",
+      "pixels_identified": 28,
+      "path": "masks/train/sentinel/LC08_L2SP_144046_20260127_02_T1__44QKH_20260127__15_32.tif",
+      "sha256": "c638390e676912ffa9b4b87033348cadc199b8fe7fc8e13aae5dda1aaf17a9a6"
+    },
+    {
+      "pair_id": "LC08_L2SP_144046_20260127_02_T1__44QKH_20260127__16_23",
+      "sensor": "sentinel",
+      "split": "train",
+      "pixels_identified": 18,
+      "path": "masks/train/sentinel/LC08_L2SP_144046_20260127_02_T1__44QKH_20260127__16_23.tif",
+      "sha256": "4edbbfdd65179bb0943d2048553f6c09610d0c5f380af9eeb99ce7183cbb56a8"
+    },
+    {
+      "pair_id": "LC08_L2SP_144046_20260127_02_T1__44QKH_20260127__17_24",
+      "sensor": "sentinel",
+      "split": "train",
+      "pixels_identified": 32,
+      "path": "masks/train/sentinel/LC08_L2SP_144046_20260127_02_T1__44QKH_20260127__17_24.tif",
+      "sha256": "b74782ff2c60bae1ec7b8dfa0e9eb7b6879e2f10943e68097b603316a23a1c8b"
+    },
+    {
+      "pair_id": "LC08_L2SP_144046_20260127_02_T1__44QKH_20260127__20_31",
+      "sensor": "sentinel",
+      "split": "train",
+      "pixels_identified": 21,
+      "path": "masks/train/sentinel/LC08_L2SP_144046_20260127_02_T1__44QKH_20260127__20_31.tif",
+      "sha256": "e7f63919a762a90e23a845e516fc12f72db1333376a578749a30b5215eb411d3"
+    },
+    {
+      "pair_id": "LC08_L2SP_144046_20260127_02_T1__44QKH_20260127__28_32",
+      "sensor": "sentinel",
+      "split": "train",
+      "pixels_identified": 56,
+      "path": "masks/train/sentinel/LC08_L2SP_144046_20260127_02_T1__44QKH_20260127__28_32.tif",
+      "sha256": "324f2b6b20a43d61888459703462a0562aafb70ec9e32f55360bff99b3d3f6a9"
+    },
+    {
+      "pair_id": "LC08_L2SP_144047_20260127_02_T1__43QHB_20260127__25_13",
+      "sensor": "sentinel",
+      "split": "train",
+      "pixels_identified": 1,
+      "path": "masks/train/sentinel/LC08_L2SP_144047_20260127_02_T1__43QHB_20260127__25_13.tif",
+      "sha256": "79f4bec965ba415488165a6abe12dfdd5a05a7011fd0a3e707b4076f02342dcc"
+    },
+    {
+      "pair_id": "LC08_L2SP_144047_20260127_02_T1__43QHB_20260127__25_17",
+      "sensor": "sentinel",
+      "split": "train",
+      "pixels_identified": 1,
+      "path": "masks/train/sentinel/LC08_L2SP_144047_20260127_02_T1__43QHB_20260127__25_17.tif",
+      "sha256": "69aa40a1995b2a5aabf07e1876d445a8709b4cf57f4d0c3a471b4a5022215b54"
+    },
+    {
+      "pair_id": "LC08_L2SP_144047_20260127_02_T1__43QHB_20260127__26_14",
+      "sensor": "sentinel",
+      "split": "train",
+      "pixels_identified": 3,
+      "path": "masks/train/sentinel/LC08_L2SP_144047_20260127_02_T1__43QHB_20260127__26_14.tif",
+      "sha256": "ff33622235186271773703882aa51b01f9412a06ffa07bf373e4300f9e7faa08"
+    },
+    {
+      "pair_id": "LC08_L2SP_144047_20260127_02_T1__43QHB_20260127__27_20",
+      "sensor": "sentinel",
+      "split": "train",
+      "pixels_identified": 3,
+      "path": "masks/train/sentinel/LC08_L2SP_144047_20260127_02_T1__43QHB_20260127__27_20.tif",
+      "sha256": "6d9a8444ce8eabf153db85ad0126c628bc345c8d878a35f2b86b14107fe8144e"
+    },
+    {
+      "pair_id": "LC08_L2SP_144047_20260127_02_T1__44QKG_20260127__24_12",
+      "sensor": "sentinel",
+      "split": "train",
+      "pixels_identified": 11,
+      "path": "masks/train/sentinel/LC08_L2SP_144047_20260127_02_T1__44QKG_20260127__24_12.tif",
+      "sha256": "20c9ad930a62ce4f2aff54dabacd4eadc6b5fa852562a8bfc8677b64a3840bde"
+    },
+    {
+      "pair_id": "LC08_L2SP_144047_20260127_02_T1__44QKG_20260127__24_18",
+      "sensor": "sentinel",
+      "split": "train",
+      "pixels_identified": 5,
+      "path": "masks/train/sentinel/LC08_L2SP_144047_20260127_02_T1__44QKG_20260127__24_18.tif",
+      "sha256": "e9f1aa7bc5dc99d14f8163c32fdfcd3fdd48502016fb699d89c33d0eae60efd2"
+    },
+    {
+      "pair_id": "LC08_L2SP_144047_20260127_02_T1__44QKG_20260127__26_13",
+      "sensor": "sentinel",
+      "split": "train",
+      "pixels_identified": 6,
+      "path": "masks/train/sentinel/LC08_L2SP_144047_20260127_02_T1__44QKG_20260127__26_13.tif",
+      "sha256": "309db72c95d6831f5af671cd26e8046fd1978f9e293389e05c95bd393b907cdf"
+    },
+    {
+      "pair_id": "LC08_L2SP_144047_20260127_02_T1__44QKG_20260127__27_11",
+      "sensor": "sentinel",
+      "split": "train",
+      "pixels_identified": 5,
+      "path": "masks/train/sentinel/LC08_L2SP_144047_20260127_02_T1__44QKG_20260127__27_11.tif",
+      "sha256": "8efa155c0301006ebe78a666a792baa83cdea63400dfa0aa2fae685251b097cc"
+    },
+    {
+      "pair_id": "LC08_L2SP_144047_20260127_02_T1__44QKG_20260127__28_11",
+      "sensor": "sentinel",
+      "split": "train",
+      "pixels_identified": 10,
+      "path": "masks/train/sentinel/LC08_L2SP_144047_20260127_02_T1__44QKG_20260127__28_11.tif",
+      "sha256": "35962e78a2acd561b01de5b3ab8391fb9107854d17e9c613bf0c8a54ba9d715c"
+    },
+    {
+      "pair_id": "LC08_L2SP_144048_20260127_02_T1__43QHV_20260127__30_28",
+      "sensor": "sentinel",
+      "split": "train",
+      "pixels_identified": 2,
+      "path": "masks/train/sentinel/LC08_L2SP_144048_20260127_02_T1__43QHV_20260127__30_28.tif",
+      "sha256": "45a160cf1345e0078ac3825fe3db6eb52ecc46551482701696dcd7b3d45cf178"
+    },
+    {
+      "pair_id": "LC08_L2SP_144051_20260127_02_T1__43PHR_20260127__36_12",
+      "sensor": "sentinel",
+      "split": "train",
+      "pixels_identified": 4,
+      "path": "masks/train/sentinel/LC08_L2SP_144051_20260127_02_T1__43PHR_20260127__36_12.tif",
+      "sha256": "e3a58bbca4ce00f2992b36ee52b23e18f48b51ac970c3a8c246b9ab37fb1a79c"
+    },
+    {
+      "pair_id": "LC08_L2SP_144051_20260127_02_T1__43PHR_20260127__37_10",
+      "sensor": "sentinel",
+      "split": "train",
+      "pixels_identified": 3,
+      "path": "masks/train/sentinel/LC08_L2SP_144051_20260127_02_T1__43PHR_20260127__37_10.tif",
+      "sha256": "36bd31f8ed18f9f3683a20439884c752526837b714e19df5d8d49ead6d488d9c"
+    },
+    {
+      "pair_id": "LC08_L2SP_145040_20260219_02_T1__44RLT_20260219__15_15",
+      "sensor": "sentinel",
+      "split": "train",
+      "pixels_identified": 4,
+      "path": "masks/train/sentinel/LC08_L2SP_145040_20260219_02_T1__44RLT_20260219__15_15.tif",
+      "sha256": "6f5b67261bd25d99ddb57ccca10afe129e78cd6a283968522f144cad723115ff"
+    },
+    {
+      "pair_id": "LC08_L2SP_145040_20260219_02_T1__44RLT_20260219__24_16",
+      "sensor": "sentinel",
+      "split": "train",
+      "pixels_identified": 21,
+      "path": "masks/train/sentinel/LC08_L2SP_145040_20260219_02_T1__44RLT_20260219__24_16.tif",
+      "sha256": "c3d72e4e98bb4cc51e5b412068990453b2d09d5b4df914e996eef23e371c9d15"
+    },
+    {
+      "pair_id": "LC08_L2SP_145040_20260219_02_T1__44RLT_20260219__26_18",
+      "sensor": "sentinel",
+      "split": "train",
+      "pixels_identified": 3,
+      "path": "masks/train/sentinel/LC08_L2SP_145040_20260219_02_T1__44RLT_20260219__26_18.tif",
+      "sha256": "282f9d88c935f282cd0e2adca7d3c12efd9d76dda3e203324219be136f6754c9"
+    },
+    {
+      "pair_id": "LC08_L2SP_145040_20260219_02_T1__44RLT_20260219__26_20",
+      "sensor": "sentinel",
+      "split": "train",
+      "pixels_identified": 1,
+      "path": "masks/train/sentinel/LC08_L2SP_145040_20260219_02_T1__44RLT_20260219__26_20.tif",
+      "sha256": "08b32c901f722c9dd3dc775c5d4652460db76a129951eba4757da74cb440cafd"
+    },
+    {
+      "pair_id": "LC08_L2SP_145040_20260219_02_T1__44RLT_20260219__27_17",
+      "sensor": "sentinel",
+      "split": "train",
+      "pixels_identified": 1,
+      "path": "masks/train/sentinel/LC08_L2SP_145040_20260219_02_T1__44RLT_20260219__27_17.tif",
+      "sha256": "7e993eab0bd2663db5858828044c98ed825a82dc74562dbbc03860891f1f598d"
+    },
+    {
+      "pair_id": "LC08_L2SP_145040_20260219_02_T1__44RLT_20260219__27_20",
+      "sensor": "sentinel",
+      "split": "train",
+      "pixels_identified": 3,
+      "path": "masks/train/sentinel/LC08_L2SP_145040_20260219_02_T1__44RLT_20260219__27_20.tif",
+      "sha256": "4b672c8ce33f5caab5c038588f1994e45f32ffd3ae835bb6dc0325f39c2a8880"
+    },
+    {
+      "pair_id": "LC08_L2SP_145040_20260219_02_T1__44RLT_20260219__29_19",
+      "sensor": "sentinel",
+      "split": "train",
+      "pixels_identified": 2,
+      "path": "masks/train/sentinel/LC08_L2SP_145040_20260219_02_T1__44RLT_20260219__29_19.tif",
+      "sha256": "b6992a777a4038e99bc7573baa622ef37c74617fa44a7f8b1753698233ba68ec"
+    },
+    {
+      "pair_id": "LC08_L2SP_145041_20260510_02_T1__44RKQ_20260510__23_44",
+      "sensor": "sentinel",
+      "split": "train",
+      "pixels_identified": 1,
+      "path": "masks/train/sentinel/LC08_L2SP_145041_20260510_02_T1__44RKQ_20260510__23_44.tif",
+      "sha256": "13e3ed609f793bf9420c6b9280a83e3f2c24c65287d854ea35ad254dd7d6c68a"
+    },
+    {
+      "pair_id": "LC08_L2SP_145042_20260510_02_T1__43RGJ_20260510__5_32",
+      "sensor": "sentinel",
+      "split": "train",
+      "pixels_identified": 9,
+      "path": "masks/train/sentinel/LC08_L2SP_145042_20260510_02_T1__43RGJ_20260510__5_32.tif",
+      "sha256": "b5ae8720900c552040b342a81ad5957e48435b8fa92dc8f3fae39e52fdfa03e6"
+    },
+    {
+      "pair_id": "LC08_L2SP_145042_20260510_02_T1__43RGJ_20260510__5_33",
+      "sensor": "sentinel",
+      "split": "train",
+      "pixels_identified": 4,
+      "path": "masks/train/sentinel/LC08_L2SP_145042_20260510_02_T1__43RGJ_20260510__5_33.tif",
+      "sha256": "2ff5623771b039da71ac75ab194cc30cb939bb100effa0b4b1b08836d226d6b6"
+    },
+    {
+      "pair_id": "LC08_L2SP_145042_20260510_02_T1__43RGJ_20260510__6_32",
+      "sensor": "sentinel",
+      "split": "train",
+      "pixels_identified": 28,
+      "path": "masks/train/sentinel/LC08_L2SP_145042_20260510_02_T1__43RGJ_20260510__6_32.tif",
+      "sha256": "e4f228314f0f0a07f78f441889393dd9f3f30f8c56de8d2ef0bb097ef3296cd1"
+    },
+    {
+      "pair_id": "LC08_L2SP_145042_20260510_02_T1__43RGJ_20260510__6_33",
+      "sensor": "sentinel",
+      "split": "train",
+      "pixels_identified": 1,
+      "path": "masks/train/sentinel/LC08_L2SP_145042_20260510_02_T1__43RGJ_20260510__6_33.tif",
+      "sha256": "f0aecdf3f39037fb0109ad4d0505d73ac4e90c13dcd5e2f008bde788a52e26a8"
+    },
+    {
+      "pair_id": "LC08_L2SP_145042_20260510_02_T1__43RGJ_20260510__7_32",
+      "sensor": "sentinel",
+      "split": "train",
+      "pixels_identified": 1,
+      "path": "masks/train/sentinel/LC08_L2SP_145042_20260510_02_T1__43RGJ_20260510__7_32.tif",
+      "sha256": "0c278949b683bb7d0deded039e435e232453ef0fe7634243d9968c8bd15f5b47"
+    },
+    {
+      "pair_id": "LC08_L2SP_145042_20260510_02_T1__43RGJ_20260510__7_35",
+      "sensor": "sentinel",
+      "split": "train",
+      "pixels_identified": 8,
+      "path": "masks/train/sentinel/LC08_L2SP_145042_20260510_02_T1__43RGJ_20260510__7_35.tif",
+      "sha256": "8f57aed381eeeb67c84fc86b22fa3b0fbee7d1879b1cce3f0be209d2e1781259"
+    },
+    {
+      "pair_id": "LC08_L2SP_145043_20260510_02_T1__43RHH_20260510__23_14",
+      "sensor": "sentinel",
+      "split": "train",
+      "pixels_identified": 22,
+      "path": "masks/train/sentinel/LC08_L2SP_145043_20260510_02_T1__43RHH_20260510__23_14.tif",
+      "sha256": "b1dad15b52abd2a0d1d907fa0f300e47e810d2d43b0d49d161fc1bde8e45ed40"
+    },
+    {
+      "pair_id": "LC08_L2SP_145043_20260510_02_T1__44RKN_20260510__21_19",
+      "sensor": "sentinel",
+      "split": "train",
+      "pixels_identified": 9,
+      "path": "masks/train/sentinel/LC08_L2SP_145043_20260510_02_T1__44RKN_20260510__21_19.tif",
+      "sha256": "6fcfeba69f710d9151f15c2ce6c88114a564039bd8b27c08bdf10438e4fdbd71"
+    },
+    {
+      "pair_id": "LC08_L2SP_145043_20260510_02_T1__44RKN_20260510__23_13",
+      "sensor": "sentinel",
+      "split": "train",
+      "pixels_identified": 22,
+      "path": "masks/train/sentinel/LC08_L2SP_145043_20260510_02_T1__44RKN_20260510__23_13.tif",
+      "sha256": "a524f339cbc6fd7d4459549841a9cbcd29dec4bf6dd4c6153d0794c47e1f283a"
+    },
+    {
+      "pair_id": "LC08_L2SP_145045_20260323_02_T1__43QFD_20260323__3_30",
+      "sensor": "sentinel",
+      "split": "train",
+      "pixels_identified": 1,
+      "path": "masks/train/sentinel/LC08_L2SP_145045_20260323_02_T1__43QFD_20260323__3_30.tif",
+      "sha256": "8ed2905ef0d68020023a5acb269782d9b7505460821ba1bad1be6041879fb525"
+    },
+    {
+      "pair_id": "LC08_L2SP_145045_20260323_02_T1__43QFD_20260323__5_26",
+      "sensor": "sentinel",
+      "split": "train",
+      "pixels_identified": 8,
+      "path": "masks/train/sentinel/LC08_L2SP_145045_20260323_02_T1__43QFD_20260323__5_26.tif",
+      "sha256": "b83a0165f5e34ef67e80b538e5729448b44ecb030f23620dbcc94d1ac83f400d"
+    },
+    {
+      "pair_id": "LC08_L2SP_145045_20260323_02_T1__43QFD_20260323__5_29",
+      "sensor": "sentinel",
+      "split": "train",
+      "pixels_identified": 4,
+      "path": "masks/train/sentinel/LC08_L2SP_145045_20260323_02_T1__43QFD_20260323__5_29.tif",
+      "sha256": "877f29095ee411b5d77308c08027895646a6aa1d1ba7d68e562685176485a71c"
+    },
+    {
+      "pair_id": "LC08_L2SP_145045_20260323_02_T1__43QFD_20260323__7_30",
+      "sensor": "sentinel",
+      "split": "train",
+      "pixels_identified": 3,
+      "path": "masks/train/sentinel/LC08_L2SP_145045_20260323_02_T1__43QFD_20260323__7_30.tif",
+      "sha256": "95dacff2bb8e858801fcfca1035e09c2f56ecb5978c88adc8962f274d0616e45"
+    },
+    {
+      "pair_id": "LC08_L2SP_145046_20260323_02_T1__43QFD_20260323__9_2",
+      "sensor": "sentinel",
+      "split": "train",
+      "pixels_identified": 1,
+      "path": "masks/train/sentinel/LC08_L2SP_145046_20260323_02_T1__43QFD_20260323__9_2.tif",
+      "sha256": "c4f36c8ae4f7f90a1dd9358eb79bf667b7442f29bd87f3735d0eb514e49f7c2f"
+    },
+    {
+      "pair_id": "LC08_L2SP_145049_20260323_02_T1__43PET_20260323__10_20",
+      "sensor": "sentinel",
+      "split": "train",
+      "pixels_identified": 2,
+      "path": "masks/train/sentinel/LC08_L2SP_145049_20260323_02_T1__43PET_20260323__10_20.tif",
+      "sha256": "4884dab6f4cdf562dd4e00540359d69eaee1ff78231d64e8384fc0aaa10c6b60"
+    },
+    {
+      "pair_id": "LC08_L2SP_145050_20260323_02_T1__43PGS_20260323__44_10",
+      "sensor": "sentinel",
+      "split": "train",
+      "pixels_identified": 5,
+      "path": "masks/train/sentinel/LC08_L2SP_145050_20260323_02_T1__43PGS_20260323__44_10.tif",
+      "sha256": "805b41cefce6b9a342be859afcd16678e1c192109e234b864e094728eadd7850"
+    },
+    {
+      "pair_id": "LC08_L2SP_145051_20260323_02_T1__43PDR_20260323__8_6",
+      "sensor": "sentinel",
+      "split": "train",
+      "pixels_identified": 1,
+      "path": "masks/train/sentinel/LC08_L2SP_145051_20260323_02_T1__43PDR_20260323__8_6.tif",
+      "sha256": "e5252654b316a9d85ff750b8c7696ad3be1c4fdb16646c1735b661ebfd13aa19"
+    },
+    {
+      "pair_id": "LC08_L2SP_146036_20260125_02_T1__44SME_20260125__34_10",
+      "sensor": "landsat",
+      "split": "train",
+      "pixels_identified": 1,
+      "path": "masks/train/landsat/LC08_L2SP_146036_20260125_02_T1__44SME_20260125__34_10.tif",
+      "sha256": "293dcd91d12ea8ce08d8b099843fd01607d23ce084033693e03a26d50781bf2a"
+    },
+    {
+      "pair_id": "LC08_L2SP_146039_20260415_02_T1__44RKT_20260415__32_41",
+      "sensor": "sentinel",
+      "split": "val",
+      "pixels_identified": 15,
+      "path": "masks/val/sentinel/LC08_L2SP_146039_20260415_02_T1__44RKT_20260415__32_41.tif",
+      "sha256": "de085b278ddf164f45712641d63cc80521cab732e55f05b8e3f21378b9059c01"
+    },
+    {
+      "pair_id": "LC08_L2SP_146040_20260415_02_T1__44RKT_20260415__42_12",
+      "sensor": "sentinel",
+      "split": "val",
+      "pixels_identified": 1,
+      "path": "masks/val/sentinel/LC08_L2SP_146040_20260415_02_T1__44RKT_20260415__42_12.tif",
+      "sha256": "813ee4cdfaa08b0d97741989fdb01192912bbe1d6456ca3785a24f06e86c2c21"
+    },
+    {
+      "pair_id": "LC08_L2SP_146041_20260125_02_T1__43RGK_20260125__27_42",
+      "sensor": "landsat",
+      "split": "train",
+      "pixels_identified": 1,
+      "path": "masks/train/landsat/LC08_L2SP_146041_20260125_02_T1__43RGK_20260125__27_42.tif",
+      "sha256": "4407dbabfca4931f0272b83dca4a04d0a75b622ae4a126accfdf42072f5bade3"
+    },
+    {
+      "pair_id": "LC08_L2SP_146041_20260125_02_T1__43RGM_20260125__29_11",
+      "sensor": "sentinel",
+      "split": "train",
+      "pixels_identified": 5,
+      "path": "masks/train/sentinel/LC08_L2SP_146041_20260125_02_T1__43RGM_20260125__29_11.tif",
+      "sha256": "990ae5d30f7ed8cb395eb3c4e25a34d9bc24ad8d849dc68a217d9e3ffdc5f81d"
+    },
+    {
+      "pair_id": "LC08_L2SP_146042_20260125_02_T1__44RKP_20260125__42_20",
+      "sensor": "sentinel",
+      "split": "train",
+      "pixels_identified": 141,
+      "path": "masks/train/sentinel/LC08_L2SP_146042_20260125_02_T1__44RKP_20260125__42_20.tif",
+      "sha256": "bd4a2f3348bc86403488f45e735a836942a6a375c99d7635e6af374dee9e4fac"
+    },
+    {
+      "pair_id": "LC08_L2SP_146042_20260125_02_T1__44RKP_20260125__42_21",
+      "sensor": "sentinel",
+      "split": "train",
+      "pixels_identified": 16,
+      "path": "masks/train/sentinel/LC08_L2SP_146042_20260125_02_T1__44RKP_20260125__42_21.tif",
+      "sha256": "7c1cab0f99233b84ba3b27aafaf61cc71223a54ab8ae0ae94b99ef205f6dc7d6"
+    },
+    {
+      "pair_id": "LC08_L2SP_146045_20260125_02_T1__43QFD_20260125__37_35",
+      "sensor": "sentinel",
+      "split": "train",
+      "pixels_identified": 57,
+      "path": "masks/train/sentinel/LC08_L2SP_146045_20260125_02_T1__43QFD_20260125__37_35.tif",
+      "sha256": "bd718a81abdf76b3bff5ab72c7da0c286788f8db2892de095ab7a4ca71846806"
+    },
+    {
+      "pair_id": "LC08_L2SP_146045_20260125_02_T1__43QFE_20260125__39_24",
+      "sensor": "sentinel",
+      "split": "train",
+      "pixels_identified": 36,
+      "path": "masks/train/sentinel/LC08_L2SP_146045_20260125_02_T1__43QFE_20260125__39_24.tif",
+      "sha256": "bb864b8c6a627ffe57951c7c239d229b1a62b230fc5ad4fcc988b7ea01f4101a"
+    },
+    {
+      "pair_id": "LC08_L2SP_146049_20260125_02_T1__43PDT_20260125__24_36",
+      "sensor": "sentinel",
+      "split": "train",
+      "pixels_identified": 1,
+      "path": "masks/train/sentinel/LC08_L2SP_146049_20260125_02_T1__43PDT_20260125__24_36.tif",
+      "sha256": "c5542969ddf69f5e00e79a4714500abce8663d6b563329aa3feb14d5d5c8887b"
+    },
+    {
+      "pair_id": "LC08_L2SP_146049_20260125_02_T1__43PDT_20260125__24_37",
+      "sensor": "sentinel",
+      "split": "train",
+      "pixels_identified": 3,
+      "path": "masks/train/sentinel/LC08_L2SP_146049_20260125_02_T1__43PDT_20260125__24_37.tif",
+      "sha256": "916d5d49563f084586c8874e7fd752153b7fa4fcbb00def1ce31909f4ddf5f2c"
+    },
+    {
+      "pair_id": "LC08_L2SP_146049_20260125_02_T1__43PDT_20260125__25_36",
+      "sensor": "sentinel",
+      "split": "train",
+      "pixels_identified": 4,
+      "path": "masks/train/sentinel/LC08_L2SP_146049_20260125_02_T1__43PDT_20260125__25_36.tif",
+      "sha256": "2c5ff213327c372e75975e8916d2842029a6c1ddb94b276ecae4867e7eb76cde"
+    },
+    {
+      "pair_id": "LC08_L2SP_146050_20260125_02_T1__43PER_20260125__36_41",
+      "sensor": "sentinel",
+      "split": "train",
+      "pixels_identified": 9,
+      "path": "masks/train/sentinel/LC08_L2SP_146050_20260125_02_T1__43PER_20260125__36_41.tif",
+      "sha256": "e1d48a1b99e2dd2be568ed1a35e98b340b1128d8d427b6baccc9493de7693725"
+    },
+    {
+      "pair_id": "LC08_L2SP_147035_20260508_02_T1__43SGV_20260508__8_40",
+      "sensor": "sentinel",
+      "split": "val",
+      "pixels_identified": 7,
+      "path": "masks/val/sentinel/LC08_L2SP_147035_20260508_02_T1__43SGV_20260508__8_40.tif",
+      "sha256": "a7f55833dd4c97a2b23e6193a91fc399cde35a49b14826ac7e8874874c5093ed"
+    },
+    {
+      "pair_id": "LC08_L2SP_147035_20260508_02_T1__43SGV_20260508__9_40",
+      "sensor": "sentinel",
+      "split": "val",
+      "pixels_identified": 1,
+      "path": "masks/val/sentinel/LC08_L2SP_147035_20260508_02_T1__43SGV_20260508__9_40.tif",
+      "sha256": "a2c2191a2240d4c7a26819a37094ccc8a9ac12826be18f2ea39e8bdfc2750689"
+    },
+    {
+      "pair_id": "LC08_L2SP_147035_20260508_02_T1__44SKE_20260508__30_44",
+      "sensor": "sentinel",
+      "split": "train",
+      "pixels_identified": 6,
+      "path": "masks/train/sentinel/LC08_L2SP_147035_20260508_02_T1__44SKE_20260508__30_44.tif",
+      "sha256": "492048a02492389f0bdded733aa58ef771e212003cb8689042ef44781658264b"
+    },
+    {
+      "pair_id": "LC08_L2SP_147035_20260508_02_T1__44SKE_20260508__32_34",
+      "sensor": "sentinel",
+      "split": "train",
+      "pixels_identified": 6,
+      "path": "masks/train/sentinel/LC08_L2SP_147035_20260508_02_T1__44SKE_20260508__32_34.tif",
+      "sha256": "f0ca9aeccd29b42f4ad80f3cde74ad60db0aa4a157a40a88e8db0adc829f397a"
+    },
+    {
+      "pair_id": "LC08_L2SP_147035_20260508_02_T1__44SKE_20260508__33_39",
+      "sensor": "sentinel",
+      "split": "train",
+      "pixels_identified": 1,
+      "path": "masks/train/sentinel/LC08_L2SP_147035_20260508_02_T1__44SKE_20260508__33_39.tif",
+      "sha256": "9128b7c1c3226e33d4a9b3fc31f93185f7039998689f0d46a8ea6c99e8e30c29"
+    },
+    {
+      "pair_id": "LC08_L2SP_147035_20260508_02_T1__44SKE_20260508__33_40",
+      "sensor": "sentinel",
+      "split": "train",
+      "pixels_identified": 17,
+      "path": "masks/train/sentinel/LC08_L2SP_147035_20260508_02_T1__44SKE_20260508__33_40.tif",
+      "sha256": "a719b29dfc7b0e80502f9429c47b2a26a7ca732b78487032cf47ae00d4272476"
+    },
+    {
+      "pair_id": "LC08_L2SP_147035_20260508_02_T1__44SLE_20260508__38_33",
+      "sensor": "sentinel",
+      "split": "test",
+      "pixels_identified": 5,
+      "path": "masks/test/sentinel/LC08_L2SP_147035_20260508_02_T1__44SLE_20260508__38_33.tif",
+      "sha256": "2dee2785833af53e85ff71003aeb18ea8896f141acc45965292e1fb20b22cf6a"
+    },
+    {
+      "pair_id": "LC08_L2SP_147035_20260508_02_T1__44SLE_20260508__38_34",
+      "sensor": "sentinel",
+      "split": "test",
+      "pixels_identified": 2,
+      "path": "masks/test/sentinel/LC08_L2SP_147035_20260508_02_T1__44SLE_20260508__38_34.tif",
+      "sha256": "eb023fe804cecb54a29b20a355fa86a627978bf439bd3f216d0d493f2a700502"
+    },
+    {
+      "pair_id": "LC08_L2SP_147035_20260508_02_T1__44SLE_20260508__38_38",
+      "sensor": "sentinel",
+      "split": "test",
+      "pixels_identified": 4,
+      "path": "masks/test/sentinel/LC08_L2SP_147035_20260508_02_T1__44SLE_20260508__38_38.tif",
+      "sha256": "0b48664b50f97e9dc2d3b2830ec84846479efb2e1971aa97cf7e7b1219f8f64d"
+    },
+    {
+      "pair_id": "LC08_L2SP_147035_20260508_02_T1__44SLE_20260508__38_39",
+      "sensor": "sentinel",
+      "split": "test",
+      "pixels_identified": 1,
+      "path": "masks/test/sentinel/LC08_L2SP_147035_20260508_02_T1__44SLE_20260508__38_39.tif",
+      "sha256": "1c4ce82f3d8bf61c93b0347bfd2398f6e484d74437d51718b4827dbd16fd2ede"
+    },
+    {
+      "pair_id": "LC08_L2SP_147035_20260508_02_T1__44SLE_20260508__38_40",
+      "sensor": "sentinel",
+      "split": "test",
+      "pixels_identified": 9,
+      "path": "masks/test/sentinel/LC08_L2SP_147035_20260508_02_T1__44SLE_20260508__38_40.tif",
+      "sha256": "a9a9ea1d9bc8687d3f9e8efef301c6f25ba2c9cf4cc571aabcdbef0052581c58"
+    },
+    {
+      "pair_id": "LC08_L2SP_147035_20260508_02_T1__44SLE_20260508__39_33",
+      "sensor": "sentinel",
+      "split": "test",
+      "pixels_identified": 12,
+      "path": "masks/test/sentinel/LC08_L2SP_147035_20260508_02_T1__44SLE_20260508__39_33.tif",
+      "sha256": "288b67f656ed1b84661911b60f4fd90a002d8619dd9858db6e679657dda87cc5"
+    },
+    {
+      "pair_id": "LC08_L2SP_147035_20260508_02_T1__44SLE_20260508__39_35",
+      "sensor": "sentinel",
+      "split": "test",
+      "pixels_identified": 8,
+      "path": "masks/test/sentinel/LC08_L2SP_147035_20260508_02_T1__44SLE_20260508__39_35.tif",
+      "sha256": "11bb2367a4e6865a06089588f2c7301e8813176dbc9f25f2b98d1f66be0ba429"
+    },
+    {
+      "pair_id": "LC08_L2SP_147035_20260625_02_T1__43SGV_20260625__8_38",
+      "sensor": "sentinel",
+      "split": "val",
+      "pixels_identified": 7,
+      "path": "masks/val/sentinel/LC08_L2SP_147035_20260625_02_T1__43SGV_20260625__8_38.tif",
+      "sha256": "1b50931ac120a7b4bd09de740c291377103454976bd663fb9e8703044ef85d5c"
+    },
+    {
+      "pair_id": "LC08_L2SP_147035_20260625_02_T1__43SGV_20260625__9_38",
+      "sensor": "sentinel",
+      "split": "val",
+      "pixels_identified": 1,
+      "path": "masks/val/sentinel/LC08_L2SP_147035_20260625_02_T1__43SGV_20260625__9_38.tif",
+      "sha256": "8bd472560e232180335960875268d22bcb1cd99c9e9a4c45342e031157b79825"
+    },
+    {
+      "pair_id": "LC08_L2SP_147036_20260217_02_T1__43SFU_20260217__8_18",
+      "sensor": "landsat",
+      "split": "val",
+      "pixels_identified": 3,
+      "path": "masks/val/landsat/LC08_L2SP_147036_20260217_02_T1__43SFU_20260217__8_18.tif",
+      "sha256": "8bd7fbd2ba90ab72f8ff56f78cbb666dd08db706e658db8351c4409f1fd7434f"
+    },
+    {
+      "pair_id": "LC08_L2SP_147036_20260217_02_T1__43SFU_20260217__8_18",
+      "sensor": "sentinel",
+      "split": "val",
+      "pixels_identified": 2,
+      "path": "masks/val/sentinel/LC08_L2SP_147036_20260217_02_T1__43SFU_20260217__8_18.tif",
+      "sha256": "066d81ea771d8fe138b803591a82bc9a93000b9532737c2c0dc0ea6a75ba5ce7"
+    },
+    {
+      "pair_id": "LC08_L2SP_147036_20260508_02_T1__44SKD_20260508__23_17",
+      "sensor": "sentinel",
+      "split": "val",
+      "pixels_identified": 2,
+      "path": "masks/val/sentinel/LC08_L2SP_147036_20260508_02_T1__44SKD_20260508__23_17.tif",
+      "sha256": "5405126a4344426d79cea882e7fc333b2efb8eeaa88311118ebe7b52710c1005"
+    },
+    {
+      "pair_id": "LC08_L2SP_147036_20260727_02_T1__43SFU_20260727__5_30",
+      "sensor": "sentinel",
+      "split": "train",
+      "pixels_identified": 2,
+      "path": "masks/train/sentinel/LC08_L2SP_147036_20260727_02_T1__43SFU_20260727__5_30.tif",
+      "sha256": "fe19ac6ee00ac61c9f03cf3503cbafccc909f65a16e0029bdb28810133a589a9"
+    },
+    {
+      "pair_id": "LC08_L2SP_147036_20260727_02_T1__43SGT_20260727__12_33",
+      "sensor": "sentinel",
+      "split": "train",
+      "pixels_identified": 10,
+      "path": "masks/train/sentinel/LC08_L2SP_147036_20260727_02_T1__43SGT_20260727__12_33.tif",
+      "sha256": "fdd6b890e24765af9ceecf2972f2a2fc4b89cf40410f93d28dea78b45235189d"
+    },
+    {
+      "pair_id": "LC08_L2SP_147036_20260727_02_T1__43SGT_20260727__15_34",
+      "sensor": "sentinel",
+      "split": "train",
+      "pixels_identified": 1,
+      "path": "masks/train/sentinel/LC08_L2SP_147036_20260727_02_T1__43SGT_20260727__15_34.tif",
+      "sha256": "90b604db820f1afd96535eafd23c46b6e7343913444893a85aa685fbf279a10c"
+    },
+    {
+      "pair_id": "LC08_L2SP_147036_20260727_02_T1__43SGT_20260727__18_35",
+      "sensor": "sentinel",
+      "split": "train",
+      "pixels_identified": 1,
+      "path": "masks/train/sentinel/LC08_L2SP_147036_20260727_02_T1__43SGT_20260727__18_35.tif",
+      "sha256": "401345a4aaf534cebe2af302a628fdc3c3f475ed2cd182b548f9086ad4cad41d"
+    },
+    {
+      "pair_id": "LC08_L2SP_147036_20260727_02_T1__43SGT_20260727__18_36",
+      "sensor": "sentinel",
+      "split": "train",
+      "pixels_identified": 1,
+      "path": "masks/train/sentinel/LC08_L2SP_147036_20260727_02_T1__43SGT_20260727__18_36.tif",
+      "sha256": "0be2d78bab496d72b1e9d08fd343e1d6eeb7aa532edf9e37ef399bcb651e4581"
+    },
+    {
+      "pair_id": "LC08_L2SP_147036_20260727_02_T1__43SGT_20260727__20_40",
+      "sensor": "sentinel",
+      "split": "train",
+      "pixels_identified": 1,
+      "path": "masks/train/sentinel/LC08_L2SP_147036_20260727_02_T1__43SGT_20260727__20_40.tif",
+      "sha256": "06d7a9ffafdb84e5d62259c02c3b43bf5af1e5a7ae77cf3038a8903cf9fd5e70"
+    },
+    {
+      "pair_id": "LC08_L2SP_147036_20260727_02_T1__43SGU_20260727__17_25",
+      "sensor": "landsat",
+      "split": "train",
+      "pixels_identified": 1,
+      "path": "masks/train/landsat/LC08_L2SP_147036_20260727_02_T1__43SGU_20260727__17_25.tif",
+      "sha256": "b51c5a84538563178994b13032a766c0b717db92ce4a250d9cc06ba8b4d54a1a"
+    },
+    {
+      "pair_id": "LC08_L2SP_147037_20260727_02_T1__43SGS_20260727__25_39",
+      "sensor": "sentinel",
+      "split": "train",
+      "pixels_identified": 2,
+      "path": "masks/train/sentinel/LC08_L2SP_147037_20260727_02_T1__43SGS_20260727__25_39.tif",
+      "sha256": "60495fe55450c8ea60e6a9c10d29eda4b8ba41b77d1b133e2d667f7b281bb817"
+    },
+    {
+      "pair_id": "LC08_L2SP_147037_20260727_02_T1__43SGT_20260727__25_4",
+      "sensor": "sentinel",
+      "split": "train",
+      "pixels_identified": 1,
+      "path": "masks/train/sentinel/LC08_L2SP_147037_20260727_02_T1__43SGT_20260727__25_4.tif",
+      "sha256": "82178f37fe9f1c2e8448d87b8643088cc465cba3083df196e6b5ee9b056eefe0"
+    },
+    {
+      "pair_id": "LC08_L2SP_147039_20260217_02_T1__43RFQ_20260217__25_9",
+      "sensor": "landsat",
+      "split": "val",
+      "pixels_identified": 3,
+      "path": "masks/val/landsat/LC08_L2SP_147039_20260217_02_T1__43RFQ_20260217__25_9.tif",
+      "sha256": "0a380735ede171943fac7a12c8ec46e4c5de5d31db88419d8d6de7800578bb92"
+    },
+    {
+      "pair_id": "LC08_L2SP_147041_20260116_02_T1__43RDK_20260116__4_33",
+      "sensor": "landsat",
+      "split": "train",
+      "pixels_identified": 12,
+      "path": "masks/train/landsat/LC08_L2SP_147041_20260116_02_T1__43RDK_20260116__4_33.tif",
+      "sha256": "c40e150ddc68c2dae99809bbc0786073208b74902e622b52b9377914a736a925"
+    },
+    {
+      "pair_id": "LC08_L2SP_147041_20260116_02_T1__43REK_20260116__10_39",
+      "sensor": "landsat",
+      "split": "train",
+      "pixels_identified": 2,
+      "path": "masks/train/landsat/LC08_L2SP_147041_20260116_02_T1__43REK_20260116__10_39.tif",
+      "sha256": "83779aa4ed1cf66f4d119a1be59d39706d1fbdec757284ca6e6bdaa71f62cec4"
+    },
+    {
+      "pair_id": "LC08_L2SP_147041_20260116_02_T1__43REK_20260116__9_40",
+      "sensor": "landsat",
+      "split": "train",
+      "pixels_identified": 5,
+      "path": "masks/train/landsat/LC08_L2SP_147041_20260116_02_T1__43REK_20260116__9_40.tif",
+      "sha256": "7373e006404c6f095daca386816aee10e5efb0bd68633296861edb7160432c02"
+    },
+    {
+      "pair_id": "LC08_L2SP_147042_20260116_02_T1__43RDJ_20260116__11_20",
+      "sensor": "landsat",
+      "split": "train",
+      "pixels_identified": 4,
+      "path": "masks/train/landsat/LC08_L2SP_147042_20260116_02_T1__43RDJ_20260116__11_20.tif",
+      "sha256": "c9b5154b5a9cfc9562522457c8421915d8ad18bb56c0c532d0e891ad268b0b25"
+    },
+    {
+      "pair_id": "LC08_L2SP_147042_20260116_02_T1__43REJ_20260116__11_24",
+      "sensor": "sentinel",
+      "split": "train",
+      "pixels_identified": 1,
+      "path": "masks/train/sentinel/LC08_L2SP_147042_20260116_02_T1__43REJ_20260116__11_24.tif",
+      "sha256": "abe0fe43a7038d4c71ea27915e4ffe456f33d4497451359fd2ccb2c5769fea3f"
+    },
+    {
+      "pair_id": "LC08_L2SP_147042_20260116_02_T1__43REJ_20260116__12_23",
+      "sensor": "sentinel",
+      "split": "train",
+      "pixels_identified": 8,
+      "path": "masks/train/sentinel/LC08_L2SP_147042_20260116_02_T1__43REJ_20260116__12_23.tif",
+      "sha256": "c70c11eb769599c07ac3d907a7508dc8d8fa04596364254acd3d13b6121bbde8"
+    },
+    {
+      "pair_id": "LC08_L2SP_147042_20260116_02_T1__43REJ_20260116__13_27",
+      "sensor": "sentinel",
+      "split": "train",
+      "pixels_identified": 4,
+      "path": "masks/train/sentinel/LC08_L2SP_147042_20260116_02_T1__43REJ_20260116__13_27.tif",
+      "sha256": "b28ad22e32535c75595d72350e7de0af82a5398354e86606901cfbdab08c8f09"
+    },
+    {
+      "pair_id": "LC08_L2SP_147042_20260116_02_T1__43REK_20260116__12_16",
+      "sensor": "sentinel",
+      "split": "train",
+      "pixels_identified": 3,
+      "path": "masks/train/sentinel/LC08_L2SP_147042_20260116_02_T1__43REK_20260116__12_16.tif",
+      "sha256": "5e7288102ecb8ba25c21573fb2b3aae13cb6abbde8277cb2d192863d5174fd10"
+    },
+    {
+      "pair_id": "LC08_L2SP_147043_20260116_02_T1__43RDJ_20260116__9_2",
+      "sensor": "landsat",
+      "split": "train",
+      "pixels_identified": 10,
+      "path": "masks/train/landsat/LC08_L2SP_147043_20260116_02_T1__43RDJ_20260116__9_2.tif",
+      "sha256": "5897d384ac8f304e6d7c58c7abe89ed70f718d6085e6e33fa48a6fdd24ca44e9"
+    },
+    {
+      "pair_id": "LC08_L2SP_147043_20260116_02_T1__43REJ_20260116__18_5",
+      "sensor": "sentinel",
+      "split": "train",
+      "pixels_identified": 1,
+      "path": "masks/train/sentinel/LC08_L2SP_147043_20260116_02_T1__43REJ_20260116__18_5.tif",
+      "sha256": "72602ed549de55e486c54d2f8bac048e313d1411aab45171f166f5fe52529793"
+    },
+    {
+      "pair_id": "LC08_L2SP_147043_20260116_02_T1__43REJ_20260116__18_6",
+      "sensor": "sentinel",
+      "split": "train",
+      "pixels_identified": 4,
+      "path": "masks/train/sentinel/LC08_L2SP_147043_20260116_02_T1__43REJ_20260116__18_6.tif",
+      "sha256": "c330fd1b03f05f8e30170950e04515c7e59c66b84e33f99512e7cf316d236d48"
+    },
+    {
+      "pair_id": "LC08_L2SP_147047_20260116_02_T1__43QBB_20260116__6_19",
+      "sensor": "sentinel",
+      "split": "train",
+      "pixels_identified": 5,
+      "path": "masks/train/sentinel/LC08_L2SP_147047_20260116_02_T1__43QBB_20260116__6_19.tif",
+      "sha256": "46c8a601cbb53bc78fd37d2b9f4df78d717150be1c864d132b28dd52848cdd9d"
+    },
+    {
+      "pair_id": "LC08_L2SP_147047_20260116_02_T1__43QBB_20260116__6_20",
+      "sensor": "sentinel",
+      "split": "train",
+      "pixels_identified": 4,
+      "path": "masks/train/sentinel/LC08_L2SP_147047_20260116_02_T1__43QBB_20260116__6_20.tif",
+      "sha256": "d35ed0a390c5e90403aa98adc72e7e637c9404791e265842b17fd5587a322c09"
+    },
+    {
+      "pair_id": "LC08_L2SP_147048_20260508_02_T1__43QCU_20260508__23_34",
+      "sensor": "sentinel",
+      "split": "train",
+      "pixels_identified": 2,
+      "path": "masks/train/sentinel/LC08_L2SP_147048_20260508_02_T1__43QCU_20260508__23_34.tif",
+      "sha256": "0728256b61fdf3e6c196db4c4fa04eef7ba8cef5433fbaa9d83cbad08eb577df"
+    },
+    {
+      "pair_id": "LC08_L2SP_147048_20260508_02_T1__43QCU_20260508__23_41",
+      "sensor": "sentinel",
+      "split": "train",
+      "pixels_identified": 1,
+      "path": "masks/train/sentinel/LC08_L2SP_147048_20260508_02_T1__43QCU_20260508__23_41.tif",
+      "sha256": "7cca621e06840c8e6d6117fbc3eb117671a64116a8d919f856e00d0ce9f94b6c"
+    },
+    {
+      "pair_id": "LC08_L2SP_148038_20250309_02_T1__43RFQ_20250309__40_28",
+      "sensor": "sentinel",
+      "split": "test",
+      "pixels_identified": 20,
+      "path": "masks/test/sentinel/LC08_L2SP_148038_20250309_02_T1__43RFQ_20250309__40_28.tif",
+      "sha256": "2c73329c5013de8e47b3e850ba767c49073c1b0ac4a333af756fd9926ccdc77b"
+    },
+    {
+      "pair_id": "LC08_L2SP_148038_20250309_02_T1__43RFQ_20250309__40_29",
+      "sensor": "sentinel",
+      "split": "test",
+      "pixels_identified": 76,
+      "path": "masks/test/sentinel/LC08_L2SP_148038_20250309_02_T1__43RFQ_20250309__40_29.tif",
+      "sha256": "b0b3dd81c3e6707bbc3003836a76be12b85ad6efb6731248e31c3dcac1c5bfb1"
+    },
+    {
+      "pair_id": "LC08_L2SP_148038_20250309_02_T1__43SFR_20250309__39_25",
+      "sensor": "sentinel",
+      "split": "test",
+      "pixels_identified": 10,
+      "path": "masks/test/sentinel/LC08_L2SP_148038_20250309_02_T1__43SFR_20250309__39_25.tif",
+      "sha256": "ad0f44eb66bc2fb58cd84578fd627e499a1f66ad7359bd79e229d1496494fea6"
+    },
+    {
+      "pair_id": "LC08_L2SP_148038_20250309_02_T1__43SFR_20250309__39_26",
+      "sensor": "sentinel",
+      "split": "test",
+      "pixels_identified": 6,
+      "path": "masks/test/sentinel/LC08_L2SP_148038_20250309_02_T1__43SFR_20250309__39_26.tif",
+      "sha256": "6b2731614b8317af137170d3ca62fe97f6d3726bd0a8fa56a8589c5d59b253c0"
+    },
+    {
+      "pair_id": "LC08_L2SP_148038_20250309_02_T1__43SFR_20250309__39_27",
+      "sensor": "sentinel",
+      "split": "test",
+      "pixels_identified": 6,
+      "path": "masks/test/sentinel/LC08_L2SP_148038_20250309_02_T1__43SFR_20250309__39_27.tif",
+      "sha256": "f44b01c7ead1e12eb2f1f93b6011dfd177a083088889534f4adce49b6c7239f4"
+    },
+    {
+      "pair_id": "LC08_L2SP_148038_20250309_02_T1__43SFR_20250309__40_15",
+      "sensor": "sentinel",
+      "split": "train",
+      "pixels_identified": 3,
+      "path": "masks/train/sentinel/LC08_L2SP_148038_20250309_02_T1__43SFR_20250309__40_15.tif",
+      "sha256": "f81cb3c74c3a63839cbf519dc60eb9f287415eb18faeaf68ecbc58d87384fb91"
+    },
+    {
+      "pair_id": "LC08_L2SP_148038_20250309_02_T1__43SFR_20250309__41_25",
+      "sensor": "sentinel",
+      "split": "test",
+      "pixels_identified": 30,
+      "path": "masks/test/sentinel/LC08_L2SP_148038_20250309_02_T1__43SFR_20250309__41_25.tif",
+      "sha256": "c0f9515fc7998cdf1e857211dae8bcf89ef049983913bd70dd63ca792ef41f95"
+    },
+    {
+      "pair_id": "LC08_L2SP_148038_20260515_02_T1__43RFQ_20260515__35_36",
+      "sensor": "sentinel",
+      "split": "test",
+      "pixels_identified": 17,
+      "path": "masks/test/sentinel/LC08_L2SP_148038_20260515_02_T1__43RFQ_20260515__35_36.tif",
+      "sha256": "2e6d97bafc0e4227579dd7b07688a0c19a4cd74549d640cd050a9ed0b4fdd367"
+    },
+    {
+      "pair_id": "LC08_L2SP_148038_20260515_02_T1__43RFQ_20260515__35_38",
+      "sensor": "sentinel",
+      "split": "test",
+      "pixels_identified": 7,
+      "path": "masks/test/sentinel/LC08_L2SP_148038_20260515_02_T1__43RFQ_20260515__35_38.tif",
+      "sha256": "cfb3ac7cbca61bdad1f630396ce98fa12e4802bf1d6eeb27dff61e7cf8ec897f"
+    },
+    {
+      "pair_id": "LC08_L2SP_148038_20260515_02_T1__43RFQ_20260515__35_43",
+      "sensor": "sentinel",
+      "split": "val",
+      "pixels_identified": 11,
+      "path": "masks/val/sentinel/LC08_L2SP_148038_20260515_02_T1__43RFQ_20260515__35_43.tif",
+      "sha256": "1b879add96d326c4dc656eae5bfb7fde5c353c2ff5ce138c1793006e08426cf3"
+    },
+    {
+      "pair_id": "LC08_L2SP_148038_20260515_02_T1__43RFQ_20260515__36_35",
+      "sensor": "sentinel",
+      "split": "test",
+      "pixels_identified": 4,
+      "path": "masks/test/sentinel/LC08_L2SP_148038_20260515_02_T1__43RFQ_20260515__36_35.tif",
+      "sha256": "49140c0311dfba969bf39c085df87d29a98676f359076451b902dc7c48a3fb3a"
+    },
+    {
+      "pair_id": "LC08_L2SP_148038_20260515_02_T1__43RFQ_20260515__36_37",
+      "sensor": "sentinel",
+      "split": "test",
+      "pixels_identified": 30,
+      "path": "masks/test/sentinel/LC08_L2SP_148038_20260515_02_T1__43RFQ_20260515__36_37.tif",
+      "sha256": "fecaf8a948d3137034bc487f970c557ba890fe86d3059a852a98885f89a08aa2"
+    },
+    {
+      "pair_id": "LC08_L2SP_148038_20260515_02_T1__43RFQ_20260515__36_43",
+      "sensor": "sentinel",
+      "split": "val",
+      "pixels_identified": 12,
+      "path": "masks/val/sentinel/LC08_L2SP_148038_20260515_02_T1__43RFQ_20260515__36_43.tif",
+      "sha256": "b58b4a299fc3f75ce84c95b4cb2b182d9d90115b3f4d2806e5ae40a86490876e"
+    },
+    {
+      "pair_id": "LC08_L2SP_148038_20260515_02_T1__43RFQ_20260515__36_44",
+      "sensor": "sentinel",
+      "split": "val",
+      "pixels_identified": 4,
+      "path": "masks/val/sentinel/LC08_L2SP_148038_20260515_02_T1__43RFQ_20260515__36_44.tif",
+      "sha256": "160683230c3596e976eb6dd4ed07ca2454f32ab8d514a5d79cd44433637a9a3f"
+    },
+    {
+      "pair_id": "LC08_L2SP_148038_20260515_02_T1__43RFQ_20260515__36_45",
+      "sensor": "sentinel",
+      "split": "val",
+      "pixels_identified": 7,
+      "path": "masks/val/sentinel/LC08_L2SP_148038_20260515_02_T1__43RFQ_20260515__36_45.tif",
+      "sha256": "480cba9add6ce5aeb92b3fba5a3dcbcd834cbb6e6c1ff970d28b0d3553d61f12"
+    },
+    {
+      "pair_id": "LC08_L2SP_148038_20260515_02_T1__43RFQ_20260515__37_31",
+      "sensor": "sentinel",
+      "split": "test",
+      "pixels_identified": 6,
+      "path": "masks/test/sentinel/LC08_L2SP_148038_20260515_02_T1__43RFQ_20260515__37_31.tif",
+      "sha256": "7f9d8df04db62652ae0bbe81c95c83cb3cf435db82ce8ec20e83954d1ea02268"
+    },
+    {
+      "pair_id": "LC08_L2SP_148038_20260515_02_T1__43RFQ_20260515__37_35",
+      "sensor": "sentinel",
+      "split": "test",
+      "pixels_identified": 2,
+      "path": "masks/test/sentinel/LC08_L2SP_148038_20260515_02_T1__43RFQ_20260515__37_35.tif",
+      "sha256": "6cda489bba40776cfb895d6c4396854a859b12aacdc54de8e67de7740e371e32"
+    },
+    {
+      "pair_id": "LC08_L2SP_148038_20260515_02_T1__43RFQ_20260515__37_47",
+      "sensor": "sentinel",
+      "split": "val",
+      "pixels_identified": 49,
+      "path": "masks/val/sentinel/LC08_L2SP_148038_20260515_02_T1__43RFQ_20260515__37_47.tif",
+      "sha256": "8208e65da3365d15e7e70f9b310a1d8902b3527538d4e439d15b58255b0d998c"
+    },
+    {
+      "pair_id": "LC08_L2SP_148038_20260515_02_T1__43RFQ_20260515__38_32",
+      "sensor": "sentinel",
+      "split": "test",
+      "pixels_identified": 17,
+      "path": "masks/test/sentinel/LC08_L2SP_148038_20260515_02_T1__43RFQ_20260515__38_32.tif",
+      "sha256": "77501d09f727cbbb6b56efd9bdd29ff5bb220f042339696aea50d089b08222cd"
+    },
+    {
+      "pair_id": "LC08_L2SP_148038_20260515_02_T1__43RFQ_20260515__39_28",
+      "sensor": "sentinel",
+      "split": "test",
+      "pixels_identified": 1,
+      "path": "masks/test/sentinel/LC08_L2SP_148038_20260515_02_T1__43RFQ_20260515__39_28.tif",
+      "sha256": "9d626735a5d81f8af4a3f7110071fd2f1cde17008263ebb3d9b4c974d9365820"
+    },
+    {
+      "pair_id": "LC08_L2SP_148038_20260515_02_T1__43RFQ_20260515__39_32",
+      "sensor": "sentinel",
+      "split": "test",
+      "pixels_identified": 39,
+      "path": "masks/test/sentinel/LC08_L2SP_148038_20260515_02_T1__43RFQ_20260515__39_32.tif",
+      "sha256": "3b42d6130d8e9f566a844c8225a09091befc68d79a876b71664fd90cf3964d0b"
+    },
+    {
+      "pair_id": "LC08_L2SP_148038_20260515_02_T1__43RFQ_20260515__39_34",
+      "sensor": "sentinel",
+      "split": "test",
+      "pixels_identified": 21,
+      "path": "masks/test/sentinel/LC08_L2SP_148038_20260515_02_T1__43RFQ_20260515__39_34.tif",
+      "sha256": "db37522fb5f40e36f10d95c82701b107a380f2e4f1e5afd5dc0b9fa9f0867aee"
+    },
+    {
+      "pair_id": "LC08_L2SP_148038_20260515_02_T1__43RFQ_20260515__39_35",
+      "sensor": "sentinel",
+      "split": "test",
+      "pixels_identified": 5,
+      "path": "masks/test/sentinel/LC08_L2SP_148038_20260515_02_T1__43RFQ_20260515__39_35.tif",
+      "sha256": "572715c6e5b25756a0045fc24cae0767a481b5f6bd5c128cf535d3d36a55771a"
+    },
+    {
+      "pair_id": "LC08_L2SP_148038_20260515_02_T1__43RFQ_20260515__39_37",
+      "sensor": "sentinel",
+      "split": "test",
+      "pixels_identified": 3,
+      "path": "masks/test/sentinel/LC08_L2SP_148038_20260515_02_T1__43RFQ_20260515__39_37.tif",
+      "sha256": "bd23dc3e3fe9c6b1daa429f25e9bb64155f604160786caf6b35ed75eb5231d0b"
+    },
+    {
+      "pair_id": "LC08_L2SP_148038_20260515_02_T1__43RFQ_20260515__41_28",
+      "sensor": "sentinel",
+      "split": "test",
+      "pixels_identified": 2,
+      "path": "masks/test/sentinel/LC08_L2SP_148038_20260515_02_T1__43RFQ_20260515__41_28.tif",
+      "sha256": "e73413d55b9a24177bd67ef42b6d642eed043a0b080ff998bc647ceb8f212e2d"
+    },
+    {
+      "pair_id": "LC08_L2SP_148038_20260515_02_T1__43SFR_20260515__41_16",
+      "sensor": "sentinel",
+      "split": "train",
+      "pixels_identified": 1,
+      "path": "masks/train/sentinel/LC08_L2SP_148038_20260515_02_T1__43SFR_20260515__41_16.tif",
+      "sha256": "e2523defb266c3c24514d889b3a7e6f8f28d7af1239369c376ac9c1a4e921889"
+    },
+    {
+      "pair_id": "LC08_L2SP_148038_20260515_02_T1__43SFR_20260515__41_27",
+      "sensor": "sentinel",
+      "split": "test",
+      "pixels_identified": 25,
+      "path": "masks/test/sentinel/LC08_L2SP_148038_20260515_02_T1__43SFR_20260515__41_27.tif",
+      "sha256": "ab92a08b99445abd9ead99183aff99a9eae6588097135c6b9a9b1c4a841e8931"
+    },
+    {
+      "pair_id": "LC08_L2SP_148039_20260515_02_T1__43REN_20260515__33_44",
+      "sensor": "sentinel",
+      "split": "train",
+      "pixels_identified": 8,
+      "path": "masks/train/sentinel/LC08_L2SP_148039_20260515_02_T1__43REN_20260515__33_44.tif",
+      "sha256": "a0aa0fdc8d7fc26629a70ea728b48b324e8203041661e0ca5d7afda5f9ea4b65"
+    },
+    {
+      "pair_id": "LC08_L2SP_148039_20260515_02_T1__43REN_20260515__34_42",
+      "sensor": "sentinel",
+      "split": "train",
+      "pixels_identified": 12,
+      "path": "masks/train/sentinel/LC08_L2SP_148039_20260515_02_T1__43REN_20260515__34_42.tif",
+      "sha256": "54e19bdc3698a31d2aec44c52365467ade6e1b8e89fdc2911d052ed81a4fb6a2"
+    },
+    {
+      "pair_id": "LC08_L2SP_148039_20260515_02_T1__43REN_20260515__37_38",
+      "sensor": "sentinel",
+      "split": "train",
+      "pixels_identified": 32,
+      "path": "masks/train/sentinel/LC08_L2SP_148039_20260515_02_T1__43REN_20260515__37_38.tif",
+      "sha256": "a4c1d60e6bf073a0e8e98ea523ac06b400b3a60855f781b0d82fee10382cd97e"
+    },
+    {
+      "pair_id": "LC08_L2SP_148039_20260515_02_T1__43REN_20260515__38_37",
+      "sensor": "sentinel",
+      "split": "train",
+      "pixels_identified": 49,
+      "path": "masks/train/sentinel/LC08_L2SP_148039_20260515_02_T1__43REN_20260515__38_37.tif",
+      "sha256": "9d1ac53a6d7b16042159e9283d9e8e28e1781f2e81eb6c4d7e557cf88ae2a417"
+    },
+    {
+      "pair_id": "LC08_L2SP_148039_20260515_02_T1__43REN_20260515__38_38",
+      "sensor": "sentinel",
+      "split": "train",
+      "pixels_identified": 48,
+      "path": "masks/train/sentinel/LC08_L2SP_148039_20260515_02_T1__43REN_20260515__38_38.tif",
+      "sha256": "89fb97537623b6ac950134d3af2a7584a43200780cbcdcb3ee344ea74f0a0648"
+    },
+    {
+      "pair_id": "LC08_L2SP_148039_20260515_02_T1__43REN_20260515__38_42",
+      "sensor": "sentinel",
+      "split": "train",
+      "pixels_identified": 17,
+      "path": "masks/train/sentinel/LC08_L2SP_148039_20260515_02_T1__43REN_20260515__38_42.tif",
+      "sha256": "b9a65982f7f01e200160599aa7458491fde9c064f5f2f6ae7308ee16b27e3054"
+    },
+    {
+      "pair_id": "LC08_L2SP_148039_20260515_02_T1__43RFQ_20260515__43_10",
+      "sensor": "sentinel",
+      "split": "val",
+      "pixels_identified": 14,
+      "path": "masks/val/sentinel/LC08_L2SP_148039_20260515_02_T1__43RFQ_20260515__43_10.tif",
+      "sha256": "851ea6537fe526b58a7f34ad6ba0b42e845d5a35ec8e1a0ad294039de6a25675"
+    },
+    {
+      "pair_id": "LC08_L2SP_148039_20260515_02_T1__43RFQ_20260515__43_11",
+      "sensor": "sentinel",
+      "split": "val",
+      "pixels_identified": 2,
+      "path": "masks/val/sentinel/LC08_L2SP_148039_20260515_02_T1__43RFQ_20260515__43_11.tif",
+      "sha256": "edee8d4b81f50a705f26eb3face663dabe035da9d5e70ac90700843c87b3c0c3"
+    },
+    {
+      "pair_id": "LC08_L2SP_148039_20260515_02_T1__43RFQ_20260515__43_14",
+      "sensor": "sentinel",
+      "split": "val",
+      "pixels_identified": 1,
+      "path": "masks/val/sentinel/LC08_L2SP_148039_20260515_02_T1__43RFQ_20260515__43_14.tif",
+      "sha256": "bfe4a6f8d4be014c0eb787930c21224e23203c96346888843ab2675a1cce9ff8"
+    },
+    {
+      "pair_id": "LC08_L2SP_148039_20260515_02_T1__43RFQ_20260515__44_12",
+      "sensor": "sentinel",
+      "split": "val",
+      "pixels_identified": 8,
+      "path": "masks/val/sentinel/LC08_L2SP_148039_20260515_02_T1__43RFQ_20260515__44_12.tif",
+      "sha256": "6132f53c065791851713ef2f37abcb7ae27bb879304a8af446f1ea2522b81a6b"
+    },
+    {
+      "pair_id": "LC08_L2SP_148039_20260515_02_T1__43RFQ_20260515__44_14",
+      "sensor": "sentinel",
+      "split": "val",
+      "pixels_identified": 18,
+      "path": "masks/val/sentinel/LC08_L2SP_148039_20260515_02_T1__43RFQ_20260515__44_14.tif",
+      "sha256": "1186ff898611bfb92d36ff057dcefdab8fb5872a6107d1809d8ff9ea22d28a0f"
+    },
+    {
+      "pair_id": "LC08_L2SP_148039_20260515_02_T1__43RFQ_20260515__44_15",
+      "sensor": "sentinel",
+      "split": "val",
+      "pixels_identified": 39,
+      "path": "masks/val/sentinel/LC08_L2SP_148039_20260515_02_T1__43RFQ_20260515__44_15.tif",
+      "sha256": "2c46195a07d348d34a83235d7805b5e6a6068a8460118ad9441f17a8c8668b9c"
+    },
+    {
+      "pair_id": "LC08_L2SP_148040_20260515_02_T1__43REN_20260515__40_23",
+      "sensor": "sentinel",
+      "split": "train",
+      "pixels_identified": 8,
+      "path": "masks/train/sentinel/LC08_L2SP_148040_20260515_02_T1__43REN_20260515__40_23.tif",
+      "sha256": "616b525c22adc81eac4f7d02dabca5d1940c0005e9cb1c17b2b5141b6ae68073"
+    },
+    {
+      "pair_id": "LC08_L2SP_148040_20260515_02_T1__43REN_20260515__42_8",
+      "sensor": "sentinel",
+      "split": "train",
+      "pixels_identified": 16,
+      "path": "masks/train/sentinel/LC08_L2SP_148040_20260515_02_T1__43REN_20260515__42_8.tif",
+      "sha256": "ff0566c86fd2c0f5fb22e0e4b51dcfb5a9d12d4cc8b6c0d03a4ae4fd5f111c9a"
+    },
+    {
+      "pair_id": "LC08_L2SP_148044_20260123_02_T1__43QDF_20260123__38_34",
+      "sensor": "sentinel",
+      "split": "train",
+      "pixels_identified": 2,
+      "path": "masks/train/sentinel/LC08_L2SP_148044_20260123_02_T1__43QDF_20260123__38_34.tif",
+      "sha256": "f94bbf0e6b43d1b52fa057ff899a3d06d687c67cf8818dac188330f8ce8a18aa"
+    },
+    {
+      "pair_id": "LC08_L2SP_148045_20260123_02_T1__43QCD_20260123__42_26",
+      "sensor": "sentinel",
+      "split": "train",
+      "pixels_identified": 63,
+      "path": "masks/train/sentinel/LC08_L2SP_148045_20260123_02_T1__43QCD_20260123__42_26.tif",
+      "sha256": "3186330ef3b1de1ccedf12ee3c13cb4f381840eaab6792afba3c94941b5fa007"
+    },
+    {
+      "pair_id": "LC08_L2SP_148047_20260123_02_T1__43QBA_20260123__39_35",
+      "sensor": "sentinel",
+      "split": "train",
+      "pixels_identified": 5,
+      "path": "masks/train/sentinel/LC08_L2SP_148047_20260123_02_T1__43QBA_20260123__39_35.tif",
+      "sha256": "11889bf49cec9f2d4f2e6d855e565cb166d00a065e9b3878348f008222a8ee93"
+    },
+    {
+      "pair_id": "LC08_L2SP_149035_20260215_02_T1__43SDV_20260215__15_42",
+      "sensor": "landsat",
+      "split": "train",
+      "pixels_identified": 3,
+      "path": "masks/train/landsat/LC08_L2SP_149035_20260215_02_T1__43SDV_20260215__15_42.tif",
+      "sha256": "8a242ef77a2f257d15036af6690311487b63e9d5ebeec170c9083a8d3bb41c5b"
+    },
+    {
+      "pair_id": "LC08_L2SP_149035_20260607_02_T1__43SEV_20260607__30_35",
+      "sensor": "sentinel",
+      "split": "train",
+      "pixels_identified": 1,
+      "path": "masks/train/sentinel/LC08_L2SP_149035_20260607_02_T1__43SEV_20260607__30_35.tif",
+      "sha256": "3fe3f1e0097036fc370d95b7c36d13751ce72e1d4816999a219b23ed5ed7b034"
+    },
+    {
+      "pair_id": "LC08_L2SP_149035_20260607_02_T1__43SEV_20260607__32_40",
+      "sensor": "sentinel",
+      "split": "train",
+      "pixels_identified": 1,
+      "path": "masks/train/sentinel/LC08_L2SP_149035_20260607_02_T1__43SEV_20260607__32_40.tif",
+      "sha256": "504d29cf6f0d2f4e70bbe3218265a721eea1835f37783b36c995e086e898b642"
+    },
+    {
+      "pair_id": "LC08_L2SP_149035_20260623_02_T1__43SDV_20260623__11_29",
+      "sensor": "sentinel",
+      "split": "train",
+      "pixels_identified": 7,
+      "path": "masks/train/sentinel/LC08_L2SP_149035_20260623_02_T1__43SDV_20260623__11_29.tif",
+      "sha256": "f07ddc7c38593c7e2db7c299be68d19498760e060ea9d2a7dd87776d49e06596"
+    },
+    {
+      "pair_id": "LC08_L2SP_149036_20260215_02_T1__43SDT_20260215__21_33",
+      "sensor": "sentinel",
+      "split": "train",
+      "pixels_identified": 4,
+      "path": "masks/train/sentinel/LC08_L2SP_149036_20260215_02_T1__43SDT_20260215__21_33.tif",
+      "sha256": "82fed60e36fa65e633bba0611a7bd747bcfef5682d1cbbbb640043fbe1b7f2d8"
+    },
+    {
+      "pair_id": "LC08_L2SP_149036_20260506_02_T1__43SDT_20260506__16_36",
+      "sensor": "sentinel",
+      "split": "train",
+      "pixels_identified": 1,
+      "path": "masks/train/sentinel/LC08_L2SP_149036_20260506_02_T1__43SDT_20260506__16_36.tif",
+      "sha256": "e13998a65fda4af727c9c85244e581fd818a6d0f02fd9769339bd85c449590a5"
+    },
+    {
+      "pair_id": "LC08_L2SP_149036_20260506_02_T1__43SDT_20260506__17_33",
+      "sensor": "landsat",
+      "split": "train",
+      "pixels_identified": 3,
+      "path": "masks/train/landsat/LC08_L2SP_149036_20260506_02_T1__43SDT_20260506__17_33.tif",
+      "sha256": "455497e7a3b80915b040b2edbcbb522aa140f072d2f78968c5fc2330f192e7f4"
+    },
+    {
+      "pair_id": "LC08_L2SP_149036_20260506_02_T1__43SDT_20260506__17_33",
+      "sensor": "sentinel",
+      "split": "train",
+      "pixels_identified": 1,
+      "path": "masks/train/sentinel/LC08_L2SP_149036_20260506_02_T1__43SDT_20260506__17_33.tif",
+      "sha256": "63e613c25ccf4442c151f6910a10b2de8e6f5ad8adc25161510095a66a456496"
+    },
+    {
+      "pair_id": "LC08_L2SP_149036_20260506_02_T1__43SDT_20260506__17_34",
+      "sensor": "sentinel",
+      "split": "train",
+      "pixels_identified": 2,
+      "path": "masks/train/sentinel/LC08_L2SP_149036_20260506_02_T1__43SDT_20260506__17_34.tif",
+      "sha256": "3ef82d42ea3ac1dd61f7869fb938d4785b0c6883007147bb741fb5e4d7c010c7"
+    },
+    {
+      "pair_id": "LC08_L2SP_149036_20260506_02_T1__43SDT_20260506__23_38",
+      "sensor": "sentinel",
+      "split": "train",
+      "pixels_identified": 10,
+      "path": "masks/train/sentinel/LC08_L2SP_149036_20260506_02_T1__43SDT_20260506__23_38.tif",
+      "sha256": "e933c70e0f7425c35353fb0e39614807c78cb30e88772e2fb99e29b0345dc5c8"
+    },
+    {
+      "pair_id": "LC08_L2SP_149036_20260506_02_T1__43SDT_20260506__23_39",
+      "sensor": "sentinel",
+      "split": "train",
+      "pixels_identified": 7,
+      "path": "masks/train/sentinel/LC08_L2SP_149036_20260506_02_T1__43SDT_20260506__23_39.tif",
+      "sha256": "8a3e409739c6359851df710ae93ecddb72b4e36ac99bef28604884f21ba7bc09"
+    },
+    {
+      "pair_id": "LC08_L2SP_149036_20260506_02_T1__43SDU_20260506__21_28",
+      "sensor": "sentinel",
+      "split": "train",
+      "pixels_identified": 17,
+      "path": "masks/train/sentinel/LC08_L2SP_149036_20260506_02_T1__43SDU_20260506__21_28.tif",
+      "sha256": "37865adc0986dc36404ab725e1e7c0c1650f80719ec8d290ab42db1648885883"
+    },
+    {
+      "pair_id": "LC08_L2SP_149036_20260506_02_T1__43SET_20260506__32_45",
+      "sensor": "sentinel",
+      "split": "test",
+      "pixels_identified": 15,
+      "path": "masks/test/sentinel/LC08_L2SP_149036_20260506_02_T1__43SET_20260506__32_45.tif",
+      "sha256": "2487a9dca29da2d037766254e19f893e928318f777ff2d2ffd95ddffada9f371"
+    },
+    {
+      "pair_id": "LC08_L2SP_149036_20260506_02_T1__43SET_20260506__33_44",
+      "sensor": "sentinel",
+      "split": "test",
+      "pixels_identified": 6,
+      "path": "masks/test/sentinel/LC08_L2SP_149036_20260506_02_T1__43SET_20260506__33_44.tif",
+      "sha256": "7cca49bd8efe3b6dd364fc77bc796070fc103118ee63f2d1928a2cbd657ddc1f"
+    },
+    {
+      "pair_id": "LC08_L2SP_149036_20260506_02_T1__43SET_20260506__33_45",
+      "sensor": "sentinel",
+      "split": "test",
+      "pixels_identified": 3,
+      "path": "masks/test/sentinel/LC08_L2SP_149036_20260506_02_T1__43SET_20260506__33_45.tif",
+      "sha256": "b15c621df9fe3db9d9f6ce91dde55e4b673926b1b595be677b05a1e1b67488a4"
+    },
+    {
+      "pair_id": "LC08_L2SP_149036_20260506_02_T1__43SET_20260506__34_44",
+      "sensor": "sentinel",
+      "split": "test",
+      "pixels_identified": 1,
+      "path": "masks/test/sentinel/LC08_L2SP_149036_20260506_02_T1__43SET_20260506__34_44.tif",
+      "sha256": "b33529edfe6b508420648ad948395dd87d018ae9b0179a5d462f8928d53b200d"
+    },
+    {
+      "pair_id": "LC08_L2SP_149036_20260607_02_T1__43SDT_20260607__21_38",
+      "sensor": "sentinel",
+      "split": "train",
+      "pixels_identified": 1,
+      "path": "masks/train/sentinel/LC08_L2SP_149036_20260607_02_T1__43SDT_20260607__21_38.tif",
+      "sha256": "817a2344983195cfaf762b653885498fe4df14c386901bd63507655ba37165a7"
+    },
+    {
+      "pair_id": "LC08_L2SP_149036_20260607_02_T1__43SDT_20260607__23_36",
+      "sensor": "sentinel",
+      "split": "train",
+      "pixels_identified": 4,
+      "path": "masks/train/sentinel/LC08_L2SP_149036_20260607_02_T1__43SDT_20260607__23_36.tif",
+      "sha256": "7bef8ae0658c37078d845aa4e8f1282499b3f7d76bf2f77626ed800cfd84d3f5"
+    },
+    {
+      "pair_id": "LC08_L2SP_149036_20260607_02_T1__43SDT_20260607__24_36",
+      "sensor": "sentinel",
+      "split": "train",
+      "pixels_identified": 17,
+      "path": "masks/train/sentinel/LC08_L2SP_149036_20260607_02_T1__43SDT_20260607__24_36.tif",
+      "sha256": "6a4972594fc4cdd924b09e6147afecaf169c38f71862c5f215e3e56f0d168b6c"
+    },
+    {
+      "pair_id": "LC08_L2SP_149036_20260607_02_T1__43SDT_20260607__24_40",
+      "sensor": "sentinel",
+      "split": "train",
+      "pixels_identified": 7,
+      "path": "masks/train/sentinel/LC08_L2SP_149036_20260607_02_T1__43SDT_20260607__24_40.tif",
+      "sha256": "16ad4511e844608d767134064f17ad64ebc9f78ba08bbafeb9d78dc8132fb6b4"
+    },
+    {
+      "pair_id": "LC08_L2SP_149036_20260607_02_T1__43SDT_20260607__25_37",
+      "sensor": "sentinel",
+      "split": "train",
+      "pixels_identified": 2,
+      "path": "masks/train/sentinel/LC08_L2SP_149036_20260607_02_T1__43SDT_20260607__25_37.tif",
+      "sha256": "1839c4af16fb955dd594ff722b42b3209b147fb7a21539530423831f065f9602"
+    },
+    {
+      "pair_id": "LC08_L2SP_149036_20260607_02_T1__43SDT_20260607__25_44",
+      "sensor": "sentinel",
+      "split": "test",
+      "pixels_identified": 2,
+      "path": "masks/test/sentinel/LC08_L2SP_149036_20260607_02_T1__43SDT_20260607__25_44.tif",
+      "sha256": "3802ad9b7ca08b6825480f8b3026d2fcdc17f4260178e580323f9b710bf04200"
+    },
+    {
+      "pair_id": "LC08_L2SP_149036_20260607_02_T1__43SDT_20260607__27_42",
+      "sensor": "sentinel",
+      "split": "test",
+      "pixels_identified": 27,
+      "path": "masks/test/sentinel/LC08_L2SP_149036_20260607_02_T1__43SDT_20260607__27_42.tif",
+      "sha256": "e6ea0d14b5dfb6e8975bcb9a7b0337a8a9d2d372c71fc1fee982c788878d30d5"
+    },
+    {
+      "pair_id": "LC08_L2SP_149036_20260607_02_T1__43SDT_20260607__27_44",
+      "sensor": "sentinel",
+      "split": "test",
+      "pixels_identified": 8,
+      "path": "masks/test/sentinel/LC08_L2SP_149036_20260607_02_T1__43SDT_20260607__27_44.tif",
+      "sha256": "97c13e688dd17028b5a3dc41969036e4d76a62ca443e7cf724ab1301beefa4f6"
+    },
+    {
+      "pair_id": "LC08_L2SP_149036_20260607_02_T1__43SET_20260607__31_42",
+      "sensor": "sentinel",
+      "split": "test",
+      "pixels_identified": 2,
+      "path": "masks/test/sentinel/LC08_L2SP_149036_20260607_02_T1__43SET_20260607__31_42.tif",
+      "sha256": "06a122f04eb46e35328011b07e9667ad33e6745b8456f6272aec0330905aa624"
+    },
+    {
+      "pair_id": "LC08_L2SP_149036_20260623_02_T1__43SDV_20260623__11_5",
+      "sensor": "sentinel",
+      "split": "train",
+      "pixels_identified": 1,
+      "path": "masks/train/sentinel/LC08_L2SP_149036_20260623_02_T1__43SDV_20260623__11_5.tif",
+      "sha256": "7b399920cf86559a66b9d8fbfb7e6bf074b4c0422321477651835b4a02716a17"
+    },
+    {
+      "pair_id": "LC08_L2SP_149037_20260506_02_T1__43SDS_20260506__32_28",
+      "sensor": "sentinel",
+      "split": "test",
+      "pixels_identified": 48,
+      "path": "masks/test/sentinel/LC08_L2SP_149037_20260506_02_T1__43SDS_20260506__32_28.tif",
+      "sha256": "4ca446aaf2dd931b8a0fc2b41510e345395c87c3f1226f8e767b87b935711785"
+    },
+    {
+      "pair_id": "LC08_L2SP_149037_20260506_02_T1__43SDT_20260506__32_7",
+      "sensor": "sentinel",
+      "split": "train",
+      "pixels_identified": 6,
+      "path": "masks/train/sentinel/LC08_L2SP_149037_20260506_02_T1__43SDT_20260506__32_7.tif",
+      "sha256": "fcede7d96de26208859a656380c3f43827e6e628e90dcef61f95d514425d4903"
+    },
+    {
+      "pair_id": "LC08_L2SP_149037_20260506_02_T1__43SDT_20260506__33_8",
+      "sensor": "sentinel",
+      "split": "test",
+      "pixels_identified": 42,
+      "path": "masks/test/sentinel/LC08_L2SP_149037_20260506_02_T1__43SDT_20260506__33_8.tif",
+      "sha256": "7ad19bb874822230dcff27eda267d06deeb81a08a66645a88097d590e5ad64dd"
+    },
+    {
+      "pair_id": "LC08_L2SP_149037_20260506_02_T1__43SDT_20260506__35_13",
+      "sensor": "sentinel",
+      "split": "test",
+      "pixels_identified": 46,
+      "path": "masks/test/sentinel/LC08_L2SP_149037_20260506_02_T1__43SDT_20260506__35_13.tif",
+      "sha256": "6d1a7d78796fa837b4232c51c9a7bdd5a0201664cc4c7ef166415782b3c14d75"
+    },
+    {
+      "pair_id": "LC08_L2SP_149037_20260506_02_T1__43SDT_20260506__35_7",
+      "sensor": "sentinel",
+      "split": "train",
+      "pixels_identified": 5,
+      "path": "masks/train/sentinel/LC08_L2SP_149037_20260506_02_T1__43SDT_20260506__35_7.tif",
+      "sha256": "b717ba6aeebf3a81eee174cdc0d388ab92d5ac8fb755c9866fc2644098677461"
+    },
+    {
+      "pair_id": "LC08_L2SP_149037_20260506_02_T1__43SDT_20260506__35_9",
+      "sensor": "sentinel",
+      "split": "test",
+      "pixels_identified": 34,
+      "path": "masks/test/sentinel/LC08_L2SP_149037_20260506_02_T1__43SDT_20260506__35_9.tif",
+      "sha256": "ee7b982b7c4be242a2ad1a3d104b0d5e0dd3ba9b8f6ae5b730f071b1c5566c92"
+    },
+    {
+      "pair_id": "LC08_L2SP_149037_20260506_02_T1__43SDT_20260506__36_14",
+      "sensor": "sentinel",
+      "split": "test",
+      "pixels_identified": 12,
+      "path": "masks/test/sentinel/LC08_L2SP_149037_20260506_02_T1__43SDT_20260506__36_14.tif",
+      "sha256": "d1d71880e8f1b9418d331d2a096897b92c91a23d9c2139ee2ae8e32941417bc6"
+    },
+    {
+      "pair_id": "LC08_L2SP_149037_20260506_02_T1__43SDT_20260506__37_13",
+      "sensor": "sentinel",
+      "split": "test",
+      "pixels_identified": 43,
+      "path": "masks/test/sentinel/LC08_L2SP_149037_20260506_02_T1__43SDT_20260506__37_13.tif",
+      "sha256": "9844cc3efaf83918fcd7616f083ba12dbd136e60a61e4f7d697e886b7ef3d8e1"
+    },
+    {
+      "pair_id": "LC08_L2SP_149037_20260506_02_T1__43SES_20260506__38_31",
+      "sensor": "sentinel",
+      "split": "train",
+      "pixels_identified": 2,
+      "path": "masks/train/sentinel/LC08_L2SP_149037_20260506_02_T1__43SES_20260506__38_31.tif",
+      "sha256": "58ad6a3f90a806c81a5ed63cb7d1bafee9fdc887d40bfe6ffcc219104eda9f25"
+    },
+    {
+      "pair_id": "LC08_L2SP_149037_20260506_02_T1__43SET_20260506__37_8",
+      "sensor": "sentinel",
+      "split": "test",
+      "pixels_identified": 7,
+      "path": "masks/test/sentinel/LC08_L2SP_149037_20260506_02_T1__43SET_20260506__37_8.tif",
+      "sha256": "aaf0d3eadacd201be17ac1a8c09efb1e1bde772e2da3a620de635546342a0eaf"
+    },
+    {
+      "pair_id": "LC08_L2SP_149037_20260506_02_T1__43SET_20260506__38_14",
+      "sensor": "sentinel",
+      "split": "test",
+      "pixels_identified": 8,
+      "path": "masks/test/sentinel/LC08_L2SP_149037_20260506_02_T1__43SET_20260506__38_14.tif",
+      "sha256": "4f3559760f9b4ed7240ffc1094654addf61725524093502ef62523ddbfe79140"
+    },
+    {
+      "pair_id": "LC08_L2SP_149037_20260506_02_T1__43SET_20260506__38_9",
+      "sensor": "sentinel",
+      "split": "test",
+      "pixels_identified": 10,
+      "path": "masks/test/sentinel/LC08_L2SP_149037_20260506_02_T1__43SET_20260506__38_9.tif",
+      "sha256": "1f733b3e9d485c9a19cfa0dd099dcb8c9088f5ab9d84fb2b86a4fb7ddb7d0c0d"
+    },
+    {
+      "pair_id": "LC08_L2SP_149037_20260506_02_T1__43SET_20260506__40_14",
+      "sensor": "sentinel",
+      "split": "test",
+      "pixels_identified": 18,
+      "path": "masks/test/sentinel/LC08_L2SP_149037_20260506_02_T1__43SET_20260506__40_14.tif",
+      "sha256": "75f054e98c901cf21cf9d428f826f33eb62a0325aa9b5642066c81035e766c06"
+    },
+    {
+      "pair_id": "LC08_L2SP_149037_20260506_02_T1__43SET_20260506__40_15",
+      "sensor": "sentinel",
+      "split": "test",
+      "pixels_identified": 15,
+      "path": "masks/test/sentinel/LC08_L2SP_149037_20260506_02_T1__43SET_20260506__40_15.tif",
+      "sha256": "1c33bf698ddfb2d83a3bb5feba36e0d9f5a7a9b7b1b3f3b519951e3f6dc2f75a"
+    },
+    {
+      "pair_id": "LC08_L2SP_149037_20260607_02_T1__43SDS_20260607__23_27",
+      "sensor": "sentinel",
+      "split": "val",
+      "pixels_identified": 4,
+      "path": "masks/val/sentinel/LC08_L2SP_149037_20260607_02_T1__43SDS_20260607__23_27.tif",
+      "sha256": "477cf867f0bfd81b122230901d76fd2af73138772152975a5abf6abf1a8e3107"
+    },
+    {
+      "pair_id": "LC08_L2SP_149037_20260607_02_T1__43SDS_20260607__24_25",
+      "sensor": "sentinel",
+      "split": "val",
+      "pixels_identified": 2,
+      "path": "masks/val/sentinel/LC08_L2SP_149037_20260607_02_T1__43SDS_20260607__24_25.tif",
+      "sha256": "5399a6dfeec804479566d11573725fd6c55b0b3e2113add4d76be064aab5dd32"
+    },
+    {
+      "pair_id": "LC08_L2SP_149037_20260607_02_T1__43SDS_20260607__31_27",
+      "sensor": "sentinel",
+      "split": "test",
+      "pixels_identified": 14,
+      "path": "masks/test/sentinel/LC08_L2SP_149037_20260607_02_T1__43SDS_20260607__31_27.tif",
+      "sha256": "a81177c869bb16f957766facbd3143d0d6bafaefbe25872ff0288adc969b00f9"
+    },
+    {
+      "pair_id": "LC08_L2SP_149037_20260607_02_T1__43SDS_20260607__32_33",
+      "sensor": "sentinel",
+      "split": "train",
+      "pixels_identified": 16,
+      "path": "masks/train/sentinel/LC08_L2SP_149037_20260607_02_T1__43SDS_20260607__32_33.tif",
+      "sha256": "946180ed941cb2bea2ec4582cb4246e853f85a091c8df50ada8b05509c267f85"
+    },
+    {
+      "pair_id": "LC08_L2SP_149037_20260607_02_T1__43SDS_20260607__33_32",
+      "sensor": "sentinel",
+      "split": "train",
+      "pixels_identified": 34,
+      "path": "masks/train/sentinel/LC08_L2SP_149037_20260607_02_T1__43SDS_20260607__33_32.tif",
+      "sha256": "d24b104cf749d97661b3eaa4b9fa6110be608e8aa3f3779535b4791a2e423ba9"
+    },
+    {
+      "pair_id": "LC08_L2SP_149037_20260607_02_T1__43SDS_20260607__33_35",
+      "sensor": "sentinel",
+      "split": "train",
+      "pixels_identified": 26,
+      "path": "masks/train/sentinel/LC08_L2SP_149037_20260607_02_T1__43SDS_20260607__33_35.tif",
+      "sha256": "94673868cce93a82c1d2b501037f2e7a183b7a4fc3a6a37ab2410dc4f158ac0a"
+    },
+    {
+      "pair_id": "LC08_L2SP_149037_20260607_02_T1__43SDS_20260607__34_33",
+      "sensor": "sentinel",
+      "split": "train",
+      "pixels_identified": 28,
+      "path": "masks/train/sentinel/LC08_L2SP_149037_20260607_02_T1__43SDS_20260607__34_33.tif",
+      "sha256": "7c74612ece9d4b81b188d9f33572cc3a1bfcada5062273b110ea93ff7d5b2e67"
+    },
+    {
+      "pair_id": "LC08_L2SP_149037_20260607_02_T1__43SDS_20260607__34_36",
+      "sensor": "sentinel",
+      "split": "train",
+      "pixels_identified": 23,
+      "path": "masks/train/sentinel/LC08_L2SP_149037_20260607_02_T1__43SDS_20260607__34_36.tif",
+      "sha256": "b55b5e56980296478cc4f81cab65a5e50ba62b95204197dd4062ca645772b029"
+    },
+    {
+      "pair_id": "LC08_L2SP_149037_20260607_02_T1__43SDS_20260607__36_36",
+      "sensor": "sentinel",
+      "split": "train",
+      "pixels_identified": 18,
+      "path": "masks/train/sentinel/LC08_L2SP_149037_20260607_02_T1__43SDS_20260607__36_36.tif",
+      "sha256": "f0b65790508b7a0463ae7e1f28ae75be92697e87176824b883383a88073e0c40"
+    },
+    {
+      "pair_id": "LC08_L2SP_149037_20260607_02_T1__43SDT_20260607__28_5",
+      "sensor": "sentinel",
+      "split": "train",
+      "pixels_identified": 2,
+      "path": "masks/train/sentinel/LC08_L2SP_149037_20260607_02_T1__43SDT_20260607__28_5.tif",
+      "sha256": "e479d40108a39907990610d4aeaa4ce746fe4145ce3f66b2aac704d7ec3061de"
+    },
+    {
+      "pair_id": "LC08_L2SP_149037_20260607_02_T1__43SDT_20260607__33_13",
+      "sensor": "sentinel",
+      "split": "test",
+      "pixels_identified": 1,
+      "path": "masks/test/sentinel/LC08_L2SP_149037_20260607_02_T1__43SDT_20260607__33_13.tif",
+      "sha256": "beb58e6c5ad182775011194941a4ac03383ab575affac5db062ac15b2c2df606"
+    },
+    {
+      "pair_id": "LC08_L2SP_149037_20260607_02_T1__43SDT_20260607__34_10",
+      "sensor": "sentinel",
+      "split": "test",
+      "pixels_identified": 1,
+      "path": "masks/test/sentinel/LC08_L2SP_149037_20260607_02_T1__43SDT_20260607__34_10.tif",
+      "sha256": "dcbc599416caa2b70cd9c20c624f43d8e66ddfb44c11b099da7862fb09fa6a92"
+    },
+    {
+      "pair_id": "LC08_L2SP_149037_20260607_02_T1__43SDT_20260607__34_12",
+      "sensor": "sentinel",
+      "split": "test",
+      "pixels_identified": 1,
+      "path": "masks/test/sentinel/LC08_L2SP_149037_20260607_02_T1__43SDT_20260607__34_12.tif",
+      "sha256": "54047d645b95a0b936ac9f2451ba874a7490746e95d8a49895baf14e2b0f5e3e"
+    },
+    {
+      "pair_id": "LC08_L2SP_149037_20260607_02_T1__43SDT_20260607__34_14",
+      "sensor": "sentinel",
+      "split": "test",
+      "pixels_identified": 3,
+      "path": "masks/test/sentinel/LC08_L2SP_149037_20260607_02_T1__43SDT_20260607__34_14.tif",
+      "sha256": "3e89fe387c888b473abf40058875f7983f53c39b298c201d0ab17a68e802da7b"
+    },
+    {
+      "pair_id": "LC08_L2SP_149037_20260607_02_T1__43SET_20260607__37_12",
+      "sensor": "sentinel",
+      "split": "test",
+      "pixels_identified": 2,
+      "path": "masks/test/sentinel/LC08_L2SP_149037_20260607_02_T1__43SET_20260607__37_12.tif",
+      "sha256": "7d9fa2967e37691283c4876a3e2801fc41f6d8533f336322c6ecbb4b20de85be"
+    },
+    {
+      "pair_id": "LC08_L2SP_149037_20260607_02_T1__43SET_20260607__38_15",
+      "sensor": "sentinel",
+      "split": "test",
+      "pixels_identified": 1,
+      "path": "masks/test/sentinel/LC08_L2SP_149037_20260607_02_T1__43SET_20260607__38_15.tif",
+      "sha256": "21ca6a678376e890fb04e68b06789f9a9635f3ffe20ce1628778485370525543"
+    },
+    {
+      "pair_id": "LC08_L2SP_149037_20260623_02_T1__43SCT_20260623__12_17",
+      "sensor": "sentinel",
+      "split": "val",
+      "pixels_identified": 1,
+      "path": "masks/val/sentinel/LC08_L2SP_149037_20260623_02_T1__43SCT_20260623__12_17.tif",
+      "sha256": "9929b9937a97c69e4d29ea654f5f8e519640e5c9c6d150257c76135aee8fcd63"
+    },
+    {
+      "pair_id": "LC08_L2SP_149040_20260114_02_T1__43RCN_20260114__24_20",
+      "sensor": "sentinel",
+      "split": "test",
+      "pixels_identified": 2,
+      "path": "masks/test/sentinel/LC08_L2SP_149040_20260114_02_T1__43RCN_20260114__24_20.tif",
+      "sha256": "bd4fa6f5adfcf2e0b82e575cf2561f2a921e85a068a56f7ba7b688a86a36b7ac"
+    },
+    {
+      "pair_id": "LC08_L2SP_149041_20260623_02_T1__42RYQ_20260623__1_38",
+      "sensor": "sentinel",
+      "split": "train",
+      "pixels_identified": 3,
+      "path": "masks/train/sentinel/LC08_L2SP_149041_20260623_02_T1__42RYQ_20260623__1_38.tif",
+      "sha256": "c14179e52ec2cae84026f85d7a0d85b086d6a0220dd2ae0f915de1da96ab1bbf"
+    },
+    {
+      "pair_id": "LC08_L2SP_149042_20260114_02_T1__43RBJ_20260114__18_30",
+      "sensor": "landsat",
+      "split": "val",
+      "pixels_identified": 4,
+      "path": "masks/val/landsat/LC08_L2SP_149042_20260114_02_T1__43RBJ_20260114__18_30.tif",
+      "sha256": "f4f894b4bffe866e310d3dc76d5578be69c2c3a9c3f443d60705d5aac76d433d"
+    },
+    {
+      "pair_id": "LC08_L2SP_149044_20260114_02_T1__42QXL_20260114__4_24",
+      "sensor": "sentinel",
+      "split": "train",
+      "pixels_identified": 3,
+      "path": "masks/train/sentinel/LC08_L2SP_149044_20260114_02_T1__42QXL_20260114__4_24.tif",
+      "sha256": "9afe784547ab6a2fa991b9ba078bdd4cbc3154fcdcde555986ecd7c77fca4b83"
+    },
+    {
+      "pair_id": "LC08_L2SP_149044_20260114_02_T1__42QXL_20260114__5_24",
+      "sensor": "sentinel",
+      "split": "train",
+      "pixels_identified": 2,
+      "path": "masks/train/sentinel/LC08_L2SP_149044_20260114_02_T1__42QXL_20260114__5_24.tif",
+      "sha256": "9d842927516eeb11b63a8422b752d356aef2844f332570b379c6dc700fea2239"
+    },
+    {
+      "pair_id": "LC08_L2SP_149044_20260114_02_T1__42QXL_20260114__5_25",
+      "sensor": "sentinel",
+      "split": "train",
+      "pixels_identified": 2,
+      "path": "masks/train/sentinel/LC08_L2SP_149044_20260114_02_T1__42QXL_20260114__5_25.tif",
+      "sha256": "a05352ebb8e95c9d8f8c514818183a079916e47623e960fb470bdbfb471ef2d5"
+    },
+    {
+      "pair_id": "LC08_L2SP_151043_20260112_02_T1__42QWM_20260112__34_36",
+      "sensor": "landsat",
+      "split": "train",
+      "pixels_identified": 3,
+      "path": "masks/train/landsat/LC08_L2SP_151043_20260112_02_T1__42QWM_20260112__34_36.tif",
+      "sha256": "9e9590015cc15241a8eb6047a88071cc993b275ab43958d5c1f39f6aa755396e"
+    },
+    {
+      "pair_id": "LC08_L2SP_151044_20260112_02_T1__42QVM_20260112__27_15",
+      "sensor": "sentinel",
+      "split": "test",
+      "pixels_identified": 5,
+      "path": "masks/test/sentinel/LC08_L2SP_151044_20260112_02_T1__42QVM_20260112__27_15.tif",
+      "sha256": "5b92c95bc304ca229e679ec7a74bfe792e4eafb11a9621260c359d74e9816a63"
+    },
+    {
+      "pair_id": "LC08_L2SP_151044_20260112_02_T1__42QVM_20260112__28_14",
+      "sensor": "sentinel",
+      "split": "test",
+      "pixels_identified": 2,
+      "path": "masks/test/sentinel/LC08_L2SP_151044_20260112_02_T1__42QVM_20260112__28_14.tif",
+      "sha256": "bb1c26e3673af881acb125acbe89aa4d5234973a40e34f31a9990dee6ab99f7d"
+    },
+    {
+      "pair_id": "LC09_L2SP_139042_20260116_02_T1__45RVJ_20260116__2_36",
+      "sensor": "sentinel",
+      "split": "train",
+      "pixels_identified": 5,
+      "path": "masks/train/sentinel/LC09_L2SP_139042_20260116_02_T1__45RVJ_20260116__2_36.tif",
+      "sha256": "b76cd9626b15864a43d953b65a3e6b7d34f8893bdf350fe319331187a0e0d69b"
+    },
+    {
+      "pair_id": "LC09_L2SP_139042_20260116_02_T1__45RVJ_20260116__3_38",
+      "sensor": "sentinel",
+      "split": "train",
+      "pixels_identified": 6,
+      "path": "masks/train/sentinel/LC09_L2SP_139042_20260116_02_T1__45RVJ_20260116__3_38.tif",
+      "sha256": "0a242f1fe8dc9fceb0b7faf6af6ba02d49aba277437b93738b2b3a0f7db2c4ff"
+    },
+    {
+      "pair_id": "LC09_L2SP_139042_20260116_02_T1__45RVJ_20260116__3_39",
+      "sensor": "sentinel",
+      "split": "train",
+      "pixels_identified": 6,
+      "path": "masks/train/sentinel/LC09_L2SP_139042_20260116_02_T1__45RVJ_20260116__3_39.tif",
+      "sha256": "96c3326a55229472d448a90810c688a3fe280b27ea1b911ab6e3ae0e8f3eb31e"
+    },
+    {
+      "pair_id": "LC09_L2SP_139042_20260116_02_T1__45RVJ_20260116__4_25",
+      "sensor": "sentinel",
+      "split": "train",
+      "pixels_identified": 1,
+      "path": "masks/train/sentinel/LC09_L2SP_139042_20260116_02_T1__45RVJ_20260116__4_25.tif",
+      "sha256": "bb258d4091e195a99a592ef0ef22b28adaa46dad9a9df497a7b4431297b0470d"
+    },
+    {
+      "pair_id": "LC09_L2SP_139042_20260116_02_T1__45RVJ_20260116__4_38",
+      "sensor": "sentinel",
+      "split": "train",
+      "pixels_identified": 10,
+      "path": "masks/train/sentinel/LC09_L2SP_139042_20260116_02_T1__45RVJ_20260116__4_38.tif",
+      "sha256": "112528fc715d37a156bbbfb27909878402d84c57d65a5996f8f0fe94f85ff234"
+    },
+    {
+      "pair_id": "LC09_L2SP_139042_20260116_02_T1__45RWJ_20260116__13_20",
+      "sensor": "sentinel",
+      "split": "train",
+      "pixels_identified": 16,
+      "path": "masks/train/sentinel/LC09_L2SP_139042_20260116_02_T1__45RWJ_20260116__13_20.tif",
+      "sha256": "5672c13db4b5beda43188a14b9c64dbe245647deb52fe0ba975e09af320183f1"
+    },
+    {
+      "pair_id": "LC09_L2SP_139042_20260116_02_T1__45RWJ_20260116__14_22",
+      "sensor": "sentinel",
+      "split": "train",
+      "pixels_identified": 1,
+      "path": "masks/train/sentinel/LC09_L2SP_139042_20260116_02_T1__45RWJ_20260116__14_22.tif",
+      "sha256": "314e0cb26ebeb8f5e54008789e6c4bb68ca946a1986e454af2c51479622804a6"
+    },
+    {
+      "pair_id": "LC09_L2SP_139042_20260116_02_T1__45RWJ_20260116__19_26",
+      "sensor": "sentinel",
+      "split": "train",
+      "pixels_identified": 2,
+      "path": "masks/train/sentinel/LC09_L2SP_139042_20260116_02_T1__45RWJ_20260116__19_26.tif",
+      "sha256": "cd76d54ed51feda4e93cb73a994b511d3dcaac3a30e4546e2c3fedb00986f4d9"
+    },
+    {
+      "pair_id": "LC09_L2SP_139042_20260116_02_T1__45RWJ_20260116__20_21",
+      "sensor": "sentinel",
+      "split": "train",
+      "pixels_identified": 29,
+      "path": "masks/train/sentinel/LC09_L2SP_139042_20260116_02_T1__45RWJ_20260116__20_21.tif",
+      "sha256": "33f2f590bbbcefbd7a836f7e3c1cb133dce88759619ca0c8f8848bf9eba988ba"
+    },
+    {
+      "pair_id": "LC09_L2SP_139042_20260116_02_T1__45RWJ_20260116__4_39",
+      "sensor": "sentinel",
+      "split": "train",
+      "pixels_identified": 7,
+      "path": "masks/train/sentinel/LC09_L2SP_139042_20260116_02_T1__45RWJ_20260116__4_39.tif",
+      "sha256": "21fb8cb361260cfeca0a8a67ad9929eb071c4e9df5e4de099db852096a2bbc8d"
+    },
+    {
+      "pair_id": "LC09_L2SP_139042_20260116_02_T1__45RWJ_20260116__5_24",
+      "sensor": "sentinel",
+      "split": "train",
+      "pixels_identified": 9,
+      "path": "masks/train/sentinel/LC09_L2SP_139042_20260116_02_T1__45RWJ_20260116__5_24.tif",
+      "sha256": "60d9634d95f95404c9a92465611908209d3e3a67564610ddab34d41f2a250cae"
+    },
+    {
+      "pair_id": "LC09_L2SP_139042_20260116_02_T1__45RWJ_20260116__7_20",
+      "sensor": "sentinel",
+      "split": "train",
+      "pixels_identified": 10,
+      "path": "masks/train/sentinel/LC09_L2SP_139042_20260116_02_T1__45RWJ_20260116__7_20.tif",
+      "sha256": "ce82f4ccccb6186677dfa29524f2fd59be3a6297b06c783d4e57d5b16d235a35"
+    },
+    {
+      "pair_id": "LC09_L2SP_139043_20260116_02_T1__45RWJ_20260116__13_2",
+      "sensor": "sentinel",
+      "split": "train",
+      "pixels_identified": 1,
+      "path": "masks/train/sentinel/LC09_L2SP_139043_20260116_02_T1__45RWJ_20260116__13_2.tif",
+      "sha256": "d0d7c4205e55bfff3e19352909f0e444c5c07784f165ae1331d87883af7e3a09"
+    },
+    {
+      "pair_id": "LC09_L2SP_139043_20260116_02_T1__45RWJ_20260116__13_5",
+      "sensor": "sentinel",
+      "split": "train",
+      "pixels_identified": 19,
+      "path": "masks/train/sentinel/LC09_L2SP_139043_20260116_02_T1__45RWJ_20260116__13_5.tif",
+      "sha256": "518fe113fdb96a2eb7453737d204025af53464b92e32cc19cb7f050a143feee0"
+    },
+    {
+      "pair_id": "LC09_L2SP_139043_20260116_02_T1__45RWJ_20260116__17_6",
+      "sensor": "sentinel",
+      "split": "train",
+      "pixels_identified": 1,
+      "path": "masks/train/sentinel/LC09_L2SP_139043_20260116_02_T1__45RWJ_20260116__17_6.tif",
+      "sha256": "e37c09fe311068945cd36da42ce76ceb784d92dcc7c691536a27ac2a04a61fba"
+    },
+    {
+      "pair_id": "LC09_L2SP_139043_20260116_02_T1__45RWJ_20260116__18_6",
+      "sensor": "sentinel",
+      "split": "train",
+      "pixels_identified": 3,
+      "path": "masks/train/sentinel/LC09_L2SP_139043_20260116_02_T1__45RWJ_20260116__18_6.tif",
+      "sha256": "de76ab0a0c3ca90e16a6b6cb08f1dac1d1acac83c538fc5209c9ca5f62f741f6"
+    },
+    {
+      "pair_id": "LC09_L2SP_139043_20260116_02_T1__45RWJ_20260116__19_6",
+      "sensor": "sentinel",
+      "split": "train",
+      "pixels_identified": 8,
+      "path": "masks/train/sentinel/LC09_L2SP_139043_20260116_02_T1__45RWJ_20260116__19_6.tif",
+      "sha256": "d1e75c78f9c574aca3bb453a0caa93111fa367cf03da88102320c751ee80351a"
+    },
+    {
+      "pair_id": "LC09_L2SP_139044_20260609_02_T1__45QWG_20260609__27_15",
+      "sensor": "sentinel",
+      "split": "train",
+      "pixels_identified": 7,
+      "path": "masks/train/sentinel/LC09_L2SP_139044_20260609_02_T1__45QWG_20260609__27_15.tif",
+      "sha256": "1a84e1b585d3e67db038f11cea62423abd0eeb8ad5c3dc7ad4a464e8c2c383ab"
+    },
+    {
+      "pair_id": "LC09_L2SP_139044_20260609_02_T1__45QWG_20260609__29_13",
+      "sensor": "sentinel",
+      "split": "train",
+      "pixels_identified": 1,
+      "path": "masks/train/sentinel/LC09_L2SP_139044_20260609_02_T1__45QWG_20260609__29_13.tif",
+      "sha256": "01f66b191f03fda4983c511302d60016f2c7456a84f67826abdb8553df637ec4"
+    },
+    {
+      "pair_id": "LC09_L2SP_139044_20260609_02_T1__45QWG_20260609__30_14",
+      "sensor": "sentinel",
+      "split": "train",
+      "pixels_identified": 1,
+      "path": "masks/train/sentinel/LC09_L2SP_139044_20260609_02_T1__45QWG_20260609__30_14.tif",
+      "sha256": "5982cbc01bee97a69f4956c3e690d1b0a1efcc0dcbc1691bbd6457c27ba16a90"
+    },
+    {
+      "pair_id": "LC09_L2SP_139044_20260609_02_T1__45QWG_20260609__30_15",
+      "sensor": "sentinel",
+      "split": "train",
+      "pixels_identified": 1,
+      "path": "masks/train/sentinel/LC09_L2SP_139044_20260609_02_T1__45QWG_20260609__30_15.tif",
+      "sha256": "35e39e878f91aefb1d3a8549b82a39b9846a5327d1ddeddbe1a79581631cc6fc"
+    },
+    {
+      "pair_id": "LC09_L2SP_139045_20260116_02_T1__45QUE_20260116__5_21",
+      "sensor": "sentinel",
+      "split": "train",
+      "pixels_identified": 3,
+      "path": "masks/train/sentinel/LC09_L2SP_139045_20260116_02_T1__45QUE_20260116__5_21.tif",
+      "sha256": "e247fb3accb2b9992ceebd7119f7adcc33ac456c8abf9d751a0bb874dac6b0a8"
+    },
+    {
+      "pair_id": "LC09_L2SP_141042_20260114_02_T1__44RQP_20260114__5_22",
+      "sensor": "sentinel",
+      "split": "train",
+      "pixels_identified": 1,
+      "path": "masks/train/sentinel/LC09_L2SP_141042_20260114_02_T1__44RQP_20260114__5_22.tif",
+      "sha256": "3de8db4bdc7201cda8b67f811b8d6db9bc42eb78bf5cef4580a0c031eb7a1caa"
+    },
+    {
+      "pair_id": "LC09_L2SP_141042_20260114_02_T1__44RRP_20260114__23_31",
+      "sensor": "sentinel",
+      "split": "test",
+      "pixels_identified": 5,
+      "path": "masks/test/sentinel/LC09_L2SP_141042_20260114_02_T1__44RRP_20260114__23_31.tif",
+      "sha256": "2552d33a1c7800864b03c4773c9e59850df5561b73f9b46310249c218403361b"
+    },
+    {
+      "pair_id": "LC09_L2SP_141042_20260114_02_T1__45RTJ_20260114__24_31",
+      "sensor": "sentinel",
+      "split": "test",
+      "pixels_identified": 4,
+      "path": "masks/test/sentinel/LC09_L2SP_141042_20260114_02_T1__45RTJ_20260114__24_31.tif",
+      "sha256": "369c4f6d07b940677df49b3f526a2b5ae764b9631a8c31162294498fbbccef1b"
+    },
+    {
+      "pair_id": "LC09_L2SP_141042_20260114_02_T1__45RTJ_20260114__24_32",
+      "sensor": "sentinel",
+      "split": "test",
+      "pixels_identified": 12,
+      "path": "masks/test/sentinel/LC09_L2SP_141042_20260114_02_T1__45RTJ_20260114__24_32.tif",
+      "sha256": "df40c176ec334638a1efd48e9f5ad73f292b264e3dda4686f5e6becfd15ca9ec"
+    },
+    {
+      "pair_id": "LC09_L2SP_141043_20260506_02_T1__44QRM_20260506__22_32",
+      "sensor": "sentinel",
+      "split": "train",
+      "pixels_identified": 4,
+      "path": "masks/train/sentinel/LC09_L2SP_141043_20260506_02_T1__44QRM_20260506__22_32.tif",
+      "sha256": "88957d5a7b37f3106b794f506a1a2120e6b89ba883ff1eb14900ba086f332268"
+    },
+    {
+      "pair_id": "LC09_L2SP_141043_20260506_02_T1__44QRM_20260506__22_37",
+      "sensor": "sentinel",
+      "split": "val",
+      "pixels_identified": 23,
+      "path": "masks/val/sentinel/LC09_L2SP_141043_20260506_02_T1__44QRM_20260506__22_37.tif",
+      "sha256": "0d36d281f52530433f1a179852a43d76d8611ad1e78089cf0237702ec2f089b0"
+    },
+    {
+      "pair_id": "LC09_L2SP_141043_20260506_02_T1__44QRM_20260506__23_39",
+      "sensor": "sentinel",
+      "split": "val",
+      "pixels_identified": 26,
+      "path": "masks/val/sentinel/LC09_L2SP_141043_20260506_02_T1__44QRM_20260506__23_39.tif",
+      "sha256": "014cb221678b9052819e2a8f1c45e75158e801b8d93df24b1f5efcd5b8d05eee"
+    },
+    {
+      "pair_id": "LC09_L2SP_141043_20260506_02_T1__44QRM_20260506__27_35",
+      "sensor": "sentinel",
+      "split": "train",
+      "pixels_identified": 21,
+      "path": "masks/train/sentinel/LC09_L2SP_141043_20260506_02_T1__44QRM_20260506__27_35.tif",
+      "sha256": "e836669baf7a1edaa867f729dba321a9a60ab50354c6d3d18365d2c45316ff3f"
+    },
+    {
+      "pair_id": "LC09_L2SP_141043_20260506_02_T1__44QRM_20260506__28_34",
+      "sensor": "sentinel",
+      "split": "train",
+      "pixels_identified": 16,
+      "path": "masks/train/sentinel/LC09_L2SP_141043_20260506_02_T1__44QRM_20260506__28_34.tif",
+      "sha256": "c3807531a93e2a0d1c81422cbf2c2cc29332b2b5a95d453c27b3aaef1b008846"
+    },
+    {
+      "pair_id": "LC09_L2SP_141043_20260506_02_T1__44RRN_20260506__27_29",
+      "sensor": "sentinel",
+      "split": "train",
+      "pixels_identified": 28,
+      "path": "masks/train/sentinel/LC09_L2SP_141043_20260506_02_T1__44RRN_20260506__27_29.tif",
+      "sha256": "0083c682ea6a958577179d74ff65b5cc06e2457f30f9261318757d706dbe3ddf"
+    },
+    {
+      "pair_id": "LC09_L2SP_141043_20260506_02_T1__44RRN_20260506__31_29",
+      "sensor": "sentinel",
+      "split": "train",
+      "pixels_identified": 26,
+      "path": "masks/train/sentinel/LC09_L2SP_141043_20260506_02_T1__44RRN_20260506__31_29.tif",
+      "sha256": "395731769f2b86c500dce2631ae497ab16e7d4ef0bb36c665ebeb5fb70b23303"
+    },
+    {
+      "pair_id": "LC09_L2SP_141043_20260506_02_T1__45QTG_20260506__21_37",
+      "sensor": "sentinel",
+      "split": "val",
+      "pixels_identified": 15,
+      "path": "masks/val/sentinel/LC09_L2SP_141043_20260506_02_T1__45QTG_20260506__21_37.tif",
+      "sha256": "794bd29bfe0fbf9168e4cd63b3235fcb6d77b6fc04b02b16dc87a9820bd23807"
+    },
+    {
+      "pair_id": "LC09_L2SP_141043_20260506_02_T1__45QTG_20260506__21_41",
+      "sensor": "sentinel",
+      "split": "val",
+      "pixels_identified": 25,
+      "path": "masks/val/sentinel/LC09_L2SP_141043_20260506_02_T1__45QTG_20260506__21_41.tif",
+      "sha256": "9fe3ff91a46b70e7d7116796fa7efbe71eba370d5d794fe32470c299e1bbc205"
+    },
+    {
+      "pair_id": "LC09_L2SP_141043_20260506_02_T1__45QTG_20260506__24_32",
+      "sensor": "sentinel",
+      "split": "train",
+      "pixels_identified": 3,
+      "path": "masks/train/sentinel/LC09_L2SP_141043_20260506_02_T1__45QTG_20260506__24_32.tif",
+      "sha256": "7be9b2bd489ca1dab18c34a89203703b476a58e3af6550999ef294666444e23c"
+    },
+    {
+      "pair_id": "LC09_L2SP_141043_20260506_02_T1__45QTG_20260506__24_39",
+      "sensor": "sentinel",
+      "split": "val",
+      "pixels_identified": 49,
+      "path": "masks/val/sentinel/LC09_L2SP_141043_20260506_02_T1__45QTG_20260506__24_39.tif",
+      "sha256": "2f070c32088124e9ea5467909434cbdacec270cde43ae8b5fb044cef58037f12"
+    },
+    {
+      "pair_id": "LC09_L2SP_141043_20260506_02_T1__45QTG_20260506__25_36",
+      "sensor": "sentinel",
+      "split": "val",
+      "pixels_identified": 10,
+      "path": "masks/val/sentinel/LC09_L2SP_141043_20260506_02_T1__45QTG_20260506__25_36.tif",
+      "sha256": "01731124fd8969895c248f3d2771122fee8e2593376117dfadc41278b0811573"
+    },
+    {
+      "pair_id": "LC09_L2SP_141043_20260506_02_T1__45QTG_20260506__25_40",
+      "sensor": "sentinel",
+      "split": "val",
+      "pixels_identified": 34,
+      "path": "masks/val/sentinel/LC09_L2SP_141043_20260506_02_T1__45QTG_20260506__25_40.tif",
+      "sha256": "6baf4da846baa1cbea1eb2cdbb502ed70794612be2a587e1e10c4ef8ea52d104"
+    },
+    {
+      "pair_id": "LC09_L2SP_141043_20260506_02_T1__45QTG_20260506__26_30",
+      "sensor": "sentinel",
+      "split": "train",
+      "pixels_identified": 9,
+      "path": "masks/train/sentinel/LC09_L2SP_141043_20260506_02_T1__45QTG_20260506__26_30.tif",
+      "sha256": "76eeacd08bd65e7ff8ebfc9559869a8b01f46afd34f47b7897261c901a5ec2e6"
+    },
+    {
+      "pair_id": "LC09_L2SP_141043_20260506_02_T1__45QTG_20260506__26_35",
+      "sensor": "sentinel",
+      "split": "train",
+      "pixels_identified": 14,
+      "path": "masks/train/sentinel/LC09_L2SP_141043_20260506_02_T1__45QTG_20260506__26_35.tif",
+      "sha256": "48a578118312ffc50a16b4a5891e7569762dd85a6aa77eaf7cd3ef1f1046900d"
+    },
+    {
+      "pair_id": "LC09_L2SP_141043_20260506_02_T1__45QTG_20260506__26_38",
+      "sensor": "sentinel",
+      "split": "val",
+      "pixels_identified": 26,
+      "path": "masks/val/sentinel/LC09_L2SP_141043_20260506_02_T1__45QTG_20260506__26_38.tif",
+      "sha256": "6ebe483e9cb5f2634c07b8050945980de93877860781ba00bb87c559d850faee"
+    },
+    {
+      "pair_id": "LC09_L2SP_141043_20260506_02_T1__45QTG_20260506__26_39",
+      "sensor": "sentinel",
+      "split": "val",
+      "pixels_identified": 48,
+      "path": "masks/val/sentinel/LC09_L2SP_141043_20260506_02_T1__45QTG_20260506__26_39.tif",
+      "sha256": "3fd883839760e176989c7f306c3545ee703bf7f9b4834dc2cef827f6ba9d7836"
+    },
+    {
+      "pair_id": "LC09_L2SP_141043_20260506_02_T1__45QTG_20260506__29_34",
+      "sensor": "sentinel",
+      "split": "train",
+      "pixels_identified": 27,
+      "path": "masks/train/sentinel/LC09_L2SP_141043_20260506_02_T1__45QTG_20260506__29_34.tif",
+      "sha256": "1d56ca4256a09221e75e92731446b201f57d8a9f5bfcc824f8da97f10a1c37b9"
+    },
+    {
+      "pair_id": "LC09_L2SP_141043_20260506_02_T1__45QTG_20260506__29_36",
+      "sensor": "sentinel",
+      "split": "val",
+      "pixels_identified": 52,
+      "path": "masks/val/sentinel/LC09_L2SP_141043_20260506_02_T1__45QTG_20260506__29_36.tif",
+      "sha256": "786fc809f03b1dc184f112d9ce8fb7c0c0dda1f4a67a174d41a00cf912bdc6bb"
+    },
+    {
+      "pair_id": "LC09_L2SP_141043_20260506_02_T1__45QTG_20260506__33_31",
+      "sensor": "sentinel",
+      "split": "train",
+      "pixels_identified": 10,
+      "path": "masks/train/sentinel/LC09_L2SP_141043_20260506_02_T1__45QTG_20260506__33_31.tif",
+      "sha256": "dd7da3012853742f782b2d7d75ec2ed0173b6783c62b4102fe56fa2a3efb8282"
+    },
+    {
+      "pair_id": "LC09_L2SP_141043_20260506_02_T1__45RTH_20260506__25_24",
+      "sensor": "sentinel",
+      "split": "train",
+      "pixels_identified": 23,
+      "path": "masks/train/sentinel/LC09_L2SP_141043_20260506_02_T1__45RTH_20260506__25_24.tif",
+      "sha256": "7ca8ec06dffbc85380f65e863d7f4b4e6a650a8a48f4fa0f1df4b71e6a798b0b"
+    },
+    {
+      "pair_id": "LC09_L2SP_141043_20260506_02_T1__45RTH_20260506__33_27",
+      "sensor": "sentinel",
+      "split": "train",
+      "pixels_identified": 34,
+      "path": "masks/train/sentinel/LC09_L2SP_141043_20260506_02_T1__45RTH_20260506__33_27.tif",
+      "sha256": "30aa6e4e4aed37ca07758d6d93978b6beec92d2550922bb96b321773b1c7bbc0"
+    },
+    {
+      "pair_id": "LC09_L2SP_141044_20260114_02_T1__44QQL_20260114__16_29",
+      "sensor": "sentinel",
+      "split": "train",
+      "pixels_identified": 7,
+      "path": "masks/train/sentinel/LC09_L2SP_141044_20260114_02_T1__44QQL_20260114__16_29.tif",
+      "sha256": "8a040f478a535ba6c21e324fa2b99deb98f09258d959bf1dfcef47929efedecd"
+    },
+    {
+      "pair_id": "LC09_L2SP_141044_20260506_02_T1__44QRM_20260506__27_14",
+      "sensor": "sentinel",
+      "split": "val",
+      "pixels_identified": 16,
+      "path": "masks/val/sentinel/LC09_L2SP_141044_20260506_02_T1__44QRM_20260506__27_14.tif",
+      "sha256": "7af68b52a664b0ed011fda1ce8f356151259a12f71e4f883552e14d27184d13a"
+    },
+    {
+      "pair_id": "LC09_L2SP_141044_20260506_02_T1__44QRM_20260506__29_13",
+      "sensor": "sentinel",
+      "split": "val",
+      "pixels_identified": 17,
+      "path": "masks/val/sentinel/LC09_L2SP_141044_20260506_02_T1__44QRM_20260506__29_13.tif",
+      "sha256": "fde85a547c5d11a085e61c3466af1c596b8e7086ec07885269f461e807e587a4"
+    },
+    {
+      "pair_id": "LC09_L2SP_141044_20260506_02_T1__45QTG_20260506__27_11",
+      "sensor": "sentinel",
+      "split": "val",
+      "pixels_identified": 31,
+      "path": "masks/val/sentinel/LC09_L2SP_141044_20260506_02_T1__45QTG_20260506__27_11.tif",
+      "sha256": "558c06a0e5165cc49621376586fd981f62cd624de944a60e7d2e1bda5df0fdff"
+    },
+    {
+      "pair_id": "LC09_L2SP_141044_20260506_02_T1__45QTG_20260506__29_9",
+      "sensor": "sentinel",
+      "split": "val",
+      "pixels_identified": 30,
+      "path": "masks/val/sentinel/LC09_L2SP_141044_20260506_02_T1__45QTG_20260506__29_9.tif",
+      "sha256": "3f27718adbdd5b7a91c76d8555798a1b652196e1c03fd8f3cf4fa3e0c3c6067a"
+    },
+    {
+      "pair_id": "LC09_L2SP_141044_20260506_02_T1__45QTG_20260506__30_6",
+      "sensor": "sentinel",
+      "split": "val",
+      "pixels_identified": 22,
+      "path": "masks/val/sentinel/LC09_L2SP_141044_20260506_02_T1__45QTG_20260506__30_6.tif",
+      "sha256": "3ecc612e3ffe8973f69626f9be00bc1a84dfcff0d938c5ab73d02f261c0b832a"
+    },
+    {
+      "pair_id": "LC09_L2SP_141044_20260506_02_T1__45QTG_20260506__33_6",
+      "sensor": "sentinel",
+      "split": "val",
+      "pixels_identified": 41,
+      "path": "masks/val/sentinel/LC09_L2SP_141044_20260506_02_T1__45QTG_20260506__33_6.tif",
+      "sha256": "fb7dd008f580d9e52dd78dc31ba01bb935a6e2e8950b98b97f28d7ec33c9616f"
+    },
+    {
+      "pair_id": "LC09_L2SP_141045_20260114_02_T1__44QRJ_20260114__28_24",
+      "sensor": "sentinel",
+      "split": "test",
+      "pixels_identified": 2,
+      "path": "masks/test/sentinel/LC09_L2SP_141045_20260114_02_T1__44QRJ_20260114__28_24.tif",
+      "sha256": "27029d025cff78c49b9eeb3acf5c7c595db8cc3d1bbc00d3ac32ee6d73119f3d"
+    },
+    {
+      "pair_id": "LC09_L2SP_141045_20260114_02_T1__44QRJ_20260114__28_26",
+      "sensor": "sentinel",
+      "split": "test",
+      "pixels_identified": 1,
+      "path": "masks/test/sentinel/LC09_L2SP_141045_20260114_02_T1__44QRJ_20260114__28_26.tif",
+      "sha256": "6ea02be9178aec80146caff370002e05506f5e9a91c9f321ff05c93cccc39906"
+    },
+    {
+      "pair_id": "LC09_L2SP_141045_20260114_02_T1__44QRK_20260114__27_20",
+      "sensor": "landsat",
+      "split": "test",
+      "pixels_identified": 2,
+      "path": "masks/test/landsat/LC09_L2SP_141045_20260114_02_T1__44QRK_20260114__27_20.tif",
+      "sha256": "beb7495c8dfa68e0a99a26c98340273dc2a3d9bdbe5159f69963147acda82272"
+    },
+    {
+      "pair_id": "LC09_L2SP_141048_20260114_02_T1__44QPD_20260114__9_31",
+      "sensor": "sentinel",
+      "split": "train",
+      "pixels_identified": 5,
+      "path": "masks/train/sentinel/LC09_L2SP_141048_20260114_02_T1__44QPD_20260114__9_31.tif",
+      "sha256": "af6092d43735a6b2607211f38597a7a95546db641a72fa78a1858d064516eef3"
+    },
+    {
+      "pair_id": "LC09_L2SP_143042_20260112_02_T1__44RMQ_20260112__6_19",
+      "sensor": "sentinel",
+      "split": "train",
+      "pixels_identified": 1,
+      "path": "masks/train/sentinel/LC09_L2SP_143042_20260112_02_T1__44RMQ_20260112__6_19.tif",
+      "sha256": "f82f67949b8751b345e83a889857582aa503d0c23265333f59264e532380de5f"
+    },
+    {
+      "pair_id": "LC09_L2SP_143042_20260112_02_T1__44RPP_20260112__30_20",
+      "sensor": "sentinel",
+      "split": "train",
+      "pixels_identified": 1,
+      "path": "masks/train/sentinel/LC09_L2SP_143042_20260112_02_T1__44RPP_20260112__30_20.tif",
+      "sha256": "e49e3055f793aca0125491e26cc89520716aad0a256ee22f1de3dfd86bba89c3"
+    },
+    {
+      "pair_id": "LC09_L2SP_143042_20260112_02_T1__44RPP_20260112__31_19",
+      "sensor": "sentinel",
+      "split": "train",
+      "pixels_identified": 1,
+      "path": "masks/train/sentinel/LC09_L2SP_143042_20260112_02_T1__44RPP_20260112__31_19.tif",
+      "sha256": "2f60019da0e1ddf9dd50d8adae88243a6c6e47eaee4e0fc0c9680bd5dc4601d4"
+    },
+    {
+      "pair_id": "LC09_L2SP_143042_20260112_02_T1__44RPQ_20260112__29_9",
+      "sensor": "sentinel",
+      "split": "train",
+      "pixels_identified": 2,
+      "path": "masks/train/sentinel/LC09_L2SP_143042_20260112_02_T1__44RPQ_20260112__29_9.tif",
+      "sha256": "98619fc78e6c5774af3454e0b055068ebbcddde24f8c1d9e0fadcae8fcdd0d87"
+    },
+    {
+      "pair_id": "LC09_L2SP_143042_20260112_02_T1__44RPQ_20260112__30_11",
+      "sensor": "sentinel",
+      "split": "train",
+      "pixels_identified": 4,
+      "path": "masks/train/sentinel/LC09_L2SP_143042_20260112_02_T1__44RPQ_20260112__30_11.tif",
+      "sha256": "91e9bc99fac4cd9f8edad6ac6e7e66c2e172ca64787c3fe2fd20e27639b6646d"
+    },
+    {
+      "pair_id": "LC09_L2SP_143042_20260112_02_T1__44RPQ_20260112__32_12",
+      "sensor": "sentinel",
+      "split": "train",
+      "pixels_identified": 3,
+      "path": "masks/train/sentinel/LC09_L2SP_143042_20260112_02_T1__44RPQ_20260112__32_12.tif",
+      "sha256": "b054fe27c300502eaca4b996b7644ddad1bb334c8967a5f859d28f3987a37076"
+    },
+    {
+      "pair_id": "LC09_L2SP_143042_20260112_02_T1__44RPQ_20260112__33_12",
+      "sensor": "sentinel",
+      "split": "train",
+      "pixels_identified": 3,
+      "path": "masks/train/sentinel/LC09_L2SP_143042_20260112_02_T1__44RPQ_20260112__33_12.tif",
+      "sha256": "b21211f9fb5e0284cedc76b63ebb19606986536c1a412f87063eba5da5022bcb"
+    },
+    {
+      "pair_id": "LC09_L2SP_143042_20260112_02_T1__44RPQ_20260112__43_16",
+      "sensor": "sentinel",
+      "split": "train",
+      "pixels_identified": 4,
+      "path": "masks/train/sentinel/LC09_L2SP_143042_20260112_02_T1__44RPQ_20260112__43_16.tif",
+      "sha256": "e04ea8a571e72ae0b4b4c6ea0e45cec1df465a29d361f9e9a18295f067f8ffd0"
+    },
+    {
+      "pair_id": "LC09_L2SP_144043_20260628_02_T1__44QMM_20260628__37_32",
+      "sensor": "sentinel",
+      "split": "train",
+      "pixels_identified": 4,
+      "path": "masks/train/sentinel/LC09_L2SP_144043_20260628_02_T1__44QMM_20260628__37_32.tif",
+      "sha256": "78c5e2db998b87568d4a5f766146d93fa1c0f96064c8c47baa8f7930eb14cc74"
+    },
+    {
+      "pair_id": "LC09_L2SP_144043_20260628_02_T1__44QMM_20260628__38_33",
+      "sensor": "sentinel",
+      "split": "train",
+      "pixels_identified": 3,
+      "path": "masks/train/sentinel/LC09_L2SP_144043_20260628_02_T1__44QMM_20260628__38_33.tif",
+      "sha256": "be6848631dce2e0540ce142a201c9db2663d4ce1c1b1f2b9fb6484f93c6c4811"
+    },
+    {
+      "pair_id": "LC09_L2SP_144044_20260628_02_T1__44QML_20260628__35_19",
+      "sensor": "sentinel",
+      "split": "train",
+      "pixels_identified": 26,
+      "path": "masks/train/sentinel/LC09_L2SP_144044_20260628_02_T1__44QML_20260628__35_19.tif",
+      "sha256": "f96e88bedacc4577a232f0f1df301fe9ad4e00afd9e3592d0445fdb388560880"
+    },
+    {
+      "pair_id": "LC09_L2SP_144044_20260628_02_T1__44QML_20260628__36_19",
+      "sensor": "sentinel",
+      "split": "train",
+      "pixels_identified": 46,
+      "path": "masks/train/sentinel/LC09_L2SP_144044_20260628_02_T1__44QML_20260628__36_19.tif",
+      "sha256": "05be029d4de6ceab815c3f6bca0ff51914e70c74ed66f140f271e9a27f5b2873"
+    },
+    {
+      "pair_id": "LC09_L2SP_144045_20260628_02_T1__44QLK_20260628__40_15",
+      "sensor": "sentinel",
+      "split": "train",
+      "pixels_identified": 4,
+      "path": "masks/train/sentinel/LC09_L2SP_144045_20260628_02_T1__44QLK_20260628__40_15.tif",
+      "sha256": "6c6978ab0bec51558b72eb66a585d626d5854a8cda758ebdb3381d6a2a1eab97"
+    },
+    {
+      "pair_id": "LC09_L2SP_145040_20260619_02_T1__44RKT_20260619__10_7",
+      "sensor": "sentinel",
+      "split": "val",
+      "pixels_identified": 11,
+      "path": "masks/val/sentinel/LC09_L2SP_145040_20260619_02_T1__44RKT_20260619__10_7.tif",
+      "sha256": "5858a6498be797b0c2f348a5a11dec67a8c12791e2c6c1cfc61fab72ab2c5e0c"
+    },
+    {
+      "pair_id": "LC09_L2SP_146035_20250927_02_T1__44SLE_20250927__21_42",
+      "sensor": "sentinel",
+      "split": "test",
+      "pixels_identified": 15,
+      "path": "masks/test/sentinel/LC09_L2SP_146035_20250927_02_T1__44SLE_20250927__21_42.tif",
+      "sha256": "53caa5e7d53e1a69f3f33895e5fb316e8e2717bc38ec6088399be6e45e847188"
+    },
+    {
+      "pair_id": "LC09_L2SP_146035_20250927_02_T1__44SLE_20250927__22_41",
+      "sensor": "sentinel",
+      "split": "test",
+      "pixels_identified": 4,
+      "path": "masks/test/sentinel/LC09_L2SP_146035_20250927_02_T1__44SLE_20250927__22_41.tif",
+      "sha256": "e1d20180c04d52a7541d1f68c852004259955079ac486de8c5af9713bee18736"
+    },
+    {
+      "pair_id": "LC09_L2SP_146035_20250927_02_T1__44SLE_20250927__24_35",
+      "sensor": "landsat",
+      "split": "test",
+      "pixels_identified": 15,
+      "path": "masks/test/landsat/LC09_L2SP_146035_20250927_02_T1__44SLE_20250927__24_35.tif",
+      "sha256": "6be2700ab04c1168ca2dc44665838574e8509cf60c84b7bd81fb330d1b4ffbb7"
+    },
+    {
+      "pair_id": "LC09_L2SP_146036_20250927_02_T1__44SKC_20250927__4_38",
+      "sensor": "sentinel",
+      "split": "train",
+      "pixels_identified": 2,
+      "path": "masks/train/sentinel/LC09_L2SP_146036_20250927_02_T1__44SKC_20250927__4_38.tif",
+      "sha256": "6e1c23914ee7345ac9cd3bb9c3312eea7fd0bcf4a5523d48f4410cd231c0a14d"
+    },
+    {
+      "pair_id": "LC09_L2SP_146036_20250927_02_T1__44SKC_20250927__5_38",
+      "sensor": "sentinel",
+      "split": "train",
+      "pixels_identified": 20,
+      "path": "masks/train/sentinel/LC09_L2SP_146036_20250927_02_T1__44SKC_20250927__5_38.tif",
+      "sha256": "9d1fbfcb6863e2c3dfdf390caf6ac1c08270eb80895457c8f92bb897bfeee1e6"
+    },
+    {
+      "pair_id": "LC09_L2SP_146036_20250927_02_T1__44SLE_20250927__29_11",
+      "sensor": "sentinel",
+      "split": "test",
+      "pixels_identified": 4,
+      "path": "masks/test/sentinel/LC09_L2SP_146036_20250927_02_T1__44SLE_20250927__29_11.tif",
+      "sha256": "3109659bd8ba7fc12b64198a78949d9cfdf1bafe19908966c51c1d586d6604ee"
+    },
+    {
+      "pair_id": "LC09_L2SP_146037_20250927_02_T1__44SKB_20250927__10_28",
+      "sensor": "sentinel",
+      "split": "train",
+      "pixels_identified": 1,
+      "path": "masks/train/sentinel/LC09_L2SP_146037_20250927_02_T1__44SKB_20250927__10_28.tif",
+      "sha256": "c9730cb8fad580426a6e34a5a20d0cc96b99ea7b14bde39f77c9471f12158c57"
+    },
+    {
+      "pair_id": "LC09_L2SP_146037_20250927_02_T1__44SKB_20250927__10_33",
+      "sensor": "sentinel",
+      "split": "val",
+      "pixels_identified": 4,
+      "path": "masks/val/sentinel/LC09_L2SP_146037_20250927_02_T1__44SKB_20250927__10_33.tif",
+      "sha256": "50c5106f12d625a8d41ed418535bff0292d3f23174f08904a407370d0c597cc3"
+    },
+    {
+      "pair_id": "LC09_L2SP_146037_20250927_02_T1__44SKC_20250927__14_5",
+      "sensor": "sentinel",
+      "split": "train",
+      "pixels_identified": 11,
+      "path": "masks/train/sentinel/LC09_L2SP_146037_20250927_02_T1__44SKC_20250927__14_5.tif",
+      "sha256": "9409fc683e1b3f371247ba0e24e3acfd7d91bb87490b2048609aed507a53b704"
+    },
+    {
+      "pair_id": "LC09_L2SP_146037_20250927_02_T1__44SKC_20250927__19_18",
+      "sensor": "sentinel",
+      "split": "train",
+      "pixels_identified": 1,
+      "path": "masks/train/sentinel/LC09_L2SP_146037_20250927_02_T1__44SKC_20250927__19_18.tif",
+      "sha256": "705560dac1ca418f719c20fd134c452c5930e99b7eb87e1b5845fe1e403f31ca"
+    },
+    {
+      "pair_id": "LC09_L2SP_146037_20250927_02_T1__44SKC_20250927__20_11",
+      "sensor": "sentinel",
+      "split": "train",
+      "pixels_identified": 42,
+      "path": "masks/train/sentinel/LC09_L2SP_146037_20250927_02_T1__44SKC_20250927__20_11.tif",
+      "sha256": "1eae3999c8f59aa1f6e84659c8cb5dae8c1922beb238367d77f8b16a5cfefdc5"
+    },
+    {
+      "pair_id": "LC09_L2SP_146037_20250927_02_T1__44SKC_20250927__20_16",
+      "sensor": "sentinel",
+      "split": "train",
+      "pixels_identified": 47,
+      "path": "masks/train/sentinel/LC09_L2SP_146037_20250927_02_T1__44SKC_20250927__20_16.tif",
+      "sha256": "564582edb60ddc24948a4f46aabdbf5b41dfe1446c67ab54873221de1d61f7bd"
+    },
+    {
+      "pair_id": "LC09_L2SP_146037_20250927_02_T1__44SLB_20250927__26_26",
+      "sensor": "sentinel",
+      "split": "train",
+      "pixels_identified": 12,
+      "path": "masks/train/sentinel/LC09_L2SP_146037_20250927_02_T1__44SLB_20250927__26_26.tif",
+      "sha256": "179b1f4d108878141ac6d362af702e39f6a89a7ec96d3e3aff22d390d3f271bf"
+    },
+    {
+      "pair_id": "LC09_L2SP_146037_20250927_02_T1__44SLB_20250927__26_27",
+      "sensor": "sentinel",
+      "split": "train",
+      "pixels_identified": 4,
+      "path": "masks/train/sentinel/LC09_L2SP_146037_20250927_02_T1__44SLB_20250927__26_27.tif",
+      "sha256": "6e7d566ef11288260ac346e527cd7cd1c97f9cdbcd1524b60d58f86bd378a8df"
+    },
+    {
+      "pair_id": "LC09_L2SP_146037_20260306_02_T1__44SKB_20260306__4_29",
+      "sensor": "landsat",
+      "split": "train",
+      "pixels_identified": 8,
+      "path": "masks/train/landsat/LC09_L2SP_146037_20260306_02_T1__44SKB_20260306__4_29.tif",
+      "sha256": "c298120ac569cf747204888034b433524ae23ff0633dafca756df56ab4a7b414"
+    },
+    {
+      "pair_id": "LC09_L2SP_146038_20250927_02_T1__43SGR_20250927__8_27",
+      "sensor": "sentinel",
+      "split": "train",
+      "pixels_identified": 1,
+      "path": "masks/train/sentinel/LC09_L2SP_146038_20250927_02_T1__43SGR_20250927__8_27.tif",
+      "sha256": "c79863f2634d86f0b8c645b7e2dc42e92b002cd4ef5ecd354350f9324e13114d"
+    },
+    {
+      "pair_id": "LC09_L2SP_146039_20250927_02_T1__43RGN_20250927__21_38",
+      "sensor": "sentinel",
+      "split": "val",
+      "pixels_identified": 5,
+      "path": "masks/val/sentinel/LC09_L2SP_146039_20250927_02_T1__43RGN_20250927__21_38.tif",
+      "sha256": "7000cfbb1fd3f87813a0af4da40e896c7acfa299adb3c4a239ef67bd4992b426"
+    },
+    {
+      "pair_id": "LC09_L2SP_146039_20250927_02_T1__44RKU_20250927__19_32",
+      "sensor": "landsat",
+      "split": "val",
+      "pixels_identified": 4,
+      "path": "masks/val/landsat/LC09_L2SP_146039_20250927_02_T1__44RKU_20250927__19_32.tif",
+      "sha256": "67d144dbfd55b8fb3b9a798979d324f344bb13762cf20282764468665f5ddfc1"
+    },
+    {
+      "pair_id": "LC09_L2SP_146039_20250927_02_T1__44RKU_20250927__20_24",
+      "sensor": "landsat",
+      "split": "train",
+      "pixels_identified": 1,
+      "path": "masks/train/landsat/LC09_L2SP_146039_20250927_02_T1__44RKU_20250927__20_24.tif",
+      "sha256": "5aa9754c1c1c9b55c9238bad6e0a8f4ba8096b52783a6188deecbf416b8c6149"
+    },
+    {
+      "pair_id": "LC09_L2SP_146039_20260423_02_T1__43RGP_20260423__14_19",
+      "sensor": "sentinel",
+      "split": "train",
+      "pixels_identified": 1,
+      "path": "masks/train/sentinel/LC09_L2SP_146039_20260423_02_T1__43RGP_20260423__14_19.tif",
+      "sha256": "175e48c8ef861b324532a58ba0a858345f7ebb93ea3584b5fb50ed0b725288f2"
+    },
+    {
+      "pair_id": "LC09_L2SP_146039_20260423_02_T1__43RGP_20260423__19_31",
+      "sensor": "sentinel",
+      "split": "val",
+      "pixels_identified": 26,
+      "path": "masks/val/sentinel/LC09_L2SP_146039_20260423_02_T1__43RGP_20260423__19_31.tif",
+      "sha256": "c112ee0eb04ce196648b3ebd20c2be58c8c9ed2a01749b93e718d34385224628"
+    },
+    {
+      "pair_id": "LC09_L2SP_146039_20260423_02_T1__44RKU_20260423__22_30",
+      "sensor": "sentinel",
+      "split": "val",
+      "pixels_identified": 47,
+      "path": "masks/val/sentinel/LC09_L2SP_146039_20260423_02_T1__44RKU_20260423__22_30.tif",
+      "sha256": "ad3d9b025b9f7dd437ad2df1aa1260f17e845263b37e5a853d80ac6962ec1111"
+    },
+    {
+      "pair_id": "LC09_L2SP_146039_20260423_02_T1__44RKU_20260423__24_28",
+      "sensor": "sentinel",
+      "split": "val",
+      "pixels_identified": 15,
+      "path": "masks/val/sentinel/LC09_L2SP_146039_20260423_02_T1__44RKU_20260423__24_28.tif",
+      "sha256": "d6cda7d000fb102b87d7046b3d5037742cf72c119d98c9046aeb1c0aa7c1faae"
+    },
+    {
+      "pair_id": "LC09_L2SP_146041_20260306_02_T1__43RFL_20260306__4_28",
+      "sensor": "sentinel",
+      "split": "train",
+      "pixels_identified": 1,
+      "path": "masks/train/sentinel/LC09_L2SP_146041_20260306_02_T1__43RFL_20260306__4_28.tif",
+      "sha256": "1be1553f0217d6dabce18c9e1f2570be86d8a4eea728a90ff4283e8c4ef7baa5"
+    },
+    {
+      "pair_id": "LC09_L2SP_147036_20250918_02_T1__43SGV_20250918__22_9",
+      "sensor": "sentinel",
+      "split": "val",
+      "pixels_identified": 2,
+      "path": "masks/val/sentinel/LC09_L2SP_147036_20250918_02_T1__43SGV_20250918__22_9.tif",
+      "sha256": "22db6c8ff2c023e5a7f1f457af8029b9dc318b450f69a09b88ae73eda36b0398"
+    },
+    {
+      "pair_id": "LC09_L2SP_147036_20260225_02_T1__43SGT_20260225__12_33",
+      "sensor": "landsat",
+      "split": "train",
+      "pixels_identified": 17,
+      "path": "masks/train/landsat/LC09_L2SP_147036_20260225_02_T1__43SGT_20260225__12_33.tif",
+      "sha256": "f8696a09429f0d3f1dcc24f87341b02ec1830d245cae9e855109b21fa38421aa"
+    },
+    {
+      "pair_id": "LC09_L2SP_147036_20260225_02_T1__43SGT_20260225__12_33",
+      "sensor": "sentinel",
+      "split": "train",
+      "pixels_identified": 2,
+      "path": "masks/train/sentinel/LC09_L2SP_147036_20260225_02_T1__43SGT_20260225__12_33.tif",
+      "sha256": "e83136bef13da93a876117f65856d32990b79a87b0037734909930192869efa1"
+    },
+    {
+      "pair_id": "LC09_L2SP_147036_20260225_02_T1__43SGT_20260225__16_32",
+      "sensor": "landsat",
+      "split": "train",
+      "pixels_identified": 3,
+      "path": "masks/train/landsat/LC09_L2SP_147036_20260225_02_T1__43SGT_20260225__16_32.tif",
+      "sha256": "63bdeedb9a40c64a6be7695bddd6369125aeb6d96cd80b8338a3766d55e4ebe4"
+    },
+    {
+      "pair_id": "LC09_L2SP_147037_20260225_02_T1__43SFT_20260225__10_16",
+      "sensor": "landsat",
+      "split": "train",
+      "pixels_identified": 2,
+      "path": "masks/train/landsat/LC09_L2SP_147037_20260225_02_T1__43SFT_20260225__10_16.tif",
+      "sha256": "3c22391f07828b4fe2f8732d0e9400f86d2d53cdd82c292d83284c5d187e8fb6"
+    },
+    {
+      "pair_id": "LC09_L2SP_147037_20260225_02_T1__43SFT_20260225__11_15",
+      "sensor": "landsat",
+      "split": "train",
+      "pixels_identified": 12,
+      "path": "masks/train/landsat/LC09_L2SP_147037_20260225_02_T1__43SFT_20260225__11_15.tif",
+      "sha256": "7f5aad821ac9b7930f85110a942d3acfecad42d94f732dab2454bb5f9d015665"
+    },
+    {
+      "pair_id": "LC09_L2SP_147037_20260225_02_T1__43SFT_20260225__11_15",
+      "sensor": "sentinel",
+      "split": "train",
+      "pixels_identified": 1,
+      "path": "masks/train/sentinel/LC09_L2SP_147037_20260225_02_T1__43SFT_20260225__11_15.tif",
+      "sha256": "c97c705000c48fdc947db7cac7da8424d3555da5592d38cdb5a26acc755fb648"
+    },
+    {
+      "pair_id": "LC09_L2SP_147037_20260225_02_T1__43SFT_20260225__11_16",
+      "sensor": "landsat",
+      "split": "train",
+      "pixels_identified": 2,
+      "path": "masks/train/landsat/LC09_L2SP_147037_20260225_02_T1__43SFT_20260225__11_16.tif",
+      "sha256": "8c9c29366e7504ce053bb2fa26774c62b5cb24c8695942662b0b0b312dfacc44"
+    },
+    {
+      "pair_id": "LC09_L2SP_147037_20260225_02_T1__43SFT_20260225__12_16",
+      "sensor": "landsat",
+      "split": "train",
+      "pixels_identified": 1,
+      "path": "masks/train/landsat/LC09_L2SP_147037_20260225_02_T1__43SFT_20260225__12_16.tif",
+      "sha256": "8af891de59322f41a7af626ee3dff3dec6369b50277bd1c28c550fec8375d452"
+    },
+    {
+      "pair_id": "LC09_L2SP_147037_20260225_02_T1__43SFT_20260225__8_14",
+      "sensor": "landsat",
+      "split": "train",
+      "pixels_identified": 2,
+      "path": "masks/train/landsat/LC09_L2SP_147037_20260225_02_T1__43SFT_20260225__8_14.tif",
+      "sha256": "35d49cfd266775667a90dd56c78722d04bc924995504b9f4febeb32886d2681f"
+    },
+    {
+      "pair_id": "LC09_L2SP_147037_20260516_02_T1__43SFS_20260516__16_30",
+      "sensor": "sentinel",
+      "split": "train",
+      "pixels_identified": 15,
+      "path": "masks/train/sentinel/LC09_L2SP_147037_20260516_02_T1__43SFS_20260516__16_30.tif",
+      "sha256": "33b0d2af3610718c43b775399d360e6a1f6f3b93233e1b9671e9073b2e0aace4"
+    },
+    {
+      "pair_id": "LC09_L2SP_147037_20260905_02_T1__44SKB_20260905__38_28",
+      "sensor": "sentinel",
+      "split": "train",
+      "pixels_identified": 17,
+      "path": "masks/train/sentinel/LC09_L2SP_147037_20260905_02_T1__44SKB_20260905__38_28.tif",
+      "sha256": "33a8c4f46eff98595af35bb635c02c96e10ab97fc046cd1bba9b69a7d074252f"
+    },
+    {
+      "pair_id": "LC09_L2SP_147037_20260905_02_T1__44SKB_20260905__38_30",
+      "sensor": "sentinel",
+      "split": "val",
+      "pixels_identified": 1,
+      "path": "masks/val/sentinel/LC09_L2SP_147037_20260905_02_T1__44SKB_20260905__38_30.tif",
+      "sha256": "f07f0b50eda2781dff6861a6ae49781de94af2029fdafdbd302fb26bf0b57992"
+    },
+    {
+      "pair_id": "LC09_L2SP_147037_20260905_02_T1__44SKB_20260905__39_27",
+      "sensor": "sentinel",
+      "split": "train",
+      "pixels_identified": 9,
+      "path": "masks/train/sentinel/LC09_L2SP_147037_20260905_02_T1__44SKB_20260905__39_27.tif",
+      "sha256": "2cab252ca1b872ed93a47a8dbc54a3e7143844de95d44c023f1cda6934d4bc07"
+    },
+    {
+      "pair_id": "LC09_L2SP_147037_20260905_02_T1__44SKB_20260905__40_29",
+      "sensor": "sentinel",
+      "split": "val",
+      "pixels_identified": 33,
+      "path": "masks/val/sentinel/LC09_L2SP_147037_20260905_02_T1__44SKB_20260905__40_29.tif",
+      "sha256": "50bebf1a6615d9ed8738253884fc7b58936eb77689310faf856d66404747bd5d"
+    },
+    {
+      "pair_id": "LC09_L2SP_147038_20260617_02_T1__43RFQ_20260617__10_33",
+      "sensor": "sentinel",
+      "split": "test",
+      "pixels_identified": 2,
+      "path": "masks/test/sentinel/LC09_L2SP_147038_20260617_02_T1__43RFQ_20260617__10_33.tif",
+      "sha256": "978a001b645456edcb8fcae20c8c6fd8fa65ecbce151ddd78faa91e29d0b0eef"
+    },
+    {
+      "pair_id": "LC09_L2SP_147038_20260617_02_T1__43RFQ_20260617__16_33",
+      "sensor": "sentinel",
+      "split": "test",
+      "pixels_identified": 1,
+      "path": "masks/test/sentinel/LC09_L2SP_147038_20260617_02_T1__43RFQ_20260617__16_33.tif",
+      "sha256": "e3aa12c24cc884ae86a56a769e8f08eadc780b074273c4bfebedd59348191c1b"
+    },
+    {
+      "pair_id": "LC09_L2SP_147038_20260617_02_T1__43RFQ_20260617__9_31",
+      "sensor": "sentinel",
+      "split": "test",
+      "pixels_identified": 4,
+      "path": "masks/test/sentinel/LC09_L2SP_147038_20260617_02_T1__43RFQ_20260617__9_31.tif",
+      "sha256": "6a3c45383f412aa313f9d839e17896fbc8404594985c8238c0145e7acbc8c3e8"
+    },
+    {
+      "pair_id": "LC09_L2SP_147039_20260516_02_T1__43RFN_20260516__11_40",
+      "sensor": "sentinel",
+      "split": "train",
+      "pixels_identified": 31,
+      "path": "masks/train/sentinel/LC09_L2SP_147039_20260516_02_T1__43RFN_20260516__11_40.tif",
+      "sha256": "d180f05c435a77e19dfab9b4c69cebd5da595e883b7b01547ddf133ba989e890"
+    },
+    {
+      "pair_id": "LC09_L2SP_147039_20260516_02_T1__43RFN_20260516__12_40",
+      "sensor": "sentinel",
+      "split": "train",
+      "pixels_identified": 37,
+      "path": "masks/train/sentinel/LC09_L2SP_147039_20260516_02_T1__43RFN_20260516__12_40.tif",
+      "sha256": "5b18861a9fbc0991334da94e1bb75688f9dc15575c72d846a6cdff6894b22ce3"
+    },
+    {
+      "pair_id": "LC09_L2SP_148035_20260710_02_T1__43SFV_20260710__25_34",
+      "sensor": "sentinel",
+      "split": "val",
+      "pixels_identified": 1,
+      "path": "masks/val/sentinel/LC09_L2SP_148035_20260710_02_T1__43SFV_20260710__25_34.tif",
+      "sha256": "e8ff76560bd176c6234d3465dbd16605015637c2325c69540e52942b2336aced"
+    },
+    {
+      "pair_id": "LC09_L2SP_148035_20260710_02_T1__43SFV_20260710__26_35",
+      "sensor": "sentinel",
+      "split": "val",
+      "pixels_identified": 1,
+      "path": "masks/val/sentinel/LC09_L2SP_148035_20260710_02_T1__43SFV_20260710__26_35.tif",
+      "sha256": "b3392ff5463733ac3c32ebccd3c053d7f43d708ced682130c1cdf8f8a557b5cf"
+    },
+    {
+      "pair_id": "LC09_L2SP_148035_20260710_02_T1__43SGV_20260710__38_42",
+      "sensor": "sentinel",
+      "split": "val",
+      "pixels_identified": 8,
+      "path": "masks/val/sentinel/LC09_L2SP_148035_20260710_02_T1__43SGV_20260710__38_42.tif",
+      "sha256": "047663ce578fbdffbd3f9bbb621be9a78abd98fef56c8a8de36834c5ba9fe864"
+    },
+    {
+      "pair_id": "LC09_L2SP_148035_20260710_02_T1__43SGV_20260710__38_43",
+      "sensor": "sentinel",
+      "split": "val",
+      "pixels_identified": 1,
+      "path": "masks/val/sentinel/LC09_L2SP_148035_20260710_02_T1__43SGV_20260710__38_43.tif",
+      "sha256": "db4e1bad881a875380279ad3959cdba765af7d111233864fe9c74eb8145867cb"
+    },
+    {
+      "pair_id": "LC09_L2SP_148036_20260710_02_T1__43SEU_20260710__14_23",
+      "sensor": "sentinel",
+      "split": "train",
+      "pixels_identified": 4,
+      "path": "masks/train/sentinel/LC09_L2SP_148036_20260710_02_T1__43SEU_20260710__14_23.tif",
+      "sha256": "4098ea7b45c54d1e9597900b712bb222173866487f78098dd8c5f20c7a6be45e"
+    },
+    {
+      "pair_id": "LC09_L2SP_148036_20260710_02_T1__43SEU_20260710__15_11",
+      "sensor": "sentinel",
+      "split": "train",
+      "pixels_identified": 8,
+      "path": "masks/train/sentinel/LC09_L2SP_148036_20260710_02_T1__43SEU_20260710__15_11.tif",
+      "sha256": "9fcd0cb49a90a6356a42b7a3960c1fb70a7c08fa5b88f15630f24477f7e9c5da"
+    },
+    {
+      "pair_id": "LC09_L2SP_148036_20260710_02_T1__43SEU_20260710__15_31",
+      "sensor": "sentinel",
+      "split": "train",
+      "pixels_identified": 20,
+      "path": "masks/train/sentinel/LC09_L2SP_148036_20260710_02_T1__43SEU_20260710__15_31.tif",
+      "sha256": "d33d5d30d4bad3cd092c80b6666c392796782e96888a01b21587222d8ea893fa"
+    },
+    {
+      "pair_id": "LC09_L2SP_148036_20260710_02_T1__43SEU_20260710__16_10",
+      "sensor": "sentinel",
+      "split": "train",
+      "pixels_identified": 8,
+      "path": "masks/train/sentinel/LC09_L2SP_148036_20260710_02_T1__43SEU_20260710__16_10.tif",
+      "sha256": "f9b506c0b54b9b4b4874d96c7d582876aa397cc2a7f1540165110a8ca90e49bc"
+    },
+    {
+      "pair_id": "LC09_L2SP_148036_20260710_02_T1__43SEU_20260710__16_31",
+      "sensor": "sentinel",
+      "split": "train",
+      "pixels_identified": 19,
+      "path": "masks/train/sentinel/LC09_L2SP_148036_20260710_02_T1__43SEU_20260710__16_31.tif",
+      "sha256": "ea861b6642436624cb7a16b4401f8cacfdad72c72cb96f815c20ef694cd2e83e"
+    },
+    {
+      "pair_id": "LC09_L2SP_148036_20260710_02_T1__43SFU_20260710__19_26",
+      "sensor": "sentinel",
+      "split": "train",
+      "pixels_identified": 4,
+      "path": "masks/train/sentinel/LC09_L2SP_148036_20260710_02_T1__43SFU_20260710__19_26.tif",
+      "sha256": "53a49d638c5567d7c93629f788db03eda8dce6972740bc20d84f0f02a4ee1758"
+    },
+    {
+      "pair_id": "LC09_L2SP_148036_20260710_02_T1__43SFU_20260710__20_25",
+      "sensor": "sentinel",
+      "split": "train",
+      "pixels_identified": 3,
+      "path": "masks/train/sentinel/LC09_L2SP_148036_20260710_02_T1__43SFU_20260710__20_25.tif",
+      "sha256": "73dea41bfefd43cc3dc4c8c7955b50ab1b00702aff763cea7c9817bcd8b97423"
+    },
+    {
+      "pair_id": "LC09_L2SP_148036_20260710_02_T1__43SFV_20260710__20_9",
+      "sensor": "sentinel",
+      "split": "train",
+      "pixels_identified": 1,
+      "path": "masks/train/sentinel/LC09_L2SP_148036_20260710_02_T1__43SFV_20260710__20_9.tif",
+      "sha256": "e3aa73157a35e9eb2dc8a45a16dbce4f6ac4b2fa690a62b0f655adcf4202ee0c"
+    },
+    {
+      "pair_id": "LC09_L2SP_148036_20260710_02_T1__43SFV_20260710__24_10",
+      "sensor": "sentinel",
+      "split": "train",
+      "pixels_identified": 1,
+      "path": "masks/train/sentinel/LC09_L2SP_148036_20260710_02_T1__43SFV_20260710__24_10.tif",
+      "sha256": "be85000c38eb2ee27336a57432484503cdfefb0a5e6d250e4eb833774ca163e8"
+    },
+    {
+      "pair_id": "LC09_L2SP_148036_20260710_02_T1__43SFV_20260710__24_9",
+      "sensor": "sentinel",
+      "split": "train",
+      "pixels_identified": 1,
+      "path": "masks/train/sentinel/LC09_L2SP_148036_20260710_02_T1__43SFV_20260710__24_9.tif",
+      "sha256": "36235e1b1d84ae8eb9ca5d6dba224f610dcb14874c1e478327bc2a55dbe43c93"
+    },
+    {
+      "pair_id": "LC09_L2SP_148037_20260421_02_T1__43SET_20260421__11_14",
+      "sensor": "sentinel",
+      "split": "test",
+      "pixels_identified": 1,
+      "path": "masks/test/sentinel/LC09_L2SP_148037_20260421_02_T1__43SET_20260421__11_14.tif",
+      "sha256": "fddc7ff15b14d5cb8b18529e7c79642b98a8a50ef8a4296fda8a2a4039825a4b"
+    },
+    {
+      "pair_id": "LC09_L2SP_148038_20260421_02_T1__43SES_20260421__16_2",
+      "sensor": "sentinel",
+      "split": "train",
+      "pixels_identified": 8,
+      "path": "masks/train/sentinel/LC09_L2SP_148038_20260421_02_T1__43SES_20260421__16_2.tif",
+      "sha256": "9ab172cee092e156d107ba28f6d3cbfe65176848fc3ec4ab336d4f38040e57e3"
+    },
+    {
+      "pair_id": "LC09_L2SP_148038_20260421_02_T1__43SFR_20260421__36_26",
+      "sensor": "sentinel",
+      "split": "test",
+      "pixels_identified": 2,
+      "path": "masks/test/sentinel/LC09_L2SP_148038_20260421_02_T1__43SFR_20260421__36_26.tif",
+      "sha256": "96b05a033a074fa42a706c4e8c44aa753f3b5072626d1e3c48fa036873ef9679"
+    },
+    {
+      "pair_id": "LC09_L2SP_148038_20260421_02_T1__43SFR_20260421__38_14",
+      "sensor": "sentinel",
+      "split": "train",
+      "pixels_identified": 3,
+      "path": "masks/train/sentinel/LC09_L2SP_148038_20260421_02_T1__43SFR_20260421__38_14.tif",
+      "sha256": "26aa0b85f0ca45734f443f18e49e2ecdebe671f5a2a5671a2683b06e0b41c05b"
+    },
+    {
+      "pair_id": "LC09_L2SP_148038_20260421_02_T1__43SFR_20260421__39_13",
+      "sensor": "sentinel",
+      "split": "train",
+      "pixels_identified": 1,
+      "path": "masks/train/sentinel/LC09_L2SP_148038_20260421_02_T1__43SFR_20260421__39_13.tif",
+      "sha256": "8e01e04fb007435cc35134babdbbe5a59906947368ea3fd27f8446adb2430416"
+    },
+    {
+      "pair_id": "LC09_L2SP_148038_20260421_02_T1__43SFR_20260421__39_15",
+      "sensor": "sentinel",
+      "split": "train",
+      "pixels_identified": 2,
+      "path": "masks/train/sentinel/LC09_L2SP_148038_20260421_02_T1__43SFR_20260421__39_15.tif",
+      "sha256": "0aa7ebc2caf8fbf8901631d740275654c74b230e1aa8ac0ec028ecff8bb20af2"
+    },
+    {
+      "pair_id": "LC09_L2SP_148038_20260421_02_T1__43SFR_20260421__42_18",
+      "sensor": "sentinel",
+      "split": "test",
+      "pixels_identified": 4,
+      "path": "masks/test/sentinel/LC09_L2SP_148038_20260421_02_T1__43SFR_20260421__42_18.tif",
+      "sha256": "a5081a9735dbc71feb222762e781a66bd7cb8b818bcc87e48ae74aeb7d5f3fac"
+    },
+    {
+      "pair_id": "LC09_L2SP_148038_20260421_02_T1__43SFR_20260421__42_26",
+      "sensor": "sentinel",
+      "split": "test",
+      "pixels_identified": 4,
+      "path": "masks/test/sentinel/LC09_L2SP_148038_20260421_02_T1__43SFR_20260421__42_26.tif",
+      "sha256": "e2d5541ba0845c871827ac6f535ad21c71992e5778a34cc27a4064271fc11117"
+    },
+    {
+      "pair_id": "LC09_L2SP_148038_20260523_02_T1__43RFQ_20260523__36_33",
+      "sensor": "sentinel",
+      "split": "test",
+      "pixels_identified": 43,
+      "path": "masks/test/sentinel/LC09_L2SP_148038_20260523_02_T1__43RFQ_20260523__36_33.tif",
+      "sha256": "c68fe221c920b61aa2ca8843b7f399ea8cdf1dfeb2e33bdfa9cb3320095b9af3"
+    },
+    {
+      "pair_id": "LC09_L2SP_148038_20260624_02_T1__43RFQ_20260624__38_29",
+      "sensor": "sentinel",
+      "split": "test",
+      "pixels_identified": 15,
+      "path": "masks/test/sentinel/LC09_L2SP_148038_20260624_02_T1__43RFQ_20260624__38_29.tif",
+      "sha256": "cbf57d1c14aad0068cadfb01e89b45cd2294b90331bd0fa035a6c4348d9f33e2"
+    },
+    {
+      "pair_id": "LC09_L2SP_149035_20260514_02_T1__43SDV_20260514__13_32",
+      "sensor": "sentinel",
+      "split": "train",
+      "pixels_identified": 4,
+      "path": "masks/train/sentinel/LC09_L2SP_149035_20260514_02_T1__43SDV_20260514__13_32.tif",
+      "sha256": "a9189160d2a248d7c8d9c477804cd09869d1444378a453debc5bb01420dd3d43"
+    },
+    {
+      "pair_id": "LC09_L2SP_149036_20260223_02_T1__43SDT_20260223__21_41",
+      "sensor": "landsat",
+      "split": "val",
+      "pixels_identified": 22,
+      "path": "masks/val/landsat/LC09_L2SP_149036_20260223_02_T1__43SDT_20260223__21_41.tif",
+      "sha256": "34c14a0752310af5460d6fe43a8070b53218e03c605a3bb92bad3b763d3297eb"
+    },
+    {
+      "pair_id": "LC09_L2SP_149036_20260223_02_T1__43SDT_20260223__21_41",
+      "sensor": "sentinel",
+      "split": "val",
+      "pixels_identified": 2,
+      "path": "masks/val/sentinel/LC09_L2SP_149036_20260223_02_T1__43SDT_20260223__21_41.tif",
+      "sha256": "66543d437556a8daae24a9b84dbfae4be8d952545ed1d4730d18c7304f144feb"
+    },
+    {
+      "pair_id": "LC09_L2SP_149036_20260223_02_T1__43SDU_20260223__14_28",
+      "sensor": "sentinel",
+      "split": "train",
+      "pixels_identified": 5,
+      "path": "masks/train/sentinel/LC09_L2SP_149036_20260223_02_T1__43SDU_20260223__14_28.tif",
+      "sha256": "45cf452e830e0d48bff5fcd7b88d7c525775b29ee61d1b18bd5790f7ddff7a1d"
+    },
+    {
+      "pair_id": "LC09_L2SP_149036_20260514_02_T1__43SDT_20260514__24_44",
+      "sensor": "sentinel",
+      "split": "test",
+      "pixels_identified": 14,
+      "path": "masks/test/sentinel/LC09_L2SP_149036_20260514_02_T1__43SDT_20260514__24_44.tif",
+      "sha256": "ed0ae638262e8be5b8a5c1761931d5230089d8afe7c255743fd7f20091ffc69b"
+    },
+    {
+      "pair_id": "LC09_L2SP_149037_20260514_02_T1__43SCT_20260514__11_19",
+      "sensor": "sentinel",
+      "split": "val",
+      "pixels_identified": 2,
+      "path": "masks/val/sentinel/LC09_L2SP_149037_20260514_02_T1__43SCT_20260514__11_19.tif",
+      "sha256": "0050fa9d2d1d1664ebbec8f392ce83355885c32e6e3679f2197b632b149521b9"
+    },
+    {
+      "pair_id": "LC09_L2SP_149037_20260514_02_T1__43SCT_20260514__16_19",
+      "sensor": "sentinel",
+      "split": "val",
+      "pixels_identified": 44,
+      "path": "masks/val/sentinel/LC09_L2SP_149037_20260514_02_T1__43SCT_20260514__16_19.tif",
+      "sha256": "06c72e4b530313fb48db3697b757ed8750dd4ab8369ff6a6b4067b0e6866f9f4"
+    },
+    {
+      "pair_id": "LC09_L2SP_149037_20260514_02_T1__43SCT_20260514__9_17",
+      "sensor": "sentinel",
+      "split": "test",
+      "pixels_identified": 4,
+      "path": "masks/test/sentinel/LC09_L2SP_149037_20260514_02_T1__43SCT_20260514__9_17.tif",
+      "sha256": "47e972f2316466b1307d02373830dd9986b44ef3583ae2f2b0825e867ddb8e90"
+    },
+    {
+      "pair_id": "LC09_L2SP_149037_20260514_02_T1__43SCT_20260514__9_18",
+      "sensor": "sentinel",
+      "split": "test",
+      "pixels_identified": 1,
+      "path": "masks/test/sentinel/LC09_L2SP_149037_20260514_02_T1__43SCT_20260514__9_18.tif",
+      "sha256": "27c754d34892aa5998b213daacc0f4c66795f33cbd25e0c6c3882f730fab2923"
+    },
+    {
+      "pair_id": "LC09_L2SP_149037_20260802_02_T1__43SCT_20260802__14_16",
+      "sensor": "sentinel",
+      "split": "val",
+      "pixels_identified": 3,
+      "path": "masks/val/sentinel/LC09_L2SP_149037_20260802_02_T1__43SCT_20260802__14_16.tif",
+      "sha256": "e4bee63a4fc2556fc5b818d921db181e1d7def42632aa740f544dcd1bf71d5e3"
+    },
+    {
+      "pair_id": "LC09_L2SP_149040_20250916_02_T1__43RCN_20250916__22_22",
+      "sensor": "sentinel",
+      "split": "test",
+      "pixels_identified": 1,
+      "path": "masks/test/sentinel/LC09_L2SP_149040_20250916_02_T1__43RCN_20250916__22_22.tif",
+      "sha256": "271b8a990ae2509cbe865f6dfc26c85964e8d9c361d805da8b998bed880f9f4c"
+    },
+    {
+      "pair_id": "LC09_L2SP_150035_20260708_02_T1__43SDA_20260708__43_19",
+      "sensor": "sentinel",
+      "split": "train",
+      "pixels_identified": 19,
+      "path": "masks/train/sentinel/LC09_L2SP_150035_20260708_02_T1__43SDA_20260708__43_19.tif",
+      "sha256": "24ba5d765163bd3458e8592acdadf1f7055c19c1a06094cdc86b03c3ca8c7a61"
+    },
+    {
+      "pair_id": "LC09_L2SP_150035_20260708_02_T1__43SDV_20260708__35_24",
+      "sensor": "landsat",
+      "split": "train",
+      "pixels_identified": 1,
+      "path": "masks/train/landsat/LC09_L2SP_150035_20260708_02_T1__43SDV_20260708__35_24.tif",
+      "sha256": "4fcb6602b0c415e651c736578f60aefa51d134d0d023fa70791bbbdee2d67a77"
+    },
+    {
+      "pair_id": "LC09_L2SP_150035_20260708_02_T1__43SDV_20260708__35_24",
+      "sensor": "sentinel",
+      "split": "train",
+      "pixels_identified": 25,
+      "path": "masks/train/sentinel/LC09_L2SP_150035_20260708_02_T1__43SDV_20260708__35_24.tif",
+      "sha256": "26511053a2478614b875b58470a6f1f39fec860b2cdaf87fb6e6f351a17ac49f"
+    },
+    {
+      "pair_id": "LC09_L2SP_150035_20260708_02_T1__43SDV_20260708__39_28",
+      "sensor": "sentinel",
+      "split": "train",
+      "pixels_identified": 17,
+      "path": "masks/train/sentinel/LC09_L2SP_150035_20260708_02_T1__43SDV_20260708__39_28.tif",
+      "sha256": "95c56fb11de783b556551da9f5965762dff8e9eab4a66e8c5811f0c82675fe51"
+    }
+  ]
+}

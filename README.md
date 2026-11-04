@@ -1,117 +1,104 @@
 # MahimandalSR
 
-Code and saved results for the MahimandalSR dataset paper: paired Landsat
-30 m and Sentinel-2 10 m images from Bharat, with RGB and near-infrared bands.
+Dataset preparation and benchmark code for Landsat-to-Sentinel-2 super-resolution.
+The published dataset has 4,800 pairs: 3,424 train, 645 validation and 731 test.
+Inputs are 160 x 160 and targets are 480 x 480, using RGB or RGB+NIR.
 
-The frozen release has 4,800 pairs: 3,424 train, 645 validation and 731 test.
-Inputs are 160 x 160; targets are 480 x 480. Model tensors use RGB or RGBNIR;
-the TIFF band descriptions determine the conversion from stored BGRNIR order.
-Integer reflectance is divided by 10,000 and clipped to [0, 1].
+Dataset: https://www.kaggle.com/datasets/twilight2002/mahimandal-sr-reflectance16/
 
-## Contents
+[Paper with appendices](paper/MahimandalSR.pdf). The release is identified by
+`metadata/paper_release_manifest.csv` (4,800 IDs with their original splits).
+Its SHA-256 is
+`6bf97403ee40ccf0cbd38b2e6e4932e01973e5d00e211e0acfb1e0b810efc5e7`.
 
-```
-notebooks/       Data collection, benchmark and dataset checks
-benchmark/       Model adapters, training, evaluation and metrics
-dataset/         Release export and dataset-quality checks
-metadata/        Frozen manifest, protocol, dataset card and image checksums
-results/         Saved benchmark, transfer and dataset-audit results
-paper/           Manuscript and supplement PDFs
-weights/         Index of the separately supplied checkpoints
-verify.py        File integrity and saved-score checks
-```
+## Setup
 
-This repository concerns the dataset paper only. It does not contain the NAS
-model paper, architecture search, internal review correspondence or notebook
-generation tools. TIFF imagery, model weights and third-party model source
-repositories are distributed separately; they are not embedded in this ZIP.
-
-## Check the reported results
-
-Python 3.10+ is recommended. No GPU or additional Python packages are needed:
+Use Python 3.10+ in a project environment. Install PyTorch and torchvision for
+your CPU/CUDA version, then:
 
 ```bash
-python verify.py
+pip install -r requirements.txt
 ```
 
-This checks the distributed files against `checksums.sha256`, verifies the frozen
-split, and recomputes benchmark means from the saved per-image CSVs. It does not
-run inference or claim independent reproduction of the predictions.
+Put the released dataset in `data/reflectance16/`, including its original
+`paper_release_manifest.csv` and `protocol.json`. Images and weights are supplied
+separately. `metadata/` contains the published manifest; do not change its split.
 
-## Rerun the benchmark
-
-Use a project environment. Install PyTorch/torchvision appropriate for your
-machine, then install `requirements.txt`. Do not change a shared machine's
-global environment. The historical runs used an A100 and PyTorch 2.1.0a0;
-`environment.json` in each saved run records the actual environment.
-
-Put the released imagery in `data/reflectance16/`, including its original
-`paper_release_manifest.csv` and `protocol.json`. Both the original
-`landsat/`, `sentinel/` layout and the release's split-first LR/HR paths are
-handled by the manifest reader. Do not redraw the split.
-
-Open `notebooks/02_benchmark.ipynb`, or run from this folder:
+## Run
 
 ```bash
 python benchmark/run.py fetch --sources models/upstream
-python benchmark/run.py smoke --model RDN --modality rgb --sources models/upstream --output runs --device cpu --backward
-python benchmark/run.py train --model RDN --dataset data/reflectance16 --sources models/upstream --output runs --radiometry reflectance16 --modality rgb --epochs 50 --patience 3 --batch-size 1 --train-lr-crop 160 --lr 0.0001 --seed 42 --device cuda
-python benchmark/run.py evaluate --model RDN --dataset data/reflectance16 --sources models/upstream --output runs --radiometry reflectance16 --modality rgb --train-lr-crop 160 --seed 42 --split test --border-crop 3 --device cuda
+python benchmark/run.py train --model RDN --dataset data/reflectance16 --sources models/upstream --output runs --modality rgb --epochs 50 --patience 3 --batch-size 1 --train-lr-crop 160 --seed 42 --device cuda
+python benchmark/run.py evaluate --model RDN --dataset data/reflectance16 --sources models/upstream --output runs --modality rgb --train-lr-crop 160 --split val --seed 42 --device cuda
+python benchmark/run.py evaluate --model RDN --dataset data/reflectance16 --sources models/upstream --output runs --modality rgb --train-lr-crop 160 --split test --seed 42 --device cuda
 ```
 
-Use only a GPU assigned to you. `fetch` downloads the pinned upstream repositories;
-the other steps do not fetch data. All paper runs use the explicit
-`--train-lr-crop 160` flag. The unchanged historical harness also supports smaller
-crops; its legacy CLI default is not the setting used in the paper.
+Use `--device cpu` without a GPU. On shared machines, use only your assigned GPU.
+Change `--model` to select another implementation; `benchmark/registry.json`
+lists supported modalities and pinned upstream revisions. Use `--modality rgbnir`
+for supported four-band models. Bicubic needs evaluation only, not training.
 
-The notebook separates training, validation and test execution. Choose the best
-validation checkpoint before enabling test. Use a new `runs/` directory for new
-experiments, not `results/`. Historical checkpoint evaluation requires matching
-the archived protocol and source hashes; do not remove those checks to force a
-checkpoint to load. `weights/checkpoints.csv` identifies the archived files.
+Paper training uses full 160 x 160 inputs, Adam at 1e-4 and validation-PSNR selection.
+Test uses full160 inputs and a three-pixel HR border crop. Evaluation always
+recomputes scores, so replacing `best.pt` cannot silently reuse old metrics.
+Resume preserves optimizer and RNG states. Use a new output folder if settings
+change; choose checkpoints on validation before opening test results.
 
-RGB results cover EDSR, RCAN, RDN, CAFRN, DCM, FENet and the paired x3 SRVGG
-adaptation, plus bicubic. Four-band results cover registry-supported RDN, CAFRN
-and SRVGG, plus bicubic. The registry retains the original candidate implementations;
-being listed there does not mean a model completed the paper benchmark.
-SRVGG did not reach its adversarial stage in the supplied runs. DCM is the HSENet
-comparison implementation; the FENet acronym match to Land2Sent is unverified.
+## Files
 
-## Data preparation and checks
+- `notebooks/01_prepare_dataset.ipynb`: Planetary Computer collection workflow.
+- `notebooks/02_benchmark.ipynb`: the same benchmark commands in notebook form.
+- `dataset/`: optional dataset-quality analyses used in the paper.
+- `benchmark/transfer.py`: fixed-baseline OLI2MSI transfer; run with `--help`.
+- `results/`: original reported scores, settings, histories and audit records.
+- `paper/`: manuscript and supplement; `weights/`: checkpoint inventory.
 
-`notebooks/01_prepare_dataset.ipynb` contains the collection workflow using
-Microsoft Planetary Computer. It requires internet access and the geospatial
-dependencies in `requirements.txt`. It can collect new pairs, but changed remote
-catalogues or rerunning with different date windows can produce a different
-release. Use the supplied frozen manifest and imagery for paper reproduction.
-The original auxiliary-raster collection receipts are incomplete; current queries
-do not recreate that historical provenance.
+## Training masks and scoring
 
-`notebooks/03_check_dataset.ipynb` runs local manifest and source-overlap checks.
-The scripts in `dataset/` additionally cover source masks, radiometry, registration
-diagnostics and source-fill sensitivity. Run an individual script with `--help`
-for its required inputs. Network audits can be slow; they are not run by `verify.py`.
+The spatial loss mask intersects the HR TIFF raster mask with the LR raster
+mask expanded 3x onto the target grid. Validity must hold in all stored bands;
+the mask is shared across output channels and normalizes the L1 average.
+The released masks are all-valid, so this gives ordinary full-frame L1.
+QA/SCL masks screen candidate pairs during collection; companion identified-fill
+masks document recovered source fill separately. Neither enters training loss
+or the published scoring mask. Test metrics exclude a three-pixel HR border.
 
-The stored split is block-held-out, not acquisition-disjoint or spatially buffered.
-Some source products and boundary footprints overlap across splits. Sensitivity
-analyses in `results/audits/` supplement the original 731-pair evaluation; they do
-not replace its split or metrics. Automatic registration proxies are not surveyed
-ground-control accuracy. Separate fill masks were not applied to the original fits.
+## Supporting CPU analysis
 
-`benchmark/transfer.py` contains the fixed-baseline OLI2MSI transfer evaluator;
-its CLI is `python benchmark/transfer.py --help`. OLI2MSI has RGB float32 inputs
-and publisher TOA provenance, unlike Mahimandal surface reflectance. The supplied
-transfer results are descriptive, not evidence of radiometric harmonization.
+```bash
+python dataset/analyze_paired_blocks.py
+python dataset/verify_companion_masks.py --release data/reflectance16
+```
 
-## Source and data terms
+The first command uses the saved three-seed scores in
+`results/benchmark_three_seed/`. It checks cohort membership and archived metric
+means, then calculates paired model differences, equal-block means and
+leave-one-block-out summaries. The second checks the existing companion masks
+against their inventory and imagery grids. See `results/cpu_support/README.md`.
+Neither command runs model inference or replaces the primary benchmark.
 
-`metadata/file_sources.csv` records the source and SHA-256 of copied files.
-Benchmark training/metric code is unchanged; the transfer copy removes the
-unrelated NAS branches. Preparation notebook outputs and its optional web app
-were removed, not its collection logic. Saved scores and historical protocols
-are kept as recorded. Paths inside historical receipts describe the original
-run; the setup instructions above use relative paths.
+## Data and checkpoint access
 
-See `LICENSES.md` before redistribution. This repository does not grant new
-rights over satellite imagery, auxiliary products, upstream code or checkpoints.
+The Kaggle download supplies reflectance16 images. Archived scores and audit
+reports are under `results/`; the checkpoint inventory is
+`weights/checkpoints.csv`. Validation-selected model states and the full-evidence
+bundle will be supplied as confidential journal-review material, with access
+instructions accompanying the manuscript.
 
+Band descriptions determine RGB/RGBNIR ordering. Integer reflectance is divided
+by 10,000 and clipped to [0, 1]; display stretches never enter metric calculation.
+The reader checks shape, bands and validity. Training/evaluation use the
+published manifest and recorded model/data protocol.
+Model settings and strict weight loading still guard checkpoint compatibility.
+
+Archived file identities remain in historical result records, and the ID-based
+OLI2MSI split algorithm is unchanged.
+Fresh collection may differ from the frozen release as remote catalogues change;
+use the published imagery and split for reproduction. New training can also vary
+with hardware/software; the archived environments document the reported runs.
+
+Source products and some boundary footprints recur across the published splits;
+this is not a source-disjoint or buffered benchmark. SRVGG stopped before its
+adversarial phase; DCM uses the HSENet comparison code and FeNet is the
+feature-enhancement network identified in the paper. See `LICENSES.md`
+for third-party terms. No NAS model code is included.

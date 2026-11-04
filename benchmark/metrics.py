@@ -8,6 +8,7 @@ from torch.nn import functional as F
 
 
 def _weighted_mean(value: torch.Tensor, mask: torch.Tensor) -> torch.Tensor:
+    """Average over included channel-pixels using shared spatial TIFF validity."""
     if mask.shape[1] == 1 and value.shape[1] != 1:
         mask = mask.expand(-1, value.shape[1], -1, -1)
     return (value * mask).sum() / mask.sum().clamp_min(1)

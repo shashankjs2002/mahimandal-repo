@@ -6,4 +6,5 @@ models/
 runs/
 *.pt
 *.pth
+*.pdf
 

@@ -1,0 +1,47 @@
+{
+  "band_order_on_disk": [
+    "blue",
+    "green",
+    "red",
+    "nir"
+  ],
+  "format": "mahimandal-split-geotiff-v1",
+  "geometry": {
+    "HR": [
+      4,
+      480,
+      480
+    ],
+    "LR": [
+      4,
+      160,
+      160
+    ],
+    "scale": 3
+  },
+  "layout": "{train,val,test}/{LR,HR}/{pair_id}.tif",
+  "model_decode": "clip(pixel/10000,0,1)",
+  "model_value_domain": "float32 reflectance [0,1]",
+  "pairs": 4800,
+  "scientific_note": "The reflectance16 release stores surface reflectance multiplied by 10000. Divide by 10000 for model inputs and metrics on linear reflectance.",
+  "dataset_url": "https://www.kaggle.com/datasets/twilight2002/mahimandal-sr-reflectance16/",
+  "code_url": "https://github.com/shashankjs2002/mahimandal-repo",
+  "release_manifest_sha256": "6bf97403ee40ccf0cbd38b2e6e4932e01973e5d00e211e0acfb1e0b810efc5e7",
+  "spatial_blocks": {"total": 274, "train": 247, "val": 14, "test": 13},
+  "holdout_minimum_fraction": 0.11,
+  "split_scope": "Whole 100-km block identifiers are assigned to one split. Source-product reuse and 22 test footprints intersecting another partition are documented in the audits.",
+  "training_loss_mask": "Intersection of all-band TIFF raster masks: nearest-neighbour 3x expansion of LR mask and HR mask, broadcast over output channels. All-valid released TIFF masks yield full-frame L1. QA/SCL and companion identified-fill masks are separate from loss support.",
+  "evaluation_support": "Linear reflectance, three-pixel HR border exclusion and joint TIFF raster masks. Companion identified-fill masks are supporting audit artifacts.",
+  "annotation_scope": "Landscape sampling strata use Esri 2025 annual land-cover percentages and Copernicus DEM GLO-30 descriptors.",
+  "source_manifest_sha256": "af910e6fcfa25813c8fbe9853a3620a40065702502a3e8203e1d2c99bd80ea52",
+  "source_root": "F:\\mahimandal-dataset\\mahimandal-dataset\\SR_pairs_india_ESRI2025_4800_balanced",
+  "split_counts": {
+    "test": 731,
+    "train": 3424,
+    "val": 645
+  },
+  "split_source": "authoritative paper_release_manifest.csv; no reshuffling",
+  "stored_dtype": "int16",
+  "stored_value_domain": "reflectance_x10000_[0,10000]",
+  "variant": "reflectance16"
+}

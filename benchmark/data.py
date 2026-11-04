@@ -130,6 +130,7 @@ class Pairs(Dataset):
         channels = 3 if self.modality == "rgb" else 4
         if lr.shape != (channels, LR_SIZE, LR_SIZE) or hr.shape != (channels, HR_SIZE, HR_SIZE):
             raise ValueError(f"Unexpected geometry for {row['pair_id']}: {lr.shape}, {hr.shape}")
+        # TIFF validity on the target grid; the published all-valid masks retain the full frame.
         joint_mask = hr_mask & np.repeat(np.repeat(lr_mask, SCALE, axis=0), SCALE, axis=1)
         if not joint_mask.any() or not np.isfinite(lr).all() or not np.isfinite(hr).all():
             raise ValueError(f"No finite jointly valid pixels for {row['pair_id']}")
