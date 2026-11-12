@@ -1,8 +1,0 @@
-{
-  "last_completed_epoch": 10,
-  "requested_epoch_ceiling": 50,
-  "early_stopped": true,
-  "patience": 3,
-  "best_validation_psnr": 35.77121561774912,
-  "best_checkpoint_sha256": "9eb0d4116cca8acfd3ea870d92e1f0bc90676580498ae9dbf2295f36888a07e8"
-}
