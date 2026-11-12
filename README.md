@@ -101,4 +101,4 @@ Source products and some boundary footprints recur across the published splits;
 this is not a source-disjoint or buffered benchmark. SRVGG stopped before its
 adversarial phase; DCM uses the HSENet comparison code and FeNet is the
 feature-enhancement network identified in the paper. See `LICENSES.md`
-for third-party terms. No NAS model code is included.
+for third-party terms.

@@ -2,7 +2,7 @@
 
 - `benchmark/`: original seed-42 histories, protocols, environment records,
   validation/test per-image scores, aggregate metrics and preflight outcomes.
-- `transfer/`: fixed-baseline Mahimandal-to-OLI2MSI scores. No NAS results.
+- `transfer/`: fixed-baseline Mahimandal-to-OLI2MSI scores.
 - `audits/mahimandal_reflectance16_review_audit/`: released-image inventory,
   source overlap, timing, cloud checks and geographic split diagnostics.
 - `audits/sentinel_product_metadata_audit/`: Sentinel product coefficient checks.

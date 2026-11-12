@@ -13,5 +13,3 @@ The manuscript's source-tree paths map to this review repository as follows:
 | `generated/multiseed_review/` score CSVs | `results/benchmark_three_seed/` |
 | `revision_cpu_only/statistical_analysis/` | `results/cpu_support/statistical_analysis/` |
 | `revision_cpu_only/verification/` | `results/cpu_support/verification/` |
-
-No NAS architecture results are included in this dataset paper.
