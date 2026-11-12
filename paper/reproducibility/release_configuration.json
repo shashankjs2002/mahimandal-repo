@@ -1,0 +1,95 @@
+{
+  "release_manifest_sha256": "6bf97403ee40ccf0cbd38b2e6e4932e01973e5d00e211e0acfb1e0b810efc5e7",
+  "manifest_counts": {
+    "train": 3424,
+    "test": 731,
+    "val": 645
+  },
+  "manifest_block_counts": {
+    "test": 13,
+    "train": 247,
+    "val": 14
+  },
+  "allocator": {
+    "seed": 42,
+    "block_size_m": 100000,
+    "guard_m": 0,
+    "target_fractions": {
+      "train": 0.78,
+      "val": 0.11,
+      "test": 0.11
+    },
+    "holdout_floor": 0.1,
+    "replay": {
+      "counts": {
+        "train": 3424,
+        "test": 731,
+        "val": 645
+      },
+      "pair_mismatches": 0,
+      "block_mismatches": 0
+    }
+  },
+  "protocol_metadata_fractions": {
+    "test": 0.1,
+    "train": 0.8,
+    "val": 0.1
+  },
+  "protocol_metadata_replay_diagnostic": {
+    "counts": {
+      "train": 3478,
+      "test": 707,
+      "val": 615
+    },
+    "pair_mismatches": 84,
+    "block_mismatches": 2
+  },
+  "landscape_caps": {
+    "alpine": {
+      "notebook_default": 500,
+      "protocol_metadata": 350,
+      "released_pairs": 353
+    },
+    "cropland": {
+      "notebook_default": 1000,
+      "protocol_metadata": 1000,
+      "released_pairs": 1000
+    },
+    "desert_bare": {
+      "notebook_default": 700,
+      "protocol_metadata": 700,
+      "released_pairs": 50
+    },
+    "forest": {
+      "notebook_default": 900,
+      "protocol_metadata": 800,
+      "released_pairs": 779
+    },
+    "mixed": {
+      "notebook_default": 700,
+      "protocol_metadata": 700,
+      "released_pairs": 162
+    },
+    "mountain": {
+      "notebook_default": 800,
+      "protocol_metadata": 700,
+      "released_pairs": 800
+    },
+    "shrub_grass": {
+      "notebook_default": 800,
+      "protocol_metadata": 800,
+      "released_pairs": 800
+    },
+    "urban": {
+      "notebook_default": 800,
+      "protocol_metadata": 700,
+      "released_pairs": 800
+    },
+    "water_wetland": {
+      "notebook_default": 600,
+      "protocol_metadata": 600,
+      "released_pairs": 56
+    }
+  },
+  "scope": "Replay starts from the final retained cohort. Split assignments are verified; historical collection cap overrides and resume state are not inferred."
+}
