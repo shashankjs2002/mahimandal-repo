@@ -14,7 +14,6 @@ before public redistribution.
 - OLI2MSI: its publisher's data and code terms remain applicable.
 - Trained weights: source implementation and data terms require author review.
 
-The source index records where files came from; it is not legal clearance.
 `LICENSE` preserves the original project's software notice. It does not override
 the separate terms of the third-party materials above.
 

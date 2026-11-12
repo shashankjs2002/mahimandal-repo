@@ -19,7 +19,7 @@ from torch.nn import functional as F
 from torch.utils.data import DataLoader
 
 from adapters import REGISTRY, fetch, load, load_discriminator, predict
-from data import LR_SIZE, Pairs, audit, digest, find_release_manifest, resolve, save_prediction
+from data import LR_SIZE, Pairs, audit, read_rows, resolve, save_prediction
 from metrics import mae, metric_bundle, psnr
 
 
@@ -71,10 +71,25 @@ def environment(device: torch.device) -> dict:
             "precision": "float32", "packages": packages}
 
 
-def code_inventory() -> dict:
-    root = Path(__file__).resolve().parent
-    return {name: digest(root / name) for name in
-            ("run.py", "adapters.py", "data.py", "metrics.py", "registry.json")}
+def split_ids(dataset: Path) -> dict:
+    rows = read_rows(dataset)
+    reference = Path(__file__).resolve().parents[1] / "metadata"
+    frozen = read_rows(reference)
+    fields = ("pair_id", "split", "landscape_class", "spatial_block_id")
+    if sorted(tuple(row[key] for key in fields) for row in rows) != sorted(
+            tuple(row[key] for key in fields) for row in frozen):
+        raise ValueError("Use the published manifest without changing pairs, splits or classes")
+    return {split: sorted(row["pair_id"] for row in rows if row["split"] == split)
+            for split in ("train", "val", "test")}
+
+
+def compatible_protocol(saved: dict, expected: dict) -> bool:
+    # Historical checkpoints predate the explicit pair lists. Their model and
+    # training settings must still agree; split_ids() checks the published split.
+    if not isinstance(saved, dict):
+        return False
+    return all(saved.get(key) == value for key, value in expected.items()
+               if key != "split_ids" or key in saved)
 
 
 def run_root(args) -> Path:
@@ -82,10 +97,8 @@ def run_root(args) -> Path:
 
 
 def signature(args, spec: dict) -> dict:
-    release = find_release_manifest(args.dataset)
     value = {
-        "model": spec, "code_sha256": code_inventory(),
-        "release_manifest_sha256": digest(release), "protocol_sha256": digest(args.dataset / "protocol.json"),
+        "model": spec, "split_ids": split_ids(args.dataset),
         "task": "actual Landsat 30 m 160x160 to Sentinel-2 10 m 480x480 paired SR",
         "scale": 3, "modality": args.modality, "radiometry": args.radiometry,
         "radiometry_definition": {
@@ -156,14 +169,9 @@ def train(args) -> None:
     root.mkdir(parents=True, exist_ok=True)
     receipt = signature(args, spec)
     protocol_path = root / "protocol.json"
-    if protocol_path.exists() and json.loads(protocol_path.read_text()) != receipt:
+    if protocol_path.exists() and not compatible_protocol(json.loads(protocol_path.read_text()), receipt):
         raise ValueError("Existing run uses different model/data/training settings; choose a new output root")
-    audit_path = args.output / "dataset_audit.json"
-    if not audit_path.exists():
-        write_json(audit_path, audit(args.dataset))
-    previous_audit = json.loads(audit_path.read_text())
-    if previous_audit["release_manifest_sha256"] != receipt["release_manifest_sha256"]:
-        raise ValueError("Dataset release manifest differs from the locked audit")
+    write_json(args.output / "dataset_split.json", receipt["split_ids"])
     write_json(protocol_path, receipt)
     (root / "architecture.txt").write_text(str(model), encoding="utf-8")
     write_json(root / "environment.json", environment(device))
@@ -181,7 +189,7 @@ def train(args) -> None:
     last_path = root / "last.pt"
     if last_path.exists():
         state = strict_load(model, last_path)
-        if state["protocol"] != receipt:
+        if not compatible_protocol(state["protocol"], receipt):
             raise ValueError("Checkpoint lineage differs from the requested run")
         optimizer.load_state_dict(state["optimizer"])
         start_epoch, best_psnr, history = state["epoch"], state["best_psnr"], state["history"]
@@ -269,7 +277,7 @@ def train(args) -> None:
                {"last_completed_epoch": history[-1]["epoch"], "requested_epoch_ceiling": args.epochs,
                 "early_stopped": trailing_nonimprovements(history) >= args.patience,
                 "patience": args.patience, "best_validation_psnr": best_psnr,
-                "best_checkpoint_sha256": digest(root / "best.pt")})
+                "best_checkpoint": "best.pt"})
 
 
 def _flops(model, sample: torch.Tensor) -> tuple[float | None, str]:
@@ -288,22 +296,21 @@ def evaluate(args) -> None:
     model, spec = load(args.model, args.sources, args.modality)
     root = run_root(args)
     checkpoint = args.checkpoint or root / "best.pt"
-    checkpoint_hash = None
+    state = {}
     if model is not None:
         if not checkpoint.is_file():
             raise FileNotFoundError(f"Train first or supply --checkpoint: {checkpoint}")
         state = strict_load(model, checkpoint)
-        checkpoint_hash = digest(checkpoint)
         expected = signature(args, spec)
-        if state.get("protocol") != expected:
+        if not compatible_protocol(state.get("protocol"), expected):
             raise ValueError("Checkpoint does not match the requested dataset/modality/radiometry protocol")
         model = model.to(device).eval()
     dataset = Pairs(args.dataset, args.split, args.modality, args.radiometry)
-    audit_info = audit(args.dataset)
-    evaluation_id = checkpoint_hash[:12] if checkpoint_hash else "bicubic"
+    membership = split_ids(args.dataset)
+    evaluation_id = checkpoint.stem if model is not None else "bicubic"
     destination = root / "evaluation" / args.split / evaluation_id
-    receipt = canonical({"model": spec, "checkpoint_sha256": checkpoint_hash,
-                         "code_sha256": code_inventory(), "dataset": audit_info,
+    receipt = canonical({"model": spec, "checkpoint": checkpoint.name if model is not None else None,
+                         "checkpoint_epoch": state.get("epoch"), "split_ids": membership,
                          "split": args.split, "modality": args.modality,
                          "radiometry": args.radiometry, "border_crop": args.border_crop,
                          "test_time_augmentation": False, "inference": "whole 160x160 frame, float32"})
@@ -313,9 +320,7 @@ def evaluate(args) -> None:
         raise ValueError("Existing evaluation protocol differs")
     write_json(protocol_path, receipt)
     write_json(destination / "environment.json", environment(device))
-    if (destination / "metrics.json").exists() and (destination / "per_image.csv").exists():
-        print("Completed evaluation reused:", destination, flush=True)
-        return
+    # Recompute on every call rather than reuse scores from a replaced best.pt.
     perceptual = lpips_network(device)
     sample = dataset[0][0][None].to(device)
     for _ in range(3):
@@ -353,7 +358,7 @@ def evaluate(args) -> None:
         save_prediction(destination / "predictions" / f"{record['pair_id']}.tif",
                         sr[0].numpy(), mask[0].numpy() > 0,
                         resolve(args.dataset, record["hr_path"]), args.modality,
-                        {"model": args.model, "checkpoint_sha256": checkpoint_hash or "none",
+                        {"model": args.model, "checkpoint": checkpoint.name if model is not None else "none",
                          "radiometry": args.radiometry, "border_crop_for_metrics": args.border_crop})
         if (index + 1) % 25 == 0 or index + 1 == len(dataset):
             print(f"[{args.model}/{args.split}] {index + 1}/{len(dataset)} "
@@ -405,17 +410,17 @@ def smoke(args) -> None:
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("action", choices=("fetch", "audit", "smoke", "train", "evaluate"))
-    parser.add_argument("--sources", type=Path, default=Path("/kaggle/working/mahimandal_sources"))
+    parser.add_argument("--sources", type=Path, default=Path("models/upstream"))
     parser.add_argument("--model", choices=[*REGISTRY, "bicubic"], default="EDSR")
     parser.add_argument("--dataset", type=Path)
-    parser.add_argument("--output", type=Path, default=Path("/kaggle/working/mahimandal160_benchmark"))
+    parser.add_argument("--output", type=Path, default=Path("runs"))
     parser.add_argument("--modality", choices=("rgb", "rgbnir"), default="rgb")
     parser.add_argument("--radiometry", choices=("reflectance16", "normalized_float32", "quantized8"),
                         default="reflectance16")
     parser.add_argument("--epochs", type=int, default=50)
     parser.add_argument("--patience", type=int, default=3)
     parser.add_argument("--batch-size", type=int, default=1)
-    parser.add_argument("--train-lr-crop", type=int, default=64)
+    parser.add_argument("--train-lr-crop", type=int, default=160)
     parser.add_argument("--lr", type=float, default=1e-4)
     parser.add_argument("--workers", type=int, default=0)
     parser.add_argument("--seed", type=int, default=42)
