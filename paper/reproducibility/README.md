@@ -15,8 +15,9 @@ artifacts. They leave the release, split, scores, and weights unchanged.
 
 The published manifest is authoritative for train, validation, and test
 membership. Starting with its retained pairs, the preparation notebook's
-seed-42 allocation reproduces all 274 block assignments (3,424 / 645 / 731
-pairs). Substituting the fractions recorded in `metadata/protocol.json`
+seed-42 allocation with 78/11/11 targets reproduces all 274 block assignments
+(3,424 / 645 / 731 pairs). Substituting the historical 80/10/10 targets
+recorded in `metadata/protocol.json`
 changes two blocks containing 84 pairs. The JSON records both settings
 without modifying the historical metadata or the release manifest.
 
@@ -33,18 +34,37 @@ than instantiating, running, or retraining the models.
 
 ## Access check and reviewer handoff
 
-The [pinned reproduction repository](https://github.com/shashankjs2002/mahimandal-repo/tree/18bb9f9a78f0f1de0c04241ee8c6918d7b3b0f8b)
+The [manuscript's pinned reproduction repository](https://github.com/shashankjs2002/mahimandal-repo/tree/4f2d5ef1adef89517f071d97b4b14b73549de0f1)
 and the [pinned notebook commit](https://github.com/shashankjs2002/mahimandal-repo/tree/4b79913ff6605f477b843b91224f86dd3e5854b6)
 resolved through GitHub's API without authentication. At the full repository
 pin, the manifest, registry, three-seed score directory, and checkpoint index
 were visible. The [Kaggle listing](https://www.kaggle.com/datasets/twilight2002/mahimandal-sr-reflectance16/)
 and its metadata endpoint resolved without authentication and identify the
-release as public version 1. The local Kaggle upload manifest matches the
-repository manifest byte for byte. An anonymous download of the full imagery
-archive was not tested.
+release as public version 1. The manifest from the local frozen release
+matches the published SHA-256 checksum. The pinned Git copy has the same CSV
+records with LF line endings; use the frozen release copy for an exact byte
+check. An anonymous download of the full imagery archive was not tested.
 
 The selected weights and full run histories are present in the local seed-42
 benchmark export and seed-43/44 compact export. The public checkpoint index
 identifies seed-42 weights; the fit CSV above identifies the selected weights
 for all 30 fits. A journal deposit or reviewer link for the private bundles
 is still needed. Test that link in a signed-out session before submission.
+
+## What the verification covers
+
+The pinned analysis replay checked 324 archived run-level metric means,
+all four paired PSNR comparisons and all 52 leave-one-block-out results.
+A separate CPU run recomputed bicubic PSNR from all 731 released test pairs
+in both output profiles: 35.3775 dB (RGB) and 33.8920 dB (RGB+NIR). All
+410 companion masks passed the release-grid check. The locally archived
+selected checkpoint files matched all 30 SHA-256 values in
+`verified_fits.csv`. Matching their hashes verifies file identity, not
+learned-model predictions. These checks did not rerun training, learned-model
+inference or catalogue collection.
+
+The [FeNet authors' repository](https://github.com/wangzheyuan-666/FeNet)
+identifies the implementation as Wang et al.'s 2022 Feature Enhancement
+Network (DOI: 10.1109/TGRS.2022.3168787). The benchmark receipt records the
+pinned revision, source module and threefold constructor; the audit did not
+re-execute that model.
